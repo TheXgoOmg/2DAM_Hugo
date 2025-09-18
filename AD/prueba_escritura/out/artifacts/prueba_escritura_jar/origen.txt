@@ -1,0 +1,7 @@
+nombre o la ruta de la ubicación del archivo a escribir y lo abre en modo añadir, para escribir al final. Si no existe, se creará, y si ya existe, se escribirá detrás (sólo si append está establecido en True).
+Los principales métodos de la clase son:
+
+write(int byte) → Escribe el byte en el flujo de salida. Aunque este parámetro es un entero, sólo se escribe un byte. Si hay un error, se lanzará una excepción de tipo IOException.
+void write(byte[] buffer) → Escribe el contenido del buffer (vector de bytes) en el archivo. Si el buffer es nulo, lanzará una excepción.
+void write(byte[] buffer, int pos, int length) → Escribe el contenido del buffer (vector de bytes) desde la posición pos, y tantos bytes como se indiquen en length.
+void flush() → Fuerza la escritura de los bytes restantes
