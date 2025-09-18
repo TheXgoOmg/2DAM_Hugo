@@ -1,0 +1,12 @@
+Escalar: Es un número (int,float,double)
+
+Punto: (x,y,z)
+
+Vector3: Es una linea de un punto a otro 
+	dir -> vector normal
+(x,y,z)	magnitud -> la distacia (un número)
+
+Ej. vector3: Velocidad (espacio/tiempo): Representa una dirección y una distancia.
+    escalar: Espacio (float)
+    escalar: Tiempo (float)
+)
