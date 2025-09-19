@@ -15,7 +15,9 @@ public class GestionAlumnos {
             case "2":
                 Conversion();
                 break;
-
+            case "3":
+                Listar();
+                break;
         }
     }
 
@@ -95,6 +97,25 @@ public class GestionAlumnos {
             pw.write("");
         } catch (IOException ex) {
             System.out.printf("Error al escribir en el archivo %s\n.", archivo.getName());
+        }
+    }
+
+    public static void Listar() {
+        File objetos = new File("objetos.dat");
+        int contador = 0;
+        System.out.println("0");
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(objetos))) {
+            System.out.println("1");
+            do {
+                Alumno alumno = (Alumno) ois.readObject();
+                System.out.println(alumno);
+                contador++;
+            } while (ois.available() != 0);
+            System.out.printf("\nSe han leído %s objetos\n", contador);
+        } catch (IOException ex) {
+            System.out.printf("Error al leer el archivo %s.\n", objetos.getName());
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
     }
 }

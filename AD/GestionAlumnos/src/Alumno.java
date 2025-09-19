@@ -46,4 +46,14 @@ public class Alumno implements Serializable {
     public void setClase(String clase) {
         this.clase = clase;
     }
+
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", NIA='" + NIA + '\'' +
+                ", clase='" + clase + '\'' +
+                '}';
+    }
 }
