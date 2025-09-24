@@ -90,12 +90,11 @@ public class GestionAlumnos {
 
 
         } catch (IOException ex) {
-            System.out.println("Error al leer el archivo.");
+            System.out.println("Eror al leer el archivo.");
         }
-
         try (PrintWriter pw = new PrintWriter(new FileWriter(archivos))) {
-            pw.write("");
-        } catch (IOException ex) {
+        pw.write("");
+    } catch (IOException ex) {
             System.out.printf("Error al escribir en el archivo %s\n.", archivos.getName());
         }
     }
