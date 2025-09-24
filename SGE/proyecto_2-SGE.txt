@@ -1,0 +1,14 @@
+# Procesos
+ 
+## Control financiero de ingresos y gastos (administración)
+- Sage 50 Essencial
+
+## Planificación de menús y horarios (hostelería)
+- Kitchen CUT
+- Excel
+
+## Control de acceso, seguridad y puntos de vigilancia del establecimiento (seguridad)
+- Genetec
+
+## Control de copias de seguridad (informática)
+- AWS Backup

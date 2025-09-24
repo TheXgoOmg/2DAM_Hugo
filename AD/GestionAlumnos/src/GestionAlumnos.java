@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
+
 public class GestionAlumnos {
     public static void main(String[] args) {
         if (args.length != 3) {
@@ -8,20 +9,23 @@ public class GestionAlumnos {
             System.exit(0);
         }
 
+        File archivos = new File(args[1]);
+        File objetos = new File(args[2]);
+
         switch (args[0]) {
             case "1":
-                Introducir();
+                Introducir(archivos);
                 break;
             case "2":
-                Conversion();
+                Conversion(archivos, objetos);
                 break;
             case "3":
-                Listar();
+                Listar(objetos);
                 break;
         }
     }
 
-    public static void Introducir() {
+    public static void Introducir(File archivos) {
         Scanner sc = new Scanner(System.in);
         String nombre, apellidos, NIA, clase;
         String datos = "";
@@ -38,11 +42,9 @@ public class GestionAlumnos {
 
         datos += nombre + ";" + apellidos + ";" + NIA + ";" + clase + "\n";
 
-        File fichero = new File("alumnos.txt");
-
-        try (PrintWriter pw = new PrintWriter(new FileWriter(fichero, true))) {
-            if (!fichero.exists()) {
-                System.out.printf("El fichero %s no existe", fichero.getName());
+        try (PrintWriter pw = new PrintWriter(new FileWriter(archivos, true))) {
+            if (!archivos.exists()) {
+                System.out.printf("El fichero %s no existe", archivos.getName());
             } else {
                 pw.write(datos);
                 System.out.print("Los datos han sido escritos correctamente");
@@ -53,10 +55,9 @@ public class GestionAlumnos {
 
     }
 
-    public static void Conversion() {
-        File objetos = new File("objetos.dat");
+    public static void Conversion(File archivos, File objetos) {
 
-        try (BufferedReader br = new BufferedReader(new FileReader("alumnos.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(archivos))) {
             String[] registros = br.readLine().split("\n");
 
             if (registros.length == 0) {
@@ -92,30 +93,29 @@ public class GestionAlumnos {
             System.out.println("Error al leer el archivo.");
         }
 
-        File archivo = new File("alumnos.txt");
-        try (PrintWriter pw = new PrintWriter(new FileWriter(archivo))) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(archivos))) {
             pw.write("");
         } catch (IOException ex) {
-            System.out.printf("Error al escribir en el archivo %s\n.", archivo.getName());
+            System.out.printf("Error al escribir en el archivo %s\n.", archivos.getName());
         }
     }
 
-    public static void Listar() {
-        File objetos = new File("objetos.dat");
+    public static void Listar(File objetos) {
         int contador = 0;
-        System.out.println("0");
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(objetos))) {
-            System.out.println("1");
             do {
-                Alumno alumno = (Alumno) ois.readObject();
+                System.out.println("1");
+                Alumno alumno = (Alumno) ois.readObject(); // ERROR serialVersionUID
+                System.out.println("2");
                 System.out.println(alumno);
                 contador++;
             } while (ois.available() != 0);
             System.out.printf("\nSe han leído %s objetos\n", contador);
         } catch (IOException ex) {
             System.out.printf("Error al leer el archivo %s.\n", objetos.getName());
+            System.out.println(ex.getMessage());
         } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: Clase no encontrada.");
         }
     }
 }

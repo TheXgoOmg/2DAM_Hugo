@@ -6,6 +6,7 @@ public class Alumno implements Serializable {
     public String NIA;
     public String clase;
 
+
     public Alumno(String nombre, String apellido, String NIA, String clase) {
         this.nombre = nombre;
         this.apellido = apellido;
