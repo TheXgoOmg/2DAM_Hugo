@@ -104,9 +104,7 @@ public class GestionAlumnos {
         int contador = 0;
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(objetos))) {
             do {
-                System.out.println("1");
-                Alumno alumno = (Alumno) ois.readObject(); // ERROR serialVersionUID
-                System.out.println("2");
+                Alumno alumno = (Alumno) ois.readObject();
                 System.out.println(alumno);
                 contador++;
             } while (ois.available() != 0);
