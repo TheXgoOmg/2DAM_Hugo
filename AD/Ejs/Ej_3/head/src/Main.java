@@ -27,10 +27,6 @@ public class Main {
 
 
     }
-
-
-    // HACERLO TAIL
-
     public static void Listar(File file, int num) {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             for (int i = 1; i <= num; i++) {
