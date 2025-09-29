@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +18,6 @@ public class Main {
         if (args.length == 3) {
             try {
                 int num = Integer.parseInt(args[2]);
-                System.out.println(num);
                 Listar(file,num);
             } catch (NumberFormatException e) {
                 System.out.printf("Formato incorrecto del número de líneas.%nError: %s.",e.getMessage());
@@ -28,16 +28,22 @@ public class Main {
 
     }
 
-
-    // HACERLO TAIL
-
     public static void Listar(File file, int num) {
+        ArrayList<String> lineas = new ArrayList<String>();
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            for (int i = 1; i <= num; i++) {
-                System.out.printf("%d. %s%n", i, br.readLine());
-            }
+            String line;
+            do {
+                line = br.readLine();
+                if (line != null) {
+                    lineas.add(line);
+                }
+            } while (line != null);
         } catch (IOException ex) {
             System.out.printf("No se encuentra el fichero.%nError:",ex.getMessage());
+        }
+
+        for (int i = lineas.size()-num; i < lineas.size(); i++) {
+            System.out.printf("%s%n", lineas.get(i));
         }
     }
 }

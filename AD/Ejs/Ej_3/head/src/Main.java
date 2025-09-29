@@ -17,7 +17,6 @@ public class Main {
         if (args.length == 3) {
             try {
                 int num = Integer.parseInt(args[2]);
-                System.out.println(num);
                 Listar(file,num);
             } catch (NumberFormatException e) {
                 System.out.printf("Formato incorrecto del número de líneas.%nError: %s.",e.getMessage());
@@ -30,7 +29,7 @@ public class Main {
     public static void Listar(File file, int num) {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             for (int i = 1; i <= num; i++) {
-                System.out.printf("%d. %s%n", i, br.readLine());
+                System.out.printf("%s%n", br.readLine());
             }
         } catch (IOException ex) {
             System.out.printf("No se encuentra el fichero.%nError:",ex.getMessage());
