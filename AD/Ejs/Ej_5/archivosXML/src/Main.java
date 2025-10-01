@@ -1,5 +1,3 @@
-package org.dam;
-
 import java.util.ArrayList;
 
 public class Main {

@@ -1,5 +1,3 @@
-package org.dam;
-
 import org.w3c.dom.Element;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

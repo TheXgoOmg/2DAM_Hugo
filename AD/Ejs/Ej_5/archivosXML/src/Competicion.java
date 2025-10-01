@@ -1,13 +1,10 @@
-package org.dam;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -32,7 +29,18 @@ public class Competicion {
             
             // Completa aquí el código
             // Buscar la sección de carrera
+            root.normalize();
 
+            NodeList carrera = root.getElementsByTagName("carrera");
+
+            for (int i = 0; i < carrera.getLength(); i++) {
+                Element carreraElement = (Element) carrera.item(i);
+                NodeList nlResultados = carreraElement.getElementsByTagName("resultado");
+                for (int j = 0; j < nlResultados.getLength(); j++) {
+                    Element resultado = (Element) nlResultados.item(j);
+                    resultados.add(new Carrera(resultado));
+                }
+            }
         } catch (Exception e) {
             System.err.println("Error al cargar XML: " + e.getMessage());
             e.printStackTrace();
@@ -54,12 +62,14 @@ public class Competicion {
 	
 	// Desarrolla aquí el resto de la función que almacena el CSV 
 	
-        try ()) {
+        try (PrintWriter out = new PrintWriter(new FileOutputStream(nombreFichero))) {
             // Escribir encabezado en español
-           
+           out.println("posicion;nombre;equipo;vueltas;tiempo;puntos");
 
             // Escribir datos de cada resultado
-            
+            for (Carrera c : losResultados) {
+                out.printf("%d;%s;%s;%d;%s;%d%n",c.getPosicion(),c.getNombre(),c.getEquipo(),c.getVueltas(),c.getTiempo(),c.getPuntos());
+            }
 
         } catch (IOException e) {
             System.err.println("Error al guardar CSV: " + e.getMessage());
@@ -94,8 +104,4 @@ public class Competicion {
         }
         System.out.println("--------------------------------------------------------------");
     }
-
-
-
-
 }
