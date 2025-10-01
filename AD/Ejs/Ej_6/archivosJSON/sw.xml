@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<characters>
+    <character films="4" vehicles="2">
+        <name>Luke Skywalker</name>
+        <mass>77</mass>
+        <url>https://swapi.dev/api/people/1/</url>
+    </character>
+    <character films="6" vehicles="0">
+        <name>C-3PO</name>
+        <mass>75</mass>
+        <url>https://swapi.dev/api/people/2/</url>
+    </character>
+    <character films="6" vehicles="0">
+        <name>R2-D2</name>
+        <mass>32</mass>
+        <url>https://swapi.dev/api/people/3/</url>
+    </character>
+    <character films="4" vehicles="0">
+        <name>Darth Vader</name>
+        <mass>136</mass>
+        <url>https://swapi.dev/api/people/4/</url>
+    </character>
+    <character films="4" vehicles="1">
+        <name>Leia Organa</name>
+        <mass>49</mass>
+        <url>https://swapi.dev/api/people/5/</url>
+    </character>
+    <character films="3" vehicles="0">
+        <name>Owen Lars</name>
+        <mass>120</mass>
+        <url>https://swapi.dev/api/people/6/</url>
+    </character>
+    <character films="3" vehicles="0">
+        <name>Beru Whitesun lars</name>
+        <mass>75</mass>
+        <url>https://swapi.dev/api/people/7/</url>
+    </character>
+    <character films="1" vehicles="0">
+        <name>R5-D4</name>
+        <mass>32</mass>
+        <url>https://swapi.dev/api/people/8/</url>
+    </character>
+    <character films="1" vehicles="0">
+        <name>Biggs Darklighter</name>
+        <mass>84</mass>
+        <url>https://swapi.dev/api/people/9/</url>
+    </character>
+    <character films="6" vehicles="1">
+        <name>Obi-Wan Kenobi</name>
+        <mass>77</mass>
+        <url>https://swapi.dev/api/people/10/</url>
+    </character>
+</characters>

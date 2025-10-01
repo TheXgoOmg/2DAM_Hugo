@@ -9,7 +9,14 @@ import org.w3c.dom.Element;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.*;
+import java.lang.classfile.Attribute;
 import java.util.ArrayList;
 
 public class Main {
@@ -65,14 +72,60 @@ public class Main {
             }
         }
 
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(ficheroXML))) {
-            Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-
-            Element root = doc.createElement("character");
-        } catch (IOException e) {
-            e.printStackTrace();
+        Document doc = null;
+        try {
+            // Crear documento
+            doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
         } catch (ParserConfigurationException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+
+        // Crear y añadir elemento root "characters"
+        Element root = doc.createElement("characters");
+        doc.appendChild(root);
+
+        // Por cada character del JsonArray
+        for (JsonElement jsonElement : arrayResults) {
+            // Crear elemento "character"
+
+            Element character = doc.createElement("character");
+            root.appendChild(character);
+
+            // Añadir Atributos
+            character.setAttribute("films", String.valueOf(jsonElement.getAsJsonObject().getAsJsonArray("films").size()));
+            character.setAttribute("vehicles", String.valueOf(jsonElement.getAsJsonObject().get("vehicles").getAsJsonArray().size()));
+
+            // Crear y añadir elementos "nombre", "mass" y "url"
+            Element name = doc.createElement("name");
+            character.appendChild(name);
+
+            Element mass = doc.createElement("mass");
+            character.appendChild(mass);
+
+            Element url = doc.createElement("url");
+            character.appendChild(url);
+
+            // Añadir TextContents
+            name.setTextContent(jsonElement.getAsJsonObject().get("name").getAsString());
+
+            mass.setTextContent(jsonElement.getAsJsonObject().get("mass").getAsString());
+
+            url.setTextContent(jsonElement.getAsJsonObject().get("url").getAsString());
+        }
+        try {
+            Transformer trans = TransformerFactory.newInstance().newTransformer();
+            DOMSource source = new DOMSource(doc);
+            StreamResult result = new StreamResult(new FileOutputStream(ficheroXML));
+
+            try {
+                trans.transform(source, result);
+                System.out.printf("%n%n%nFICHERO XML CREADO CORRECTAMENTE%n%n%n");
+            } catch (TransformerException e) {
+                System.out.println("Error al crear el fichero XML");
+                throw new RuntimeException(e);
+            }
+        } catch (TransformerConfigurationException | FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
