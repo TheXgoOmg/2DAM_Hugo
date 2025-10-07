@@ -1,10 +1,6 @@
-import java.lang.reflect.Array;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.IOException;
 
 public class Ej3 {
     public static void main(String[] args) {
@@ -13,7 +9,14 @@ public class Ej3 {
             System.exit(1);
         }
 
-        mostrarOutput(args[0]);
+        File folder =  new File(args[0]);
+
+        if (folder.isDirectory()) {
+            mostrarOutput(args[0]);
+        } else {
+            System.err.printf("Error: No existe la carpeta '%s'", folder.getAbsolutePath());
+        }
+
 
     }
 
