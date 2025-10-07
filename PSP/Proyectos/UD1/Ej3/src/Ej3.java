@@ -13,7 +13,12 @@ public class Ej3 {
             System.exit(1);
         }
 
-        ArrayList<String> comandos = new ArrayList<>()["cmd.exe","/c","dir",args]
+        mostrarOutput(args[0]);
+
+    }
+
+    public static void mostrarOutput(String arg) {
+        ArrayList<String> comandos = new ArrayList<>(Arrays.asList("cmd.exe","/c","dir",arg));
         ProcessBuilder pb = new ProcessBuilder(comandos);
         try {
             Process p = pb.start();
@@ -21,7 +26,7 @@ public class Ej3 {
                  InputStreamReader isr = new InputStreamReader(is);
                  BufferedReader br = new BufferedReader(isr)) {
                 int codRet = p.waitFor();
-                System.out.println("La ejecución de " + "'dir " + Arrays.toString(args)
+                System.out.println("La ejecución de " + "'dir " + arg
                         + "' devuelve " + codRet
                         + " " + (codRet == 0 ? "(ejecución OK)" : "(ERROR!!!)")
                 );
