@@ -27,7 +27,7 @@ public class ConnectionManager {
 
     public Connection connectDBMS() {
         try {
-            if (this.connection != null && !this.connection.isClosed()) {
+            if (this.connection == null || this.connection.isClosed()) {
                 String connectionUrl = "jdbc:mysql://" + server + ":" + port;
                 this.connection = DriverManager.getConnection(connectionUrl, user, pass);
             }
@@ -58,7 +58,7 @@ public class ConnectionManager {
         try {
             ResultSet rs = connection.getMetaData().getCatalogs();
             while (rs.next()) {
-                System.out.println(Colores.Blue+"Base de datos:\t"+Colores.Reset);
+                System.out.println(Colores.Blue+"Base de datos: "+rs.getString("TABLE_CAT")+Colores.Reset);
             }
 
         } catch (SQLException e) {
@@ -67,10 +67,27 @@ public class ConnectionManager {
     }
 
     public void importScript(String scriptPath) {
-
-
-
+//        StringBuilder scriptText = new StringBuilder();
+//        try (BufferedReader br = new BufferedReader(new FileReader(scriptPath))) {
+//            String line;
+//            while ((line = br.readLine()) != null) {
+//                scriptText.append(line);
+//            }
+//        } catch (IOException e) {
+//            System.err.println(e.getMessage());
+//        }
+        Utilidades.ejecutarScriptSQL(this.connection, scriptPath);
     }
+
+    public void showHelp() {
+        System.out.println(Colores.Blue + "Estos son los comandos disponibles:" +  Colores.Reset);
+        System.out.println("> show databases");
+        System.out.println("> info");
+        System.out.println("> import <nombre_del_script>");
+        System.out.println("> use <nombre_de_la_bd>");
+        System.out.println("> quit");
+    }
+
     public void startShell() {
         System.out.println(Colores.Green +
                 "Cliente MySQL iniciado. Escribe 'help' para ver los comandos disponibles." + Colores.Reset);
@@ -102,6 +119,10 @@ public class ConnectionManager {
                     }
                     return;
 
+                case "help":
+                    showHelp();
+                    break;
+
                 default:
                     if (input.startsWith("import ")) {
                         String[] parts = input.split(" ", 2);
@@ -115,7 +136,7 @@ public class ConnectionManager {
                         if (parts.length == 2) {
                             String databaseName = parts[1];
                             // Cambiar al modo base de datos
-                            DatabaseManager dbManager = new DatabaseManager(server, port, user, pass, databaseName);
+                            DatabaseManager dbManager = new DatabaseManager(server, port, user, pass, databaseName, connection);
                             Connection dbConnection = dbManager.connectDatabase();
                             if (dbConnection != null) {
                                 dbManager.startShell();

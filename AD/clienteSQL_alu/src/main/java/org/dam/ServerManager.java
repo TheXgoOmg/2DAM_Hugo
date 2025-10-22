@@ -12,7 +12,7 @@ public class ServerManager {
         String password = Utilidades.leerLinea("$ Password: ");
 
         // invoca a connectionManager para generar un objeto de conexión
-        ConnectionManager connectionManager = new ConnectionManager();
+        ConnectionManager connectionManager = new ConnectionManager(server, port, username, password);
 
         // Intentar conectar
         if (connectionManager.connectDBMS() != null) {

@@ -31,17 +31,25 @@ public class DatabaseManager {
         this.scanner = new Scanner(System.in);
     }
 
-    public DatabaseManager(String server, String port, String user, String pass, String dbname) {
-
+    public DatabaseManager(String server, String port, String user, String pass, String dbname, Connection connection) {
+        this.server = server;
+        this.port = port;
+        this.user = user;
+        this.pass = pass;
+        this.dbname = dbname;
+        this.connection = connection;
     }
 
     public Connection connectDatabase() {
         try {
-
+            if (this.connection == null || this.connection.isClosed()) {
+                DriverManager.getConnection("jdbc:mysql://" + this.server + ":" + this.port + "/" + this.dbname, this.user, this.pass);
+            }
         } catch (SQLException e) {
             System.out.println(Colores.Red + "✗ Error conectando a la base de datos: " + e.getMessage() + Colores.Reset);
             return null;
         }
+        return this.connection;
     }
 
     public void showTables() {
