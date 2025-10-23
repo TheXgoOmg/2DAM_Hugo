@@ -31,19 +31,19 @@ public class DatabaseManager {
         this.scanner = new Scanner(System.in);
     }
 
-    public DatabaseManager(String server, String port, String user, String pass, String dbname, Connection connection) {
+    public DatabaseManager(String server, String port, String user, String pass, String dbname) {
         this.server = server;
         this.port = port;
         this.user = user;
         this.pass = pass;
         this.dbname = dbname;
-        this.connection = connection;
+        this.connection = null;
     }
 
     public Connection connectDatabase() {
         try {
             if (this.connection == null || this.connection.isClosed()) {
-                DriverManager.getConnection("jdbc:mysql://" + this.server + ":" + this.port + "/" + this.dbname, this.user, this.pass);
+                this.connection = DriverManager.getConnection("jdbc:mysql://" + this.server + ":" + this.port + "/" + this.dbname, this.user, this.pass);
             }
         } catch (SQLException e) {
             System.out.println(Colores.Red + "✗ Error conectando a la base de datos: " + e.getMessage() + Colores.Reset);
@@ -62,12 +62,12 @@ public class DatabaseManager {
             try (Statement stmt = connection.createStatement();
                  ResultSet rs = stmt.executeQuery("SHOW TABLES")) {
 
-                System.out.println(Colores.Cyan + "\n=== TABLAS EN " + dbname.toUpperCase() + " ===" + Colores.Reset);
-                int count = 0;
-                while (rs.next()) {
-                    System.out.println("- " + rs.getString(1));
-                    count++;
-                }
+                 System.out.println(Colores.Cyan + "\n=== TABLAS EN " + dbname.toUpperCase() + " ===" + Colores.Reset);
+                 int count = 0;
+                 while (rs.next()) {
+                     System.out.println("- " + rs.getString(1));
+                     count++;
+                 }
                 System.out.println(Colores.Yellow + "Total: " + count + " tablas" + Colores.Reset);
             }
         } catch (SQLException e) {
@@ -76,7 +76,24 @@ public class DatabaseManager {
     }
 
     public void showDescTable(String tableName) {
+        try (Statement stmt = connection.createStatement();
+        ResultSet rs = stmt.executeQuery("DESCRIBE " + tableName)) {
+            System.out.println(Colores.Cyan + "\n=== DESCRIPCIÓN DE LA TABLA " + dbname.toUpperCase() + " ===" + Colores.Reset);
+            System.out.printf("%-20s%-20s%-10s%-10s%-10s%-10s%n", "Campo", "Tipo", "Clave", "Null", "Default", "Extra");
 
+            while (rs.next()) {
+                System.out.printf("%-20s%-20s%-10s%-10s%-10s%-10s%n",
+                        rs.getString("Field"),
+                        rs.getString("Type"),
+                        rs.getString("Key"),
+                        rs.getString("Null"),
+                        rs.getString("Default"),
+                        rs.getString("Extra")
+                );
+            }
+        } catch (SQLException e) {
+            System.out.println(Colores.Red + "Error mostrando tablas: " + e.getMessage() + Colores.Reset);
+        }
     }
 
     public void insertIntoTable(String tableName) {

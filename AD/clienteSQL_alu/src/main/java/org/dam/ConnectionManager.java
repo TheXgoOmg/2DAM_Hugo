@@ -136,7 +136,7 @@ public class ConnectionManager {
                         if (parts.length == 2) {
                             String databaseName = parts[1];
                             // Cambiar al modo base de datos
-                            DatabaseManager dbManager = new DatabaseManager(server, port, user, pass, databaseName, connection);
+                            DatabaseManager dbManager = new DatabaseManager(server, port, user, pass, databaseName);
                             Connection dbConnection = dbManager.connectDatabase();
                             if (dbConnection != null) {
                                 dbManager.startShell();
