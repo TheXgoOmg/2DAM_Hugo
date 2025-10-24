@@ -4,10 +4,7 @@ package org.dam;
 import lombok.Data;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 @Data
 public class DatabaseManager {
@@ -78,26 +75,45 @@ public class DatabaseManager {
     public void showDescTable(String tableName) {
         try (Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery("DESCRIBE " + tableName)) {
-            System.out.println(Colores.Cyan + "\n=== DESCRIPCIÓN DE LA TABLA " + dbname.toUpperCase() + " ===" + Colores.Reset);
-            System.out.printf("%-20s%-20s%-10s%-10s%-10s%-10s%n", "Campo", "Tipo", "Clave", "Null", "Default", "Extra");
-
-            while (rs.next()) {
-                System.out.printf("%-20s%-20s%-10s%-10s%-10s%-10s%n",
-                        rs.getString("Field"),
-                        rs.getString("Type"),
-                        rs.getString("Key"),
-                        rs.getString("Null"),
-                        rs.getString("Default"),
-                        rs.getString("Extra")
-                );
-            }
+            Utilidades.mostrarResultados(rs);
         } catch (SQLException e) {
             System.out.println(Colores.Red + "Error mostrando tablas: " + e.getMessage() + Colores.Reset);
         }
     }
 
     public void insertIntoTable(String tableName) {
+        try (Statement stmt = connection.createStatement();
+             ResultSet rs = stmt.executeQuery("DESCRIBE " + tableName)) {
 
+            System.out.println(Colores.Cyan + "=== INGRESA LOS CAMPOS ===" +  Colores.Reset);
+            System.out.println(Colores.Cyan + "(* indica que es obligatorio)" + Colores.Reset);
+
+            Map<String,ArrayList<Map>> datos = new HashMap<>();
+            int cont = 0;
+
+            while(rs.next()) {
+                if (!rs.getString("Extra").equals("auto_increment")) {
+                    cont++;
+                    System.out.printf("- %-20s%-20s%s: ", rs.getString("Field"), rs.getString("Type"), rs.getString("Null").equals("NO") ? " *":"");
+                    datos.put(rs.getString("Field"), new ArrayList<>(Arrays.asList(
+                            new HashMap<>(Map.of("Type",rs.getString("Type"))),
+                            new HashMap<>(Map.of("Null",rs.getString("Null"))))));
+                }
+            }
+
+            String interrogantes = "?,".repeat(cont);
+            interrogantes = interrogantes.substring(0, interrogantes.length() - 1);
+
+            try (PreparedStatement ps = connection.prepareStatement(String.format("INSERT INTO %s VALUES (%s)", tableName, interrogantes))) {
+                for (String key : datos.keySet()) {
+                    if (datos.get(key).get(0).get("Type").equals("String")) {
+                        ps.setString(1, key);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println(Colores.Red + "Error accediendo a la tablaa: " + e.getMessage() + Colores.Reset);
+        }
     }
 
     private Object convertirValor(String valorStr, String tipo) {
