@@ -4,6 +4,7 @@ package org.dam;
 import lombok.Data;
 
 import java.sql.*;
+import java.sql.Date;
 import java.util.*;
 
 @Data
@@ -35,6 +36,7 @@ public class DatabaseManager {
         this.pass = pass;
         this.dbname = dbname;
         this.connection = null;
+        this.scanner = new Scanner(System.in);
     }
 
     public Connection connectDatabase() {
@@ -97,7 +99,9 @@ public class DatabaseManager {
                     System.out.printf("- %-20s%-20s%s: ", rs.getString("Field"), rs.getString("Type"), rs.getString("Null").equals("NO") ? " *":"");
                     datos.put(rs.getString("Field"), new ArrayList<>(Arrays.asList(
                             new HashMap<>(Map.of("Type",rs.getString("Type"))),
-                            new HashMap<>(Map.of("Null",rs.getString("Null"))))));
+                            new HashMap<>(Map.of("Null",rs.getString("Null"))),
+                            new HashMap<>(Map.of("Valor", scanner.nextLine()))
+                    )));
                 }
             }
 
@@ -105,11 +109,23 @@ public class DatabaseManager {
             interrogantes = interrogantes.substring(0, interrogantes.length() - 1);
 
             try (PreparedStatement ps = connection.prepareStatement(String.format("INSERT INTO %s VALUES (%s)", tableName, interrogantes))) {
+                int contador = 1;
                 for (String key : datos.keySet()) {
-                    if (datos.get(key).get(0).get("Type").equals("String")) {
-                        ps.setString(1, key);
+                    System.out.println(datos.get(key).getFirst().get("Type").equals("Int"));
+                    if (datos.get(key).getFirst().get("Type").equals("Int")) {
+                        ps.setInt(contador, (int) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
+                    } else if (datos.get(key).getFirst().get("Type").equals("Decimal") || datos.get(key).getFirst().get("Type").equals("Float") || datos.get(key).getFirst().get("Type").equals("Double")) {
+                        ps.setDouble(contador, (Double) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
+                    } else if (datos.get(key).getFirst().get("Type").equals("Date") || datos.get(key).getFirst().get("Type").equals("Time")) {
+                        ps.setDate(contador, (Date) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
+                    } else {
+                        ps.setString(contador, String.valueOf(convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase())));
                     }
+                    // SIGUE AQUI FDUIGNEWUOFIJAD COSORROOOO
+                    contador++;
                 }
+
+                ps.executeUpdate();
             }
         } catch (SQLException e) {
             System.out.println(Colores.Red + "Error accediendo a la tablaa: " + e.getMessage() + Colores.Reset);
