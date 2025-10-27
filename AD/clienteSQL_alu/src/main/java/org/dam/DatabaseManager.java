@@ -75,60 +75,71 @@ public class DatabaseManager {
     }
 
     public void showDescTable(String tableName) {
-        try (Statement stmt = connection.createStatement();
-        ResultSet rs = stmt.executeQuery("DESCRIBE " + tableName)) {
-            Utilidades.mostrarResultados(rs);
+        try {
+            DatabaseMetaData dbmd = connection.getMetaData();
+            ResultSet columnas = dbmd.getColumns(dbname, null, tableName, null);
+            Utilidades.mostrarResultados(columnas);
         } catch (SQLException e) {
-            System.out.println(Colores.Red + "Error mostrando tablas: " + e.getMessage() + Colores.Reset);
+            System.out.println(Colores.Red + "Error mostrando la descripción de la tabla " + tableName + ": " + e.getMessage() + Colores.Reset);
         }
+
     }
 
     public void insertIntoTable(String tableName) {
-        try (Statement stmt = connection.createStatement();
-             ResultSet rs = stmt.executeQuery("DESCRIBE " + tableName)) {
+        try {
+            DatabaseMetaData dbmd = connection.getMetaData();
+            ResultSet columnas = dbmd.getColumns(dbname, null, tableName, null);
 
             System.out.println(Colores.Cyan + "=== INGRESA LOS CAMPOS ===" +  Colores.Reset);
             System.out.println(Colores.Cyan + "(* indica que es obligatorio)" + Colores.Reset);
 
-            Map<String,ArrayList<Map>> datos = new HashMap<>();
+            List<List<Map<String,String>>> datos = new ArrayList<>();
             int cont = 0;
 
-            while(rs.next()) {
-                if (!rs.getString("Extra").equals("auto_increment")) {
+            StringBuilder colsTabla = new StringBuilder();
+
+            while(columnas.next()) {
+                if (columnas.getString("IS_AUTOINCREMENT").equals("NO")) {
+                    System.out.printf("- %-20s%-20s%s: ", columnas.getString("COLUMN_NAME"), columnas.getString("TYPE_NAME"), columnas.getString("NULLABLE").equals("0") ? " *":"");
+                    datos.add(List.of(Map.of("tipo",columnas.getString("TYPE_NAME")),Map.of("valor",scanner.nextLine())));
+
+                    if (colsTabla.isEmpty()) {
+                        colsTabla.append(columnas.getString("COLUMN_NAME"));
+                    } else {
+                        colsTabla.append(String.format(", %s", columnas.getString("COLUMN_NAME")));
+                    }
                     cont++;
-                    System.out.printf("- %-20s%-20s%s: ", rs.getString("Field"), rs.getString("Type"), rs.getString("Null").equals("NO") ? " *":"");
-                    datos.put(rs.getString("Field"), new ArrayList<>(Arrays.asList(
-                            new HashMap<>(Map.of("Type",rs.getString("Type"))),
-                            new HashMap<>(Map.of("Null",rs.getString("Null"))),
-                            new HashMap<>(Map.of("Valor", scanner.nextLine()))
-                    )));
                 }
             }
 
             String interrogantes = "?,".repeat(cont);
-            interrogantes = interrogantes.substring(0, interrogantes.length() - 1);
+            interrogantes = interrogantes.substring(0,  interrogantes.length() - 1);
 
-            try (PreparedStatement ps = connection.prepareStatement(String.format("INSERT INTO %s VALUES (%s)", tableName, interrogantes))) {
+            try (PreparedStatement ps = connection.prepareStatement(String.format("INSERT INTO %s (%s) VALUES (%s)", tableName, colsTabla, interrogantes))) {
                 int contador = 1;
-                for (String key : datos.keySet()) {
-                    System.out.println(datos.get(key).getFirst().get("Type").equals("Int"));
-                    if (datos.get(key).getFirst().get("Type").equals("Int")) {
-                        ps.setInt(contador, (int) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
-                    } else if (datos.get(key).getFirst().get("Type").equals("Decimal") || datos.get(key).getFirst().get("Type").equals("Float") || datos.get(key).getFirst().get("Type").equals("Double")) {
-                        ps.setDouble(contador, (Double) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
-                    } else if (datos.get(key).getFirst().get("Type").equals("Date") || datos.get(key).getFirst().get("Type").equals("Time")) {
-                        ps.setDate(contador, (Date) convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase()));
-                    } else {
-                        ps.setString(contador, String.valueOf(convertirValor(String.valueOf(datos.get(key).getFirst().get("Valor")).toUpperCase(),String.valueOf(datos.get(key).getFirst().get("Type")).toUpperCase())));
+                for (List<Map<String,String>> lista : datos) {
+                    String tipo = "", valor = "";
+                    for (Map<String, String> atributo : lista) {
+                        
+                        if (atributo.containsKey("tipo")) tipo = atributo.get("tipo");
+                        if (atributo.containsKey("valor")) valor = atributo.get("valor");
                     }
-                    // SIGUE AQUI FDUIGNEWUOFIJAD COSORROOOO
+
+                    switch (tipo) {
+                        case "INT" -> ps.setInt(contador, (int) convertirValor(valor, tipo));
+                        case "DECIMAL", "FLOAT", "DOUBLE" ->
+                                ps.setDouble(contador, (double) convertirValor(valor, tipo));
+                        case "DATE", "TIME" -> ps.setDate(contador, (Date) convertirValor(valor, tipo));
+                        default -> ps.setString(contador, String.valueOf(convertirValor(valor, tipo)));
+                    }
                     contador++;
                 }
 
                 ps.executeUpdate();
             }
         } catch (SQLException e) {
-            System.out.println(Colores.Red + "Error accediendo a la tablaa: " + e.getMessage() + Colores.Reset);
+            System.out.printf(Colores.Red + "Error accediendo a la tabla %s: %s%n", tableName, e.getMessage() + Colores.Reset);
+            e.printStackTrace();
         }
     }
 
@@ -144,7 +155,7 @@ public class DatabaseManager {
                 return Double.parseDouble(valorStr);
             } else if (tipo.contains("DATE") || tipo.contains("TIME")) {
                 // Formato esperado: YYYY-MM-DD
-                return java.sql.Date.valueOf(valorStr);
+                return Date.valueOf(valorStr);
             } else {
                 return valorStr;
             }
@@ -156,6 +167,26 @@ public class DatabaseManager {
     }
 
     public void executeSelect(String query) {
+        if (query.startsWith("select ")) {
+            try (Statement stmt = connection.createStatement()) {
+                ResultSet rs = stmt.executeQuery(query);
+
+                while (rs.next()) {
+                    Utilidades.mostrarResultados(rs);
+                }
+            } catch (SQLException e) {
+                System.out.println(Colores.Red + "Error al ejecutar la consulta en la DB " + dbname + "." + Colores.Reset);
+                e.printStackTrace();
+            }
+        } else {
+            try (Statement stmt = connection.createStatement()) {
+                int output = stmt.executeUpdate(query);
+                System.out.printf("Se han realizado %d modificaciones en la BD %s.%n", output, dbname);
+            } catch (SQLException e) {
+                System.out.println(Colores.Red + "Error al ejecutar la consulta en la DB " + dbname + "." + Colores.Reset);
+                e.printStackTrace();
+            }
+        }
 
     }
 
