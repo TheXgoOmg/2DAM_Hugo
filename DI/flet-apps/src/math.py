@@ -1,95 +1,153 @@
 import flet as ft
 
 class App(ft.Column):
-    def __init__(self):
+    def __init__(self, page):
         super().__init__()
-        self.width=600
+        self.page = page
+        self.width = 600
+        self.spacing = 30
+        self.alignment = ft.MainAxisAlignment.CENTER
+
+        # Título principal
         self.titulo = ft.Text(
-            value="Encuentra los números",
+            value="🔢 Encuentra los números",
             size=40,
             weight=ft.FontWeight.BOLD,
+            color=ft.Colors.BLUE_800,
+            text_align=ft.TextAlign.CENTER,
             font_family="Consolas"
         )
+
+        # Enunciado del problema
         self.quest = ft.Text(
-            value="Encuentra 1 número, PAR de 2 cifras mayor que 20, que al dividirlo entre dos, la suma de las 2 cifras del número inicial sea menos o igual a la suma de las cifras del número resultante de la división:",
+            value="Encuentra 1 número PAR de 2 cifras mayor que 20, que al dividirlo entre dos, la suma de las 2 cifras del número inicial sea menor o igual a la suma de las cifras del número resultante de la división:",
             expand=True,
-            weight=ft.FontWeight.BOLD,
             size=18,
-            text_align=ft.TextAlign(value="justify")
+            text_align=ft.TextAlign.JUSTIFY
         )
+
+        # Etiqueta y campos de entrada
         self.enunciado = ft.Text(
             value="Número de dos cifras inicial:",
+            size=16,
             weight=ft.FontWeight.BOLD,
-            size=16
+            text_align=ft.TextAlign.CENTER
         )
+
         self.op1 = ft.TextField(
-            width=50,
+            width=60,
             text_align=ft.TextAlign.CENTER,
             max_length=1,
-            input_filter=ft.NumbersOnlyInputFilter()
+            input_filter=ft.NumbersOnlyInputFilter(),
+            border_color=ft.Colors.BLUE_400,
+            border_radius=10
         )
         self.op2 = ft.TextField(
-            width=50,
+            width=60,
             text_align=ft.TextAlign.CENTER,
             max_length=1,
-            input_filter=ft.NumbersOnlyInputFilter()
+            input_filter=ft.NumbersOnlyInputFilter(),
+            border_color=ft.Colors.BLUE_400,
+            border_radius=10
         )
-        self.boton_comprobacion = Boton("Comprobar",self.comprobar)
 
-        self.texto = ft.Column()
+        # Botones
+        self.boton_comprobar = Boton("Comprobar", self.comprobar, ft.Colors.GREEN_600)
+        self.boton_limpiar = Boton("Limpiar", self.limpiar, ft.Colors.AMBER_500)
+        self.boton_salir = Boton("Salir", self.salir, ft.Colors.RED_600)
 
+        # Zona de salida de texto
+        self.texto = ft.Column(spacing=5)
+
+        # Contenedor principal
         self.ventana = ft.Container(
-            alignment=ft.alignment.center,
             padding=20,
-            border_radius=10,
-            border=ft.border.all(2, ft.Colors.BLACK),
+            alignment=ft.alignment.center,
+            bgcolor=ft.Colors.WHITE,
+            border_radius=15,
+            shadow=ft.BoxShadow(
+                spread_radius=1,
+                blur_radius=12,
+                color=ft.Colors.with_opacity(0.3, ft.Colors.BLACK)
+            ),
             content=ft.Column(
-                controls = [ft.Row([self.quest]),
-                    ft.Row([self.enunciado],alignment = ft.MainAxisAlignment.CENTER),
-                    ft.Container(
-                        content=ft.Row([self.op1,self.op2],alignment = ft.MainAxisAlignment.CENTER)
+                controls=[
+                    self.quest,
+                    ft.Divider(),
+                    self.enunciado,
+                    ft.Row([self.op1, self.op2], alignment=ft.MainAxisAlignment.CENTER),
+                    ft.Row(
+                        [self.boton_comprobar, self.boton_limpiar, self.boton_salir],
+                        alignment=ft.MainAxisAlignment.SPACE_AROUND
                     ),
-                    ft.Row([self.boton_comprobacion],alignment = ft.MainAxisAlignment.CENTER),
-                    ft.Row([self.texto],alignment = ft.MainAxisAlignment.CENTER)],
-                horizontal_alignment=ft.CrossAxisAlignment.CENTER),
+                    ft.Divider(),
+                    self.texto
+                ],
+                horizontal_alignment=ft.CrossAxisAlignment.CENTER
+            )
         )
 
-        self.controls = [
-            self.titulo,
-            self.ventana
-        ]
+        # Estructura principal
+        self.controls = [self.titulo, self.ventana]
 
-    def comprobar(self,e):
+    # === FUNCIONES ===
+
+    def comprobar(self, e):
         self.texto.controls.clear()
-        a = int(self.op1.value)
-        b = int(self.op2.value)
-        num = a * 10 + b
-        num2 = (num//10) + (num-(num%10))
-        self.texto.controls.append(ft.Text(f"Vamos a comprobar si se cumple para el número {a}{b}"))
-        self.texto.controls.append(ft.Text(f"Cálculo: {a} + {b} = {(a+b)}"))
-        self.texto.controls.append(ft.Text(f"La mitad de {num} es {num/2} --> {num//10} + {num-(num%10)} = {num2}"))
-        if num2 >=num:
-            self.texto.controls.append(ft.Text(f"El {num} cumple con lo esperado. Enhorabuena!!"))
-        else:
-            self.texto.controls.append(ft.Text(f"El {num} NO cumple con lo esperado."))
-            self.texto.controls.append(ft.Text("Lo sentimos en lo más profundo de nuestro corazón :("))
+        try:
+            a = int(self.op1.value)
+            b = int(self.op2.value)
+            num = a * 10 + b
+
+            if num <= 20 or num % 2 != 0:
+                self.texto.controls.append(ft.Text("Debe ser un número PAR mayor que 20.", color=ft.Colors.RED_600))
+            else:
+                mitad = num // 2
+                suma_original = a + b
+                suma_mitad = sum(map(int, str(mitad)))
+
+                self.texto.controls.append(ft.Text(f"Comprobando número {num}..."))
+                self.texto.controls.append(ft.Text(f"Suma de cifras del número: {suma_original}"))
+                self.texto.controls.append(ft.Text(f"Mitad: {mitad} → suma de cifras: {suma_mitad}"))
+
+                if suma_original <= suma_mitad:
+                    self.texto.controls.append(ft.Text(f"✅ El número {num} cumple la condición.", color=ft.Colors.GREEN_600))
+                else:
+                    self.texto.controls.append(ft.Text(f"❌ El número {num} NO cumple la condición.", color=ft.Colors.RED_600))
+
+        except ValueError:
+            self.texto.controls.append(ft.Text("Por favor, introduce dos cifras válidas.", color=ft.Colors.RED_600))
+
         self.update()
 
-class Boton(ft.ElevatedButton):
-    def __init__(self,texto,accion):
-        super().__init__()
-        self.text=texto
-        self.on_click=accion
+    def limpiar(self, e):
+        self.op1.value = ""
+        self.op2.value = ""
+        self.texto.controls.clear()
+        self.update()
 
+    def salir(self,e):
+        self.page.window.close()
+
+# === Clase de botón personalizado ===
+class Boton(ft.ElevatedButton):
+    def __init__(self, texto, accion, color):
+        super().__init__(
+            text=texto,
+            on_click=accion,
+            bgcolor=color,
+            color=ft.Colors.WHITE,
+            style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=12))
+        )
+
+# === MAIN ===
 def main(page: ft.Page):
     page.title = "Math App"
-    page.vertical_alignment = ft.MainAxisAlignment.START
+    page.bgcolor = ft.Colors.BLUE_50
+    page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.scroll = ft.ScrollMode.ADAPTIVE
-    page.bgimage = ft.DecorationImage(
-        src="https://unsplash.com/photos/grand-hotel-building-with-flags-on-roof-r4uyTvVEgC8",  # URL o ruta local
-        fit=ft.ImageFit.COVER,  # Ajusta la imagen para cubrir toda la pantalla
-    )
 
-    page.add(App())
+    page.add(App(page))
+
 ft.app(main)
