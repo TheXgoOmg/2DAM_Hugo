@@ -1,10 +1,14 @@
 package org.dam.Modelo;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Entity
@@ -13,53 +17,34 @@ import java.io.Serializable;
 public class Mecanico implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Setter(AccessLevel.NONE)
     private Long id_mecanico;
 
     @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "experiencia_anio")
-    private int experiencia_anio;
+    @Column(name = "experiencia_anios")
+    private Integer experiencia_anios;
 
     @Column(name = "taller")
     private String taller;
 
-    public Mecanico(Long id_mecanico, String nombre, int experiencia_anio, String taller) {
-        this.id_mecanico = id_mecanico;
-        this.nombre = nombre;
-        this.experiencia_anio = experiencia_anio;
-        this.taller = taller;
-    }
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "idChasis",
+        foreignKey = @ForeignKey(name = "FK_MEC_CHA"))
+    private Chasis chasis;
 
-    public Long getId_mecanico() {
-        return id_mecanico;
-    }
+    @OneToMany(mappedBy = "mecanico", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<MecanicoMotor> mecanicoMotores = new ArrayList<>();
 
-    public void setId_mecanico(Long id_mecanico) {
-        this.id_mecanico = id_mecanico;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getExperiencia_anio() {
-        return experiencia_anio;
-    }
-
-    public void setExperiencia_anio(int experiencia_anio) {
-        this.experiencia_anio = experiencia_anio;
-    }
-
-    public String getTaller() {
-        return taller;
-    }
-
-    public void setTaller(String taller) {
-        this.taller = taller;
+    @Override
+    public String toString() {
+        return "Mecanico{" +
+                "id_mecanico=" + id_mecanico +
+                ", nombre='" + nombre + '\'' +
+                ", experiencia_anios=" + experiencia_anios +
+                ", taller='" + taller + '\'' +
+                ", chasis=" + chasis +
+                '}';
     }
 }
