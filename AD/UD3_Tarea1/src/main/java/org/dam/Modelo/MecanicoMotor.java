@@ -24,13 +24,18 @@ public class MecanicoMotor implements Serializable {
     private idMecanicoMotor idMecanicoMotor;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @MapsId("idMecanico")
-    @JoinColumn(name = "idMecanico")
+    @MapsId("id_mecanico")
+    @JoinColumn(name = "id_mecanico")
     private Mecanico mecanico;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @MapsId("idMotor")
-    @JoinColumn(name = "idMotor")
+    @MapsId("id_motor")
+    @JoinColumn(name = "id_motor")
     private Motor motor;
 
+    public MecanicoMotor(Mecanico mecanico, Motor motor) {
+        this.idMecanicoMotor = new idMecanicoMotor();
+        this.mecanico = mecanico;
+        this.motor = motor;
+    }
 }

@@ -38,4 +38,17 @@ public class Motor implements Serializable {
 
     @OneToMany(mappedBy = "motor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<MecanicoMotor> mecanicoMotores = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "id_motor=" + id_motor +
+                ", codigo_motor='" + codigo_motor + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", cilindrada=" + cilindrada +
+                ", anio_fabricacion=" + anio_fabricacion +
+                ", potencia_hp='" + potencia_hp + '\'' +
+                ", mecanicoMotores=" + mecanicoMotores +
+                '}';
+    }
 }

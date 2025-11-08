@@ -16,9 +16,9 @@ public class idMecanicoMotor implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @Column(name = "idMecanico")
-    private Long idMecanico;
+    @Column(name = "id_mecanico")
+    private Long id_mecanico;
 
-    @Column(name = "idMotor")
-    private Long idMotor;
+    @Column(name = "id_motor")
+    private Long id_motor;
 }

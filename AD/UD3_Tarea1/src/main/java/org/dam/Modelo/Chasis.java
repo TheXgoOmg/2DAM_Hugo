@@ -45,4 +45,20 @@ public class Chasis implements Serializable {
         cascade = CascadeType.PERSIST,
         fetch = FetchType.LAZY)
     private Set<Mecanico> mecanicos;
+
+    public Chasis(Long id_chasis) {
+        this.id_chasis = id_chasis;
+    }
+
+    @Override
+    public String toString() {
+        return "Chasis{" +
+                "id_chasis=" + id_chasis +
+                ", numero_chasis='" + numero_chasis + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", serie='" + serie + '\'' +
+                ", anio=" + anio +
+                ", color_original='" + color_original + '\'' +
+                '}';
+    }
 }

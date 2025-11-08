@@ -13,18 +13,25 @@ public class Main {
 
         EntityManager em = JpaUtil.getEntityManager();
         EntityTransaction tx = em.getTransaction();
-        tx.begin();
 
         System.out.print("> ");
         String accion = sc.nextLine();
 
         switch (accion) {
-            case "muestra Mecanico":
-                DAO.mostrarTodo();
+            case "muestra Chasis":
+                DAO.mostrarTodo(em);
                 break;
-            case "muestra -r Mecanico":
-                DAO.mostrarTodoRecursivo();
+            case "muestra -r Chasis":
+                DAO.mostrarTodoRecursivo(em);
                 break;
         }
+
+//        DAO.mostrar_Mecanico();
+
+//        DAO.insertar(em, tx);
+
+//        DAO.actualizar(em, tx);
+
+//        DAO.eliminar(em, tx);
     }
 }
