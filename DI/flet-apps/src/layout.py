@@ -1,4 +1,6 @@
 import flet as ft
+from certifi import contents
+
 
 class Workflow(ft.Column):
     def __init__(self, nombre, descripcion, comprado, activado, url, page):
@@ -10,15 +12,6 @@ class Workflow(ft.Column):
         self.width=380
         self.url=url
 
-        self.img_container = ft.Container(
-            image=ft.DecorationImage(src=self.url,fit=ft.ImageFit.COVER),
-            width=380,
-            height=200,
-            border=ft.border.all(1, ft.Colors.BLACK)
-        )
-
-
-
         self.etiqueta_workflow_comprado = ft.Row(
             controls=
             [
@@ -27,10 +20,11 @@ class Workflow(ft.Column):
                     disabled=True,
                     width=150,
                     bgcolor=ft.Colors.WHITE,
+                    border_radius=10,
                     prefix_icon=ft.Icon(name="circle",
                                  color=ft.Colors.BLUE),
                 ),
-                ft.Switch(value=False, on_change=lambda e: self.switch_clicado(page))
+                ft.Switch(value=self.activado, on_change=lambda e: self.switch_clicado(page))
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN
         )
@@ -43,21 +37,25 @@ class Workflow(ft.Column):
                     disabled=True,
                     width=150,
                     bgcolor=ft.Colors.WHITE,
+                    border_radius=10,
                     prefix_icon=ft.Icon(name="circle",
                                  color=ft.Colors.ORANGE),
                 ),
-                ft.Switch(value=False, on_change=lambda e: self.switch_clicado(page)),
+                ft.Switch(value=self.activado, on_change=lambda e: self.switch_clicado(page)),
             ],
             alignment=ft.MainAxisAlignment.SPACE_BETWEEN
         )
 
+        self.img_container = ft.Container(
+            image=ft.DecorationImage(src=self.url,fit=ft.ImageFit.COVER),
+            width=380,
+            height=200,
+            border_radius=10
+        )
+
         self.etiqueta_workflow=self.asignar_etiqueta(comprado)
 
-        self.tarjeta = ft.Container(border=ft.border.all(0),
-                                    height=200,
-                                    width=380)
-
-        self.controls=[ft.Stack([self.img_container,self.tarjeta,self.etiqueta_workflow])]
+        self.controls=[ft.Stack([self.img_container,self.etiqueta_workflow])]
 
     def switch_clicado(self, page):
         page.open(ft.SnackBar(ft.Text(f"Workflow '{self.nombre}' se ha actualizado")))
