@@ -88,59 +88,14 @@ public class DatabaseManager {
     public void insertIntoTable(String tableName) {
         try {
             DatabaseMetaData dbmd = connection.getMetaData();
-            ResultSet columnas = dbmd.getColumns(dbname, null, tableName, null);
 
             System.out.println(Colores.Cyan + "=== INGRESA LOS CAMPOS ===" +  Colores.Reset);
             System.out.println(Colores.Cyan + "(* indica que es obligatorio)" + Colores.Reset);
 
-            List<List<Map<String,String>>> datos = new ArrayList<>();
-            int cont = 0;
-
-            StringBuilder colsTabla = new StringBuilder();
-
-            while(columnas.next()) {
-                if (columnas.getString("IS_AUTOINCREMENT").equals("NO")) {
-                    System.out.printf("- %-20s%-20s%s: ", columnas.getString("COLUMN_NAME"), columnas.getString("TYPE_NAME"), columnas.getString("NULLABLE").equals("0") ? " *":"");
-                    datos.add(List.of(Map.of("tipo",columnas.getString("TYPE_NAME")),Map.of("valor",scanner.nextLine())));
-
-                    if (colsTabla.isEmpty()) {
-                        colsTabla.append(columnas.getString("COLUMN_NAME"));
-                    } else {
-                        colsTabla.append(String.format(", %s", columnas.getString("COLUMN_NAME")));
-                    }
-                    cont++;
-                }
-            }
-
-            String interrogantes = "?,".repeat(cont);
-            interrogantes = interrogantes.substring(0,  interrogantes.length() - 1);
-
-            try (PreparedStatement ps = connection.prepareStatement(String.format("INSERT INTO %s (%s) VALUES (%s)", tableName, colsTabla, interrogantes))) {
-                int contador = 1;
-                for (List<Map<String,String>> lista : datos) {
-                    String tipo = "", valor = "";
-                    for (Map<String, String> atributo : lista) {
-                        
-                        if (atributo.containsKey("tipo")) tipo = atributo.get("tipo");
-                        if (atributo.containsKey("valor")) valor = atributo.get("valor");
-                    }
-
-                    switch (tipo) {
-                        case "INT" -> ps.setInt(contador, (int) convertirValor(valor, tipo));
-                        case "DECIMAL", "FLOAT", "DOUBLE" ->
-                                ps.setDouble(contador, (double) convertirValor(valor, tipo));
-                        case "DATE", "TIME" -> ps.setDate(contador, (Date) convertirValor(valor, tipo));
-                        default -> ps.setString(contador, String.valueOf(convertirValor(valor, tipo)));
-                    }
-                    contador++;
-                }
-
-                ps.executeUpdate();
-            }
         } catch (SQLException e) {
-            System.out.printf(Colores.Red + "Error accediendo a la tabla %s: %s%n", tableName, e.getMessage() + Colores.Reset);
-            e.printStackTrace();
+
         }
+
     }
 
     private Object convertirValor(String valorStr, String tipo) {

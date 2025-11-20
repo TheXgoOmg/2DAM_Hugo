@@ -1,0 +1,56 @@
+{
+  "universes": [
+    {
+      "idUniverse": 1,
+      "name": "Throne of Glass Universe",
+      "series": [
+        {
+          "idSeries": 101,
+          "title": "Throne of Glass",
+          "books": [
+            { "code": 1, "title": "The Assassin's Blade" },
+            { "code": 2, "title": "Throne of Glass" },
+            { "code": 3, "title": "Crown of Midnight" },
+            { "code": 4, "title": "Heir of Fire" },
+            { "code": 5, "title": "Queen of Shadows" },
+            { "code": 6, "title": "Empire of Storms" },
+            { "code": 7, "title": "Tower of Dawn" },
+            { "code": 8, "title": "Kingdom of Ash" }
+          ]
+        }
+      ]
+    },
+    {
+      "idUniverse": 2,
+      "name": "A Court of Thorns and Roses Universe",
+      "series": [
+        {
+          "idSeries": 201,
+          "title": "A Court of Thorns and Roses",
+          "books": [
+            { "code": 1, "title": "A Court of Thorns and Roses" },
+            { "code": 2, "title": "A Court of Mist and Fury" },
+            { "code": 3, "title": "A Court of Wings and Ruin" },
+            { "code": 4, "title": "A Court of Frost and Starlight" },
+            { "code": 5, "title": "A Court of Silver Flames" }
+          ]
+        }
+      ]
+    },
+    {
+      "idUniverse": 3,
+      "name": "Crescent City Universe",
+      "series": [
+        {
+          "idSeries": 301,
+          "title": "Crescent City",
+          "books": [
+            { "code": 1, "title": "House of Earth and Blood" },
+            { "code": 2, "title": "House of Sky and Breath" },
+            { "code": 3, "title": "House of Flame and Shadow" }
+          ]
+        }
+      ]
+    }
+  ]
+}

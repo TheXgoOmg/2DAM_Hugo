@@ -6,15 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
 @Embeddable
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class idMecanicoMotor implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class idMecanicoMotor {
 
     @Column(name = "id_mecanico")
     private Long id_mecanico;

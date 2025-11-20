@@ -2,6 +2,7 @@ package org.dam.Modelo;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.Year;
 import java.util.ArrayList;

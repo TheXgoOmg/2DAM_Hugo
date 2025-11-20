@@ -1,0 +1,7 @@
+ArrayList<Clase>
+
+TypeToken type = new TypeToken<ArrayList<Clase>>() {}.toType()
+Comunidad clases = gson.fromJson(string, Comunidad.class);
+
+[] array
+{} objeto
