@@ -1,0 +1,49 @@
+{
+    "registros": [
+        {
+            "fecha/hora": "26/11/2025 12:23:23",
+            "matricula": "hola",
+            "resultado": "PERMITIDO"
+        },
+        {
+            "fecha/hora": "26/11/2025 12:23:35",
+            "matricula": "caracola",
+            "resultado": "DENEGADO"
+        },
+        {
+            "fecha/hora": "26/11/2025 12:23:50",
+            "matricula": "hola",
+            "resultado": "PERMITIDO"
+        },
+        {
+            "fecha/hora": "26/11/2025 12:23:59",
+            "matricula": "HOLA",
+            "resultado": "DENEGADO"
+        },
+        {
+            "fecha/hora": "26/11/2025 12:24:06",
+            "matricula": "choped",
+            "resultado": "DENEGADO"
+        },
+        {
+            "fecha/hora": "27/11/2025 11:24:38",
+            "matricula": "hola",
+            "resultado": "PERMITIDO"
+        },
+        {
+            "fecha/hora": "27/11/2025 11:24:52",
+            "matricula": "choped",
+            "resultado": "PERMITIDO"
+        },
+        {
+            "fecha/hora": "27/11/2025 11:24:57",
+            "matricula": "rfrr",
+            "resultado": "DENEGADO"
+        },
+        {
+            "fecha/hora": "27/11/2025 11:25:07",
+            "matricula": "rfrr",
+            "resultado": "PERMITIDO"
+        }
+    ]
+}
