@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f8d06b9-34ea-4142-902b-767efeef98c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../simulacro_AD/src/main/java/org/dam/Ciudad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simulacro_AD/src/main/java/org/dam/Comunidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../simulacro_AD/src/main/java/org/dam/Provincia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/NeoAnalizer/NeoAnalizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/NeoAnalizer/calculoProb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/NeoAnalizer/neos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/ProcessKillNotepad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/ProcessManagementEj2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/ProcessManagementEj3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/ProcessManagementEj4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/ProcessManagementEj5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/Recapitulacion/Recapitulacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/Recapitulacion/calculoLetras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/Recapitulacion/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/RecapitulacionHilos/ContadorLetra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../PSP/practicasExamen/src/main/java/org/dam/RecapitulacionHilos/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejs/Ej_6/archivosJSON/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejs/Ej_6/archivosJSON/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UD3_Tarea1.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../UD3_Tarea1.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Modelo/Motor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Modelo/Motor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Modelo/idMecanicoMotor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UD3_Tarea1/src/main/java/org/dam/Modelo/idMecanicoMotor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clienteSQL_alu.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clienteSQL_alu/src/main/java/org/dam/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../clienteSQL_alu/src/main/java/org/dam/DatabaseManager.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="35evDN0skKhdPeKhqYvYkbcoKVQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/hugo/Documents/2DAM_Hugo/AD/practicarSimulacro",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f8d06b9-34ea-4142-902b-767efeef98c1" name="Changes" comment="" />
+      <created>1763483230291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763483230291</updated>
+      <workItem from="1763483231588" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SHA256Procesos_Process:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SHA256Procesos_Process_jar</output-path>
+    <root id="archive" name="SHA256Procesos_Process.jar">
+      <element id="module-output" name="SHA256Procesos_Process" />
+    </root>
+  </artifact>
+</component>

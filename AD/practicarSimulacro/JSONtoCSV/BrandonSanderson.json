@@ -1,0 +1,125 @@
+{
+  "universos": [
+    {
+      "idUniverso": 1,
+      "nombre": "Cosmere",
+      "sagas": [
+        {
+          "idSaga": 101,
+          "titulo": "El Archivo de las Tormentas",
+          "libros": [
+            { "codigo": 1, "titulo": "El Camino de los Reyes" },
+            { "codigo": 2, "titulo": "Palabras Radiantes" },
+            { "codigo": 3, "titulo": "Juramentada" },
+            { "codigo": 4, "titulo": "El Ritmo de la Guerra" },
+            { "codigo": 5, "titulo": "Wind and Truth" }
+          ]
+        },
+        {
+          "idSaga": 102,
+          "titulo": "Nacidos de la Bruma - Era 1",
+          "libros": [
+            { "codigo": 1, "titulo": "El Imperio Final" },
+            { "codigo": 2, "titulo": "El Pozo de la Ascensión" },
+            { "codigo": 3, "titulo": "El Héroe de las Eras" }
+          ]
+        },
+        {
+          "idSaga": 103,
+          "titulo": "Nacidos de la Bruma - Era 2",
+          "libros": [
+            { "codigo": 1, "titulo": "Aleación de Ley" },
+            { "codigo": 2, "titulo": "Sombras de Identidad" },
+            { "codigo": 3, "titulo": "Brazales de Duelo" },
+            { "codigo": 4, "titulo": "El Metal Perdido" }
+          ]
+        },
+        {
+          "idSaga": 104,
+          "titulo": "Elantris",
+          "libros": [
+            { "codigo": 1, "titulo": "Elantris" },
+            { "codigo": 2, "titulo": "El Alma del Emperador" }
+          ]
+        },
+        {
+          "idSaga": 105,
+          "titulo": "Warbreaker",
+          "libros": [
+            { "codigo": 1, "titulo": "El Aliento de los Dioses" }
+          ]
+        },
+        {
+          "idSaga": 106,
+          "titulo": "Secret Projects (Cosmere)",
+          "libros": [
+            { "codigo": 1, "titulo": "Tress of the Emerald Sea" },
+            { "codigo": 2, "titulo": "Yumi and the Nightmare Painter" },
+            { "codigo": 3, "titulo": "The Sunlit Man" }
+          ]
+        }
+      ]
+    },
+    {
+      "idUniverso": 2,
+      "nombre": "No Cosmere",
+      "sagas": [
+        {
+          "idSaga": 201,
+          "titulo": "Skyward (Cytoverse)",
+          "libros": [
+            { "codigo": 1, "titulo": "Skyward" },
+            { "codigo": 2, "titulo": "Starsight" },
+            { "codigo": 3, "titulo": "Cytonic" },
+            { "codigo": 4, "titulo": "Defiant" }
+          ]
+        },
+        {
+          "idSaga": 202,
+          "titulo": "The Reckoners",
+          "libros": [
+            { "codigo": 1, "titulo": "Steelheart" },
+            { "codigo": 2, "titulo": "Firefight" },
+            { "codigo": 3, "titulo": "Calamity" }
+          ]
+        },
+        {
+          "idSaga": 203,
+          "titulo": "Alcatraz vs. los Bibliotecarios Malvados",
+          "libros": [
+            { "codigo": 1, "titulo": "Alcatraz Versus the Evil Librarians" },
+            { "codigo": 2, "titulo": "The Scrivener’s Bones" },
+            { "codigo": 3, "titulo": "The Knights of Crystallia" },
+            { "codigo": 4, "titulo": "The Shattered Lens" },
+            { "codigo": 5, "titulo": "The Dark Talent" },
+            { "codigo": 6, "titulo": "Bastille vs. the Evil Librarians" }
+          ]
+        },
+        {
+          "idSaga": 204,
+          "titulo": "Legion",
+          "libros": [
+            { "codigo": 1, "titulo": "Legion" },
+            { "codigo": 2, "titulo": "Skin Deep" },
+            { "codigo": 3, "titulo": "Lies of the Beholder" }
+          ]
+        },
+        {
+          "idSaga": 205,
+          "titulo": "Rithmatist",
+          "libros": [
+            { "codigo": 1, "titulo": "El Rithmatista" }
+          ]
+        },
+        {
+          "idSaga": 206,
+          "titulo": "Secret Projects (No Cosmere)",
+          "libros": [
+            { "codigo": 1, "titulo": "The Frugal Wizard’s Handbook for Surviving Medieval England" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
