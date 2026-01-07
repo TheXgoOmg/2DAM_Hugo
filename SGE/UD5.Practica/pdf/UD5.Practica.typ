@@ -42,3 +42,5 @@ Para crear este segundo módulo manualmente debemos crear la carpeta _practica_1
 ```bash
 mkdir /usr/lib/python3/dist-packages/odoo/addons/practica_1
 ```
+
+_ñpene_
