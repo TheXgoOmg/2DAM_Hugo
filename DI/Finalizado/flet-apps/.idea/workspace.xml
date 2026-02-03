@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b33e472-109a-4f27-b139-5e7c74945c9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/hateoas/ClienteHATEOAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/hateoas/CuentaHATEOAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/hateoas/DireccionHATEOAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/hateoas/RecomendacionHATEOAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../PSP/U3.Actividad1/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/CuentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/CuentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/DireccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/DireccionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/RecomendacionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/RecomendacionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/ClienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/CuentaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/CuentaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/DireccionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/DireccionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/RecomendacionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/RecomendacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/CuentaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/CuentaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/RecomendacionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/RecomendacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FLET_Ejercicio_Basket.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Prototipo_App_DI_Hugo-Tarin.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_Hugo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Ajustes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Botón.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Buscador.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Contacto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Inicio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Input.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Login.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menu Base.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menu Clicked.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menú Superior.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Purchased Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Rented Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Shop Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Short Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Tienda.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Toggle ON-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Toggle ON.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Workflows.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Ajustes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Botón.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Buscador.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Contacto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Inicio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Input.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Login.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menu Base.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menu Clicked.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menú Superior.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Purchased Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Rented Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Shop Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Short Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Tienda.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Toggle ON-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Toggle ON.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/WireframeHR_DI_PDFs/Workflows.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/IMG-20251011-WA0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/IMG-20251011-WA0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/IMG-20251011-WA0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/calendar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/gmail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Prototipo_App/Recursos/img/whatsapp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/pip3.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/bin/python3.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/flet-apps/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/registros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/acceso_vehiculos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/assets/bg.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/assets/lol_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/calculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/math.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-apps/src/todo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet-listados-app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../flet_estadisticas-baloncesto_app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../reto_psicologico_flet_app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../simon-flet-app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PI/Describe las competencias que se manejan en el proyecto.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PI/Planifica la ejecución del proyecto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/ProcessKillNotepad.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessKillNotepad/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/ProcessListPNG.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Actividades/ProcessListPNG/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/BankAccointSynchronized.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/src/pojo/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/src/pojo/BankThreadSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/BankAccointSynchronized/src/pojo/BankThreadSpend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Doc/U2AP1 - Actividad inicial - multihilo en Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Doc/U2AP2 - Actividad de repaso - multiproceso y multihilo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/Lavavajillas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/src/Fregar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/src/PilaPlatos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/src/Plato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Lavavajillas/src/Secar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/ProcessKillNotepad/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/ProcessKillNotepad/out/production/ProcessKillNotepad/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/ProcessListPNG/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/ProcessListPNG/out/production/ProcessListPNG/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/CarreraHilos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/src/Hilo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/CarreraHilos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/Ej_Recapitulacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/letras.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/src/ContadorLetra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/src/letras.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/Ej_Recapitulacion/src/random_num.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEOProcess.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/NEO_analizer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/NEOs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/src/NEOProcess.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/NEO_analizer/src/NEOProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/SHA256Procesos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/src/HashSHA256.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.idea/artifacts/SHA256Procesos_Process_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/SHA256Procesos_Process.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/src/HashSHA256.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/SHA256Procesos_Process/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/Ej2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej2/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/Ej3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej3/src/Ej3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/Ej4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej4/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/Ej5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/UD1/Ej5/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/pruebaHilos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/pruebaHilos/src/Raton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/Proyectos/simulacro_AD/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/SpringProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/U2.3 - Programación de hilos - Sincronización.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/U2AP3 - Sincronización básica.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PSP/U2AP4. Espera y notificación.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/AnexoPractica1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/CasoPrácticoModeloVistasAcciones.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/models/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/views/views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/RA5.Desarrollo_Componentes_Odoo.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.EntornoDesarrolloOdoo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.Modelos.Campos.Seguridad.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.Práctica1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica." beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/img/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/img/odoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/plantilla.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/ç" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/plantilla.typ" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SGE/plantilla.typ" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="38cob3ofRf9ilvJfQviRDoGROBc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/hugo/Documents/2DAM_Hugo/DI/Simulacro2FLET"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-ca5e2b39c7df-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.308" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b33e472-109a-4f27-b139-5e7c74945c9b" name="Changes" comment="" />
+      <created>1769108287747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769108287747</updated>
+    </task>
+    <servers />
+  </component>
+</project>

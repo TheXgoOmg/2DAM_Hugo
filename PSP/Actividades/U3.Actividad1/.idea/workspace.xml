@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cebb582a-2389-4aae-9a85-1f4320e14415" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.idea/artifacts/GestionAlumnos_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/GestionAlumnos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/alumnos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/objetos.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/src/Alumno.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/src/GestionAlumnos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_1/GestionAlumnos/src/MiOOS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/archivoGrande.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivoGrande/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/archivosOcultos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/archivosOcultos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/artifacts/ls_la_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_2/ls_la/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/cuantasVocales.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/cuantasVocales/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/head.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/head/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/prueba.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_3/tail/tail.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/archivosCSV.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/archivosCSV/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/error_make.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/error_make.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/imagen.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/imagen/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_4/prueba.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/archivosXML.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/monaco2023.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/resultados_carrera.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/src/Carrera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/src/Competicion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_5/archivosXML/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/SW.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Ej_6/archivosJSON/sw.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Recursos/Monaco/Carrera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Recursos/Monaco/Competicion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Recursos/Monaco/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Recursos/Monaco/monaco2023.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/Ejs/Recursos/Star Wars/SW.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/AD_UD5_Clientes.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/SpringProjectApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/ClienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/CuentaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/DireccionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/controller/RecomendacionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/ClienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/CuentaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/DireccionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/dto/RecomendacionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/modelo/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/modelo/Cuenta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/modelo/Direccion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/modelo/Recomendacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/ClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/CuentaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/DireccionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/repository/RecomendacionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/ClienteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/CuentaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/DireccionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/java/org/dam/service/RecomendacionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/SpringProject/src/test/java/org/dam/springproject/SpringProjectApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/TypeToken" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.idea/artifacts/UD3_Tarea1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/DAO/DAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Modelo/Chasis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Modelo/Mecanico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Modelo/MecanicoMotor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Modelo/Motor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/Modelo/idMecanicoMotor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/java/org/dam/util/JpaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/resources/import.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/UD3_Tarea1/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/script.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/script2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/src/main/java/org/dam/Colores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/src/main/java/org/dam/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/src/main/java/org/dam/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/src/main/java/org/dam/ServerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/clienteSQL_alu/src/main/java/org/dam/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/src/main/java/org/cipfpcheste/dam2/Colores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/src/main/java/org/cipfpcheste/dam2/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/src/main/java/org/cipfpcheste/dam2/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/src/main/java/org/cipfpcheste/dam2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/comunidadesSGBD_copy/src/main/java/org/cipfpcheste/dam2/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/java/org/dam/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/java/org/dam/Saga.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/java/org/dam/Universo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonJPA/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/src/main/java/org/dam/Colores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/src/main/java/org/dam/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/src/main/java/org/dam/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/BrandonSandersonSGBD/src/main/java/org/dam/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/BrandonSanderson.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/BrandonSanderson.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/BrandonSanderson.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/src/main/java/org/dam/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/src/main/java/org/dam/Saga.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JSONtoCSV/src/main/java/org/dam/Universo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/SaraJMaas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/SaraJMaas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/src/main/java/org/dam/Libro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/src/main/java/org/dam/Saga.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/JsonToCsv_SaraJMaas/src/main/java/org/dam/Universo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/SaraJMaas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/src/main/java/org/dam/Colores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/src/main/java/org/dam/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/src/main/java/org/dam/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/practicarSimulacro/SaraJMaasSGBD/src/main/java/org/dam/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/.idea/pruebas_doc.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/Moduls/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/.idea/artifacts/prueba_escritura_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/out/artifacts/prueba_escritura_jar/destino.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/out/artifacts/prueba_escritura_jar/origen.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/out/artifacts/prueba_escritura_jar/prueba_escritura.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/src/main/java/org/dam/FileCopy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_escritura/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/.idea/artifacts/prueba_ficheros_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/prueba_ficheros.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/ramon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/.idea/artifacts/prueba_ficheros_texto_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/out/artifacts/prueba_ficheros_texto_jar/carpeta/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/out/artifacts/prueba_ficheros_texto_jar/carpeta/file2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/out/artifacts/prueba_ficheros_texto_jar/fichero_final.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/out/artifacts/prueba_ficheros_texto_jar/prueba_ficheros_texto.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/src/main/java/org/dam/FusionaTextos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_ficheros_texto/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/.idea/artifacts/prueba_objetos_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/prueba_objetos.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/src/Modulo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/src/Modulo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/pruebas_doc/prueba_objetos/src/objetos.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV (copy)/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/cvalenciana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/datosProvincias.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/src/main/java/org/cipfpcheste/dam2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/src/main/java/org/cipfpcheste/dam2/pojo/Comunidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/src/main/java/org/cipfpcheste/dam2/pojo/Provinces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacroJSONtoCSV_copy/src/main/java/org/cipfpcheste/dam2/pojo/Towns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/cvalenciana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/src/main/java/org/dam/Ciudad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/src/main/java/org/dam/Comunidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/src/main/java/org/dam/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/simulacro_AD/src/main/java/org/dam/Provincia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/cvalenciana.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/java/modelo/comunidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/java/modelo/poblaciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/java/modelo/provincias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesJPA/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/src/main/java/org/cipfpcheste/dam2/Colores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/src/main/java/org/cipfpcheste/dam2/ConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/src/main/java/org/cipfpcheste/dam2/DatabaseManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/src/main/java/org/cipfpcheste/dam2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/comunidadesSGBD/src/main/java/org/cipfpcheste/dam2/Utilidades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/cvalenciana.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/datosMunicipiosProvincia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/src/main/java/org/cipfpcheste/dam2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/src/main/java/org/cipfpcheste/dam2/pojo/Comunidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/src/main/java/org/cipfpcheste/dam2/pojo/provinces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../AD/solSimulacroExamen/simulacroJSONtoCSV/src/main/java/org/cipfpcheste/dam2/pojo/towns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/FLET_Ejercicio_Basket.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Prototipo_App_DI_Hugo-Tarin.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_Hugo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Ajustes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Botón.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Buscador.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Contacto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Inicio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Input.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Login.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menu Base.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menu Clicked.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Menú Superior.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Purchased Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Rented Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Shop Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Short Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Tienda.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Toggle ON-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Toggle ON.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/PrototipoApp_DI_PDFs/Workflows.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Ajustes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Botón.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Buscador.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Contacto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Inicio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Input.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Login.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menu Base.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menu Clicked.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Menú Superior.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Purchased Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Rented Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Shop Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Short Workflow Card.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Tienda.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Toggle ON-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Toggle ON.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/WireframeHR_DI_PDFs/Workflows.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/IMG-20251011-WA0009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/IMG-20251011-WA0010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/IMG-20251011-WA0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/calendar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/gmail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/Prototipo_App/Recursos/img/whatsapp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/pip3.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/bin/python3.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/flet-apps/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/registros.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/acceso_vehiculos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/assets/bg.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/assets/lol_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/calculator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/math.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-apps/src/todo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet-listados-app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/flet_estadisticas-baloncesto_app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/reto_psicologico_flet_app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/src/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/src/assets/splash_android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DI/simon-flet-app/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/DIGITALIZACION.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/EsquemaContenidos.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA1/Presentación_RevolucionesIndustriales.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA1/Presentación_RevolucionesIndustriales.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA1/RA1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA1/Revoluciones-Industriales-Doc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA2/RA2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DIG/RA2/RA2_Tecnologia5G_MarcosS_Hugo.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PI/Describe las competencias que se manejan en el proyecto.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../PI/Planifica la ejecución del proyecto.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/AnexoPractica1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/CasoPrácticoModeloVistasAcciones.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/models/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/Ejemplo_ListaTareas/views/views.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/RA5.Desarrollo_Componentes_Odoo.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.EntornoDesarrolloOdoo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.Modelos.Campos.Seguridad.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/UD5.Práctica1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica." beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/UD5.Practica.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/img/image1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/img/odoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/plantilla.typ" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/UD5.Practica/pdf/ç" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SGE/plantilla.typ" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="38WFQLVxVAIk2a58mnX6gA7Kgjv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Cliente.executor": "Run",
+    "Application.Servidor.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/hugo/Documents/2DAM_Hugo/PSP/Actividades/U3.Actividad1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/hugo/Documents/2DAM_Hugo/PSP/U3.Actividad1/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cebb582a-2389-4aae-9a85-1f4320e14415" name="Changes" comment="" />
+      <created>1768907404547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768907404547</updated>
+      <workItem from="1768907406044" duration="3529000" />
+      <workItem from="1769159262930" duration="3000" />
+      <workItem from="1769620224633" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

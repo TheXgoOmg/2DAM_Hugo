@@ -1,0 +1,17 @@
+@use "sass:map";
+
+$status-colors: (
+  "success": #22c55e,
+  "warning": #eab308,
+  "danger": #ef4444,
+  "info": #3b82f6
+);
+
+// Función de ayuda para extraer colores del mapa de forma segura
+@function get-status($key) {
+  @if map.has-key($status-colors, $key) {
+    @return map.get($status-colors, $key);
+  }
+  @warn "La clave '#{$key}' no existe en el mapa $status-colors.";
+  @return null;
+}

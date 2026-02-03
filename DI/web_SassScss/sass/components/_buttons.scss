@@ -1,0 +1,48 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/maps';
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-family: vars.$font-main;
+
+  &:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+  }
+
+  // BOTÓN 1: Primary (Sólido)
+  &--primary {
+    background: vars.$primary-color;
+    color: vars.$white;
+    box-shadow: 0 10px 20px rgba(vars.$primary-color, 0.3);
+  }
+
+  // BOTÓN 2: Outline (Borde)
+  &--outline {
+    background: transparent;
+    color: vars.$white;
+    border: 2px solid vars.$primary-color;
+    
+    &:hover {
+      background: vars.$primary-color;
+    }
+  }
+
+  // BOTÓN 3: Submit (Uso de Mapa de colores)
+  &--submit {
+    // Variable Local
+    $submit-color: maps.get-status("success");
+    
+    background-color: $submit-color;
+    color: vars.$white;
+    width: 100%;
+    margin-top: calc(vars.$spacing-unit * 1.5);
+  }
+}

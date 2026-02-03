@@ -1,0 +1,21 @@
+@use 'variables' as vars;
+
+// Estilo base para todas las tarjetas
+%card-skeleton {
+  background: rgba(vars.$white, 0.05);
+  border-radius: 12px;
+  padding: calc(vars.$spacing-unit * 2);
+  border: 1px solid rgba(vars.$white, 0.1);
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: vars.$primary-color;
+  }
+}
+
+// Texto degradado
+%text-gradient {
+  background: linear-gradient(90deg, vars.$primary-color, vars.$secondary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,22 @@
+<configuration>
+    <!-- Appender para consola -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- 🔹 MODO VERBOSE: Cambia a DEBUG -->
+    <!-- 🔸 MODO NORMAL: Cambia a INFO -->
+    <!-- 🔴 MODO SILENCIOSO: Cambia a ERROR -->
+
+    <!-- Nivel específico para MongoDB -->
+    <logger name="org.mongodb.driver" level="ERROR"/>
+
+    <!-- Nivel para tu aplicación -->
+    <logger name="org.cipfpcheste.dam2" level="INFO"/>
+
+    <!-- Nivel global -->
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

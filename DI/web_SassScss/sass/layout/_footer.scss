@@ -1,0 +1,31 @@
+@use "sass:color";
+@use "sass:list";
+@use '../abstracts/variables' as vars;
+@use '../abstracts/maps' as maps;
+
+.footer {
+  border-top: 1px solid rgba(vars.$white, 0.1);
+  padding: vars.$spacing-unit * 3 0;
+  text-align: center;
+  background-color: color.adjust(vars.$dark-bg, $lightness: -2%);
+
+  p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: rgba(vars.$white, 0.6);
+  }
+
+  // Generación dinámica de contenido basada en la lista de abstracts
+  &::after {
+    $count: list.length(vars.$social-channels); // Función length
+    $list-text: list.join(vars.$social-channels, " • "); // Función join
+    
+    content: "Disponibles en #{$count} canales: #{$list-text}";
+    display: block;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    color: maps.get-status("info");
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

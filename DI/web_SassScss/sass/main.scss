@@ -1,0 +1,31 @@
+// ==========================================================================
+// ARCHIVO MAESTRO - APRENDE JAVA LANDING
+// ==========================================================================
+
+// 1. Abstracts: Herramientas y configuraciones (No generan CSS)
+// Usamos 'as *' para poder usar las variables sin prefijo si lo prefieres,
+// o puedes usar namespaces para mayor claridad.
+@use 'abstracts/variables' as vars;
+@use 'abstracts/maps' as maps;
+@use 'abstracts/mixins' as mixs;
+@use 'abstracts/placeholders';
+
+// 2. Base: Estilos globales y reseteo
+@use 'base/reset';
+@use 'base/typography';
+
+// 3. Layout: Estructura y contenedores
+@use 'layout/grid';
+@use 'layout/hero';
+@use 'layout/footer';
+
+// 4. Components: Elementos específicos e interactivos
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+
+// ==========================================================================
+// Nota técnica: Sass procesará estos archivos en orden. 
+// Las variables cargadas al inicio estarán disponibles para 
+// los cálculos de calc() y funciones de mapa en los componentes.
+// ==========================================================================

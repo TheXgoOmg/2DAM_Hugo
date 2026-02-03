@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+    <style>
+        .required-field {
+            border: 2px solid red;
+        }
+        form {
+            line-height: 1.6;
+            font-family: serif;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <div>
+            <strong>Name:</strong><br>
+            <input type="text" placeholder="Nom i cognoms..." class="required-field" required>
+        </div>
+
+        <div>
+            <strong>Create a user name:</strong><br>
+            <input type="text" class="required-field" required>
+        </div>
+
+        <div>
+            <strong>Create a password:</strong><br>
+            <input type="password" minlength="6" maxlength="12" class="required-field" required>
+        </div>
+
+        <div>
+            <strong>Birthday:</strong>
+            <input type="date">
+        </div>
+
+        <div>
+            <strong>I am</strong>
+            <select name="role">
+                <option value="student">a student</option>
+                <option value="teacher">a teacher</option>
+                <option value="business">a business owner</option>
+                <option value="self-employed">self-employed</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+
+        <div>
+            <strong>Mobile phone:</strong><br>
+            <input type="tel" class="required-field" required>
+        </div>
+
+        <div>
+            <strong>Select your English level (0-10):</strong><br>
+            <input type="range" min="0" max="10" step="1" value="5">
+        </div>
+
+        <div>
+            <button type="submit"><strong>Sign me up</strong></button>
+        </div>
+    </form>
+
+</body>
+</html>

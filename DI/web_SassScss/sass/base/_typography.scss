@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/placeholders';
+
+h1, h2, h3, h4 {
+  font-family: vars.$font-main;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero {
+  &__title {
+    // Uso de calc para jerarquía visual
+    font-size: calc(2rem + 2vw);
+    margin-bottom: vars.$spacing-unit;
+
+    span {
+      @extend %text-gradient; // Usando el placeholder de abstracts
+    }
+  }
+
+  &__description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    
+    strong {
+      color: vars.$secondary-color;
+    }
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: calc(vars.$spacing-unit * 0.5);
+
+  span {
+    color: vars.$secondary-color;
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: calc(vars.$spacing-unit * 3);
+  opacity: 0.7;
+}

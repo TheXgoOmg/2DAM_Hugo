@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixs;
+
+.hero {
+  @include mixs.flex-center(column, 1.5rem); // Uso del mixin con gap
+  text-align: center;
+  min-height: 80vh;
+
+  .badge {
+    background: rgba(vars.$secondary-color, 0.1);
+    color: vars.$secondary-color;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  &__actions {
+    @include mixs.flex-center(row, 1rem);
+    
+    @include mixs.respond-to("mobile") {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+// Estilo de la ventana de código
+.code-window {
+  width: 100%;
+  max-width: 600px;
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  text-align: left;
+
+  &__header {
+    background: #333;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      &.red { background: #ff5f56; }
+      &.yellow { background: #ffbd2e; }
+      &.green { background: #27c93f; }
+    }
+
+    .file-name {
+      margin-left: 10px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+  }
+
+  pre {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}

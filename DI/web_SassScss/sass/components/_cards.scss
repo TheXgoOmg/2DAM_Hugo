@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as vars;
+@use '../abstracts/placeholders';
+
+.feature-card, .testimonial-card {
+  @extend %card-skeleton; // Uso de placeholder
+  
+  &__icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+    &.icon--yellow {
+      color: #fbbf24;
+    }
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: rgba(vars.$white, 0.7);
+  }
+}
+
+.testimonial-card {
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    strong {
+      display: block;
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: vars.$secondary-color;
+    }
+  }
+}

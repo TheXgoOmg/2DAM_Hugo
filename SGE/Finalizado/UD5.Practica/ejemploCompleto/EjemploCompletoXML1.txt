@@ -1,0 +1,54 @@
+<odoo> 
+<data> 
+<!-- Vista tipo tree -->
+ <record id="student_list_view" model="ir.ui.view">
+ 	<field name="name">Lista de estudiantes</field>
+ 	<field name="model">prueba.student</field> 
+ 	<field name="arch" type="xml">
+ 		<tree>
+ 			<field name="name"/>
+			<field name="topics"/>
+		</tree>
+	 </field>
+ </record>
+
+<!-- Acción para abrir la vista --> 
+ <record id="student_action_window" model="ir.actions.act_window">
+ 	<field name="name">Estudiantes</field>
+ 	<field name="res_model">prueba.student</field>
+ 	<field name="view_mode">tree,form</field>
+ </record> 
+
+<!-- Menús --> 
+ <menuitem id="menu_root_prueba" name="Prueba"/>
+
+ <menuitem id="menu_admin_prueba" name="Administración"
+	 parent="menu_root_prueba"/>
+ <menuitem id="menu_students_prueba" name="Estudiantes" 
+	 parent="menu_admin_prueba" 
+	 action="student_action_window"/>
+</data>
+</odoo>
+
+<!--En esta vista de ejemplo, observamos lo siguiente:
+● En este ejemplo se construye la estructura visual para mostrar el modelo prueba.student en el backend de Odoo.
+● Primero se define una vista de tipo lista (tree) en el modelo ir.ui.view.
+	○ Esta vista muestra los campos name y topics, organizados en formato de tabla.
+	○ Su función es puramente visual: no guarda datos, solo determina cómo se presentan los registros.
+● A continuación, se crea una acción de ventana (ir.actions.act_window) llamada student_action_window.
+	○ Esta acción enlaza el modelo prueba.student con sus vistas y define los modos de visualización: tree (lista) y form (formulario).
+	○ Permite que el usuario vea la lista de estudiantes y, al hacer clic en un registro, abra el formulario para consultarlo o editarlo.
+● Luego se construye un menú jerárquico en ir.ui.menu con tres niveles:
+	○ Menú raíz: “Prueba”.
+	○ Submenú: “Administración”.
+	○ Elemento final: “Estudiantes”, que ejecuta la acción student_action_window.
+● El recorrido del usuario sería: Prueba → Administración → Estudiantes.
+	○ Al seleccionar “Estudiantes”, se abre la vista de lista con todos los registros del modelo prueba.student.
+	○ Al hacer clic sobre un estudiante, Odoo abre su vista de formulario.
+● Este flujo demuestra cómo vistas, acciones y menús trabajan juntos
+	○ La vista define cómo se muestran los datos.
+	○ La acción conecta la vista con el modelo.
+	○ El menú permite acceder a esa acción desde la interfaz.
+● Odoo puede generar vistas automáticas si solo se define la acción, pero son básicas y poco personalizables.
+● Por eso, definir las vistas manualmente en XML, como en este ejemplo, brinda mayor control sobre el diseño, la disposición de campos y la experiencia del usuario.
+-->

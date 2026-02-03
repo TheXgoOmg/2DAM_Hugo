@@ -1,0 +1,26 @@
+<record id="school_student_kanban_view" model="ir.ui.view">
+	<field name="name">Student Kanban</field>
+	<field name="model">school.student</field>
+	<field name="arch" type="xml">
+		<kanban> 
+			<field name="name"/> 
+			<field name="image"/>
+			<templates> 
+				<t t-name="kanban-box"> 
+					<div class="oe_kanban_global_click"> 
+						<a type="open">
+							<img class="o_image_64_contain" t-att-src="kanban_image('school.student', 'image', record.id.value)"/>
+						</a> 
+						<div class="oe_kanban_details">
+							<strong><field name="name"/></strong>
+						</div>
+					</div>
+				</t> 
+			</templates>
+		</kanban> 
+	</field> 
+</record>
+
+#En este ejemplo, cada estudiante del modelo school.student se muestra
+#como una tarjeta Kanban con su foto (image) y su nombre (name). 
+#Al hacer clic sobre una tarjeta, el usuario accede al formulario individual del registro.

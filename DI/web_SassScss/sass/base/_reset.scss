@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as vars;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // Uso de calc para un tamaño de fuente base fluido
+  font-size: calc(14px + 0.25vw);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: vars.$dark-bg;
+  color: vars.$white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
