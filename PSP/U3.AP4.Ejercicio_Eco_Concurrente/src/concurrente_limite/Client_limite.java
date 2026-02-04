@@ -1,15 +1,17 @@
-package eco_binario;
+package concurrente_limite;
 
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
-public class ClientTCP_bin {
+public class Client_limite {
     static final String Host = "localhost";
     static final int Puerto = 5000;
 
-    public ClientTCP_bin() throws IOException {
+    public Client_limite() throws IOException {
         try (
             Socket sClient = new Socket(Host, Puerto);
             InputStream in = sClient.getInputStream();
@@ -22,15 +24,16 @@ public class ClientTCP_bin {
                 System.out.print("Escribe tu mensaje: ");
                 msg = sc.nextLine();
 
-                if (msg.equals(".")) {
-                    System.out.println("Desconectando del servidor...");
-                    break;
-                }
-
                 byte[] datos = (msg + "\n").getBytes();
 
                 out.write(datos);
                 out.flush();
+
+                if (msg.equals(".")) {
+                    sClient.close();
+                    System.out.printf("%nDesconectando del servidor...%n");
+                    break;
+                }
 
                 byte[] buffer = new byte[1024];
                 int bytesLeidos = in.read(buffer);
@@ -45,6 +48,6 @@ public class ClientTCP_bin {
     }
 
     public static void main(String[] args) throws IOException {
-    	new ClientTCP_bin();
+    	new Client_limite();
     }
 }

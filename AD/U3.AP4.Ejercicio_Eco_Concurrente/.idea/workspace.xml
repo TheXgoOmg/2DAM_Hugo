@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="430ddb30-3091-41bd-b895-dfef5bc50f09" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/GEMINI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/BECA_FLOR.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/BECA_HUGO.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/Ejercicios repaso HTML5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/HugoTarin_coverLetter.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/hugo_tarin_cv.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/user1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/user2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/img/user3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/abstracts/_maps.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/abstracts/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/abstracts/_placeholders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/abstracts/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/base/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/base/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/components/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/components/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/components/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/layout/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/layout/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/layout/_hero.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DI/web_SassScss/sass/main.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="399jm324dYfN1LmoTzkNWM5wjoH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/hugo/Documents/2DAM_Hugo/PSP/U3.AP4.Ejercicio_Eco_Concurrente",
+    "onboarding.tips.debug.path": "/home/hugo/Documents/2DAM_Hugo/AD/U3.AP4.Ejercicio_Eco_Concurrente/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="430ddb30-3091-41bd-b895-dfef5bc50f09" name="Changes" comment="" />
+      <created>1770115337329</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770115337329</updated>
+      <workItem from="1770115338084" duration="253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
