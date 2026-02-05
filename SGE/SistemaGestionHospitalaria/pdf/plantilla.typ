@@ -12,6 +12,8 @@
 
   show raw.where(block: true): it => pad(left: 2em, it)   
 
+  show figure: set block(spacing: 2em)
+
   let autor = "Hugo Tarín González"
   let curso = "2025/26"
 
@@ -42,7 +44,7 @@
   // --- REGLA 1: PORTADA ---
   align(center + horizon)[
     #if imagen != none {
-      set image(height: 4cm) // Ajusta el tamaño de la imagen
+      set image(height: 40%) // Ajusta el tamaño de la imagen
       imagen
     }
     #v(1cm)

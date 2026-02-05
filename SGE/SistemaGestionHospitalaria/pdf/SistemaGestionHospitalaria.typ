@@ -3,11 +3,44 @@
 #show: proyecto.with(
   titulo: "Sistema de Gestión Hospitalaria",
   asignatura: "Sistemas de Gestión Empresarial y Digitalización",
-  imagen: "img/odoo.png",
+  imagen: image("img/odoo.png")
 )
 
 
 = Módulo SGE
+
+== Altas y bajas de pacientes
+
+#figure(
+  image("img/img4.png", width: 80%),
+  caption: [Prueba 1 de altas y bajas de pacientes]
+)
+
+#figure(
+  image("img/img5.png", width: 80%),
+  caption: [Prueba 2 de altas y bajas de pacientes]
+)
+
+== Altas y bajas de empleados
+
+#figure(
+  image("img/img6.png", width: 80%),
+  caption: [Prueba 1 de altas y bajas de empleados]
+)
+
+#figure(
+  image("img/img7.png", width: 80%),
+  caption: [Prueba 2 de altas y bajas de empleados]
+)
+
+== Registro de atención sanitaria
+
+#figure(
+  image("img/img3.png", width: 80%),
+  caption: [Prueba de registro de atención sanitaria]
+)
+
+== Registro de pruebas médicas diversas
 
 #figure(
   image("img/img1.png", width: 80%),
@@ -17,11 +50,6 @@
 #figure(
   image("img/img2.png", width: 80%),
   caption: [Prueba 2 de registro de diversas pruebas médicas]
-)
-
-#figure(
-  image("img/img3.png", width: 80%),
-  caption: [Prueba de registro de atención sanitaria]
 )
 
 #pagebreak()
@@ -42,18 +70,18 @@
 
 #seccion[2.1.1 Pilares de la Regulación Comunitaria (nivel UE)]
 
-+ #subseccion[Protección de Datos y Privacidad: RGPD]
++ #subseccion[Protección de Datos y Privacidad: RGPD 2016/679]
 
-  El *Reglamento (UE) 2016/679 (RGPD)* es el estándar de referencia. Su aplicación en un hospital es de máximo rigor debido a que los datos clínicos son considerados *categorías especiales de datos* (Art. 9).
+  Es el estándar de referencia. Su aplicación en un hospital es de máximo rigor debido a que los datos clínicos son considerados *categorías especiales de datos* (Art. 9).
   - *Principio de Responsabilidad Proactiva:* El hospital debe ser capaz de demostrar que cumple con la norma, no solo cumplirla de forma pasiva.
   - *Gestión de Riesgos:* Es obligatoria la realización de una *Evaluación de Impacto en la Protección de Datos (EIPD)* antes de la implementación del SGH, identificando posibles brechas en el flujo de información del paciente.
 
   - *Derechos del Interesado:* El sistema debe facilitar técnicamente el ejercicio de derechos como la portabilidad de la historia clínica entre centros sanitarios.
 
 
-+ #subseccion[Resiliencia y Ciberseguridad: Directiva NIS2]
++ #subseccion[Resiliencia y Ciberseguridad: Directiva NIS2 2022/2555]
 
-  La *Directiva (UE) 2022/2555 (NIS2)* refuerza la seguridad de las infraestructuras críticas. Los hospitales son clasificados como *entidades esenciales*.
+  Refuerza la seguridad de las infraestructuras críticas. Los hospitales son clasificados como *entidades esenciales*.
 
   - *Continuidad del Servicio:* La digitalización exige que el SGH tenga protocolos de recuperación ante desastres. Un hospital no puede permitirse un "tiempo de inactividad" que afecte a la asistencia vital.
 
@@ -62,15 +90,25 @@
   - *Obligación de Notificación:* Establece canales formales para informar sobre incidentes de ciberseguridad a las autoridades nacionales (como el INCIBE en España) en tiempos definidos.
 
 
-+ #subseccion[Calidad y Seguridad Técnica: Reglamento MDR]
++ #subseccion[Calidad y Seguridad Técnica: Reglamento MDR 2017/745]
 
-  El *Reglamento (UE) 2017/745 sobre Productos Sanitarios (Medical Device Regulation)* aplica directamente al software de gestión si este realiza funciones más allá del mero almacenamiento.
+  El *Reglamento sobre Productos Sanitarios (Medical Device Regulation)* aplica directamente al software de gestión si este realiza funciones más allá del mero almacenamiento.
 
   - *Software como Dispositivo Médico (SaMD):* Si el SGH incorpora algoritmos para el triaje, diagnóstico o cálculo de medicación, debe pasar por un proceso de certificación para obtener el *Marcado CE*.
 
   - *Vigilancia Post-comercialización:* Obliga a los desarrolladores a realizar un seguimiento del rendimiento del software para detectar errores que puedan comprometer la salud del paciente.
 
-#pagebreak()
++ #subseccion[Inteligencia Artificial: Reglamento 2024/1689]
+
+  Es el marco legal que regula el uso de la IA en Europa. En entornos críticos como el sanitario, garantiza que la tecnología sea segura, ética y no genere discriminación.
+
+  - *Clasificación por Riesgo:* Clasifica los sistemas según su peligro; las herramientas de diagnóstico médico se consideran de *alto riesgo* y deben superar controles estrictos.
+  - *Calidad de los Datos:* Exige que la IA se entrene con datos representativos y sin sesgos para evitar diagnósticos erróneos o injustos según el perfil del paciente.
+  - *Supervisión Humana:* El sistema debe permitir que los profesionales sanitarios supervisen y comprendan las decisiones de la IA, manteniendo siempre la responsabilidad clínica.
+  - *Transparencia y Registro:* Es obligatorio informar sobre el uso de la IA y mantener una documentación técnica (logs) que permita rastrear el comportamiento del sistema.
+
+
+  #v(2em)
 
 #seccion[2.1.2 Marco Legal Nacional (España)]
 
@@ -90,13 +128,23 @@
   
   - *Trazabilidad de Accesos:* Obliga a que el SGH registre de forma inalterable quién accede a cada dato clínico, cuándo y con qué justificación.
 
-+ #subseccion[Seguridad en las Administraciones Públicas: Esquema Nacional de Seguridad (ENS)]
++ #subseccion[Esquema Nacional de Seguridad (ENS): Real Decreto 311/2022]
 
-  El *Real Decreto 311/2022* define las medidas de seguridad técnicas necesarias para los sistemas que gestionan servicios públicos o datos sensibles.
+  Define las medidas de seguridad técnicas necesarias para los sistemas que gestionan servicios públicos o datos sensibles.
 
   - *Categoría de Seguridad Alta:* Debido a la sensibilidad de los datos de salud, el SGH debe cumplir con un catálogo reforzado de medidas de cifrado, auditoría y control perimetral.
   
   - *Certificación de Conformidad:* El software y su infraestructura deben estar auditados para garantizar que el sistema es resiliente frente a ciberamenazas modernas.
+
++ #subseccion[Interoperabilidad Regional: Real Decreto 4/2010]
+
+  En la Comunidad Valenciana, el cumplimiento normativo operativo pasa por la integración con los servicios centrales de la Conselleria de Sanitat.
+
+  - *Receta Electrónica:* El SGH debe cumplir con los protocolos técnicos de la Generalitat para la prescripción farmacéutica digital y su posterior dispensación.
+  
+  - *Seguridad TIC (CSIRT-CV):* Todo software de gestión que se conecte a la red sanitaria valenciana debe seguir las guías de seguridad dictadas por el Centro de Seguridad TIC de la Comunitat Valenciana.
+
+
 
 #pagebreak()
 
@@ -110,21 +158,13 @@
   
   - *Identidad Digital:* Obliga a que el SGH sea compatible con los sistemas de identificación ciudadana y profesional de la Generalitat para el acceso a carpetas de salud.
 
-+ #subseccion[Regulación de la Historia Clínica: Decreto 137/2003]
++ #subseccion[Regulación de la Historia Clínica: Ley 1/2003]
 
   Este decreto regula la utilización de la historia clínica en la Comunidad Valenciana, detallando los requisitos técnicos para los soportes informáticos.
 
   - *Identificación y Firma:* Exige que el SGH garantice la identificación inequívoca del personal sanitario mediante sistemas de firma electrónica homologados por la Generalitat.
   
   - *Calidad Documental:* El sistema debe seguir las directrices de los comités de documentación clínica locales para asegurar que la digitalización no degrada la validez legal de las pruebas médicas.
-
-+ #subseccion[Interoperabilidad Regional: Ecosistema Abucasis]
-
-  En la Comunidad Valenciana, el cumplimiento normativo operativo pasa por la integración con los servicios centrales de la Conselleria de Sanitat.
-
-  - *Receta Electrónica:* El SGH debe cumplir con los protocolos técnicos de la Generalitat para la prescripción farmacéutica digital y su posterior dispensación.
-  
-  - *Seguridad TIC (CSIRT-CV):* Todo software de gestión que se conecte a la red sanitaria valenciana debe seguir las guías de seguridad dictadas por el Centro de Seguridad TIC de la Comunitat Valenciana.
 
 + #subseccion[Protección de Datos en el DOGV: Instrucciones de la Conselleria]
 
@@ -139,92 +179,201 @@
 #pagebreak()
 
 
-
-
-
 == Informe de viabilidad del uso de apps cloud
 
-En los entornos sanitarios, la infraestructura tecnológica desempeña un papel crítico, ya que soporta aplicaciones y sistemas directamente relacionados con la atención al paciente.
+  La infraestructura tecnológica en sanidad es crítica: un fallo no solo es un problema técnico, sino un riesgo para la vida humana. Por ello, cualquier solución cloud debe garantizar niveles máximos de *seguridad*, *disponibilidad* y *cumplimiento*.
 
-A diferencia de otros sectores, un fallo tecnológico en un hospital puede tener consecuencias graves, tanto a nivel operativo como legal y humano. Por ello, no cualquier modelo de infraestructura es válido, siendo imprescindible garantizar altos niveles de *seguridad*, *disponibilidad* y *cumplimiento normativo*.
 
 + #subseccion[Seguridad]
 
-  La seguridad constituye uno de los pilares fundamentales de la infraestructura tecnológica en sanidad, debido al carácter altamente sensible de la información que se gestiona en los sistemas hospitalarios.
+  Es el pilar fundamental debido a la extrema sensibilidad de los datos gestionados.
 
-  - *Datos clínicos:* Los hospitales manejan datos clínicos y personales de los pacientes, como historiales médicos, diagnósticos, tratamientos o resultados de pruebas. Este tipo de información está considerada como *dato especialmente protegido*, por lo que debe garantizarse su confidencialidad, integridad y disponibilidad. Una brecha de seguridad puede derivar en sanciones legales y en una pérdida de confianza por parte de los pacientes.
-
-  - *Accesos y cifrado:* Es imprescindible implementar mecanismos de control de acceso basados en roles profesionales, asegurando que cada usuario solo pueda acceder a la información necesaria para el desempeño de su función. Además, los datos deben estar protegidos mediante técnicas de cifrado tanto en reposo como en tránsito, evitando que puedan ser interpretados en caso de acceso no autorizado o interceptación.
+  - *Protección de datos:* Los historiales y diagnósticos requieren confidencialidad absoluta; cualquier brecha implica graves sanciones legales y pérdida de confianza.
+  - *Control de acceso:* Es obligatorio el cifrado de datos y el acceso restringido por roles, asegurando que cada profesional vea solo lo estrictamente necesario.
 
 + #subseccion[Disponibilidad]
 
-  La disponibilidad de los sistemas informáticos es un requisito esencial en el ámbito hospitalario, donde muchas aplicaciones son consideradas servicios críticos.
+  Los sistemas hospitalarios no pueden permitirse tiempos de inactividad.
 
-  - *Servicios críticos 24/7:* Sistemas como los Sistemas de Información Hospitalaria (HIS), los sistemas de imágenes médicas (PACS) o las plataformas de gestión de urgencias deben estar operativos de forma continua, las 24 horas del día y los 7 días de la semana. Cualquier interrupción del servicio puede afectar directamente a la calidad asistencial.
-
-  - *Impacto real de una caída:* Una caída del sistema puede provocar retrasos en diagnósticos, imposibilidad de acceder a historiales médicos o errores en la gestión de pacientes. En situaciones críticas, como urgencias o intervenciones quirúrgicas, estos fallos pueden comprometer la seguridad del paciente, lo que hace imprescindible contar con infraestructuras altamente disponibles y tolerantes a fallos.
+  - *Continuidad asistencial:* Servicios como urgencias o historiales clínicos (HIS) deben operar 24/7 sin interrupciones.
+  - *Riesgo operativo:* Una caída del sistema bloquea diagnósticos y tratamientos, comprometiendo directamente la seguridad del paciente.
 
 + #subseccion[Cumplimiento normativo]
 
-  Además de los aspectos técnicos, la infraestructura tecnológica en sanidad debe cumplir con un marco normativo estricto que regula el tratamiento y la protección de la información sanitaria.
+  La infraestructura debe seguir estrictamente el marco legal vigente.
 
-  - *RGPD:* El Reglamento General de Protección de Datos (RGPD) establece obligaciones específicas para el tratamiento de datos personales, especialmente los relacionados con la salud. Las infraestructuras deben garantizar la confidencialidad, integridad y disponibilidad de los datos, así como permitir la trazabilidad de accesos y aplicar el principio de protección de datos desde el diseño y por defecto.
+  - *RGPD:* Exige trazabilidad total de los accesos y protección de datos desde el diseño técnico.
+  - *Leyes sanitarias:* La normativa obliga a cumplir con auditorías periódicas y, en muchos casos, a requisitos específicos sobre la ubicación física de los servidores.
 
-  - *Legislación sanitaria:* La normativa sanitaria nacional y autonómica regula la gestión de la información clínica y puede imponer requisitos adicionales, como la localización geográfica de los datos o la realización de auditorías de seguridad. Estas exigencias condicionan directamente la elección del modelo de infraestructura tecnológica a utilizar en un hospital.
 
-#line(length: 100%)
+#pagebreak()
 
 == Viabilidad del uso de Cloud en entornos hospitalarios
 
-  El uso de infraestructuras cloud en el ámbito sanitario ha experimentado un crecimiento significativo en los últimos años, impulsado por la necesidad de mejorar la eficiencia, la escalabilidad y la digitalización de los servicios de salud. No obstante, debido a la criticidad de los sistemas hospitalarios y a la sensibilidad de los datos gestionados, el despliegue de aplicaciones en la nube debe evaluarse cuidadosamente. En este contexto, el cloud es una opción viable, pero únicamente cuando se cumplen una serie de requisitos técnicos, organizativos y legales.
-
-  La viabilidad del uso de cloud en hospitales depende de que la infraestructura elegida sea capaz de ofrecer niveles de seguridad, disponibilidad y control equivalentes o superiores a los modelos tradicionales, garantizando en todo momento la continuidad del servicio y la protección de la información clínica.
+  La adopción de la nube en sanidad mejora la eficiencia y la escalabilidad, pero exige cautela. Su viabilidad depende de garantizar que la migración no comprometa la seguridad de los datos clínicos ni la continuidad del servicio médico.
 
 + #subseccion[Requisitos mínimos para el uso de cloud en sanidad]
 
-  Para que una aplicación hospitalaria pueda desplegarse en un entorno cloud de forma segura y conforme a la normativa, es imprescindible que se cumplan una serie de requisitos mínimos.
+  - *Seguridad y Control:* El proveedor debe garantizar cifrado y protección ante ataques, pero el hospital mantiene la responsabilidad de supervisar los accesos y la ubicación de los datos.
+  - *Cumplimiento Legal:* Es obligatorio que la infraestructura cumpla con el RGPD y que los centros de datos estén en regiones permitidas, respaldado por certificaciones oficiales.
 
-  - *Seguridad:* El proveedor cloud debe ofrecer mecanismos avanzados de seguridad, incluyendo cifrado de datos, control de accesos, monitorización continua y protección frente a ciberataques. Además, el hospital debe mantener la responsabilidad sobre la correcta configuración de estos mecanismos, evitando configuraciones inseguras que puedan derivar en brechas de seguridad.
++ #subseccion[Modelos de infraestructura aplicables]
 
-  - *Control de datos:* Aunque la infraestructura esté externalizada, el hospital debe conservar el control sobre los datos clínicos. Esto implica conocer dónde se almacenan los datos, quién puede acceder a ellos y cómo se gestionan las copias de seguridad. Además, debe garantizarse la posibilidad de recuperar la información y migrarla a otro proveedor si fuera necesario, evitando situaciones de dependencia excesiva del proveedor cloud.
-
-  - *Cumplimiento legal:* El uso de cloud debe ajustarse estrictamente al RGPD y a la legislación sanitaria vigente. El proveedor debe ofrecer garantías contractuales sobre el tratamiento de los datos, incluyendo acuerdos de encargo del tratamiento, certificaciones de seguridad y cumplimiento normativo. Además, es fundamental que los datos se alojen en centros de datos ubicados en regiones que cumplan con los requisitos legales establecidos.
-
-+ #subseccion[Modelos de infraestructura aplicables al entorno hospitalario]
-
-  Existen diferentes modelos de infraestructura tecnológica que pueden emplearse en el ámbito hospitalario, cada uno con características específicas en cuanto a control, costes y flexibilidad.
-
-  - *Infraestructura on-premise:* En este modelo, los sistemas y aplicaciones se alojan en servidores propios del hospital. Ofrece un alto nivel de control sobre los datos y la infraestructura, pero implica elevados costes iniciales, menor escalabilidad y una mayor carga de mantenimiento.
-
-  - *Cloud pública:* Las aplicaciones se despliegan en infraestructuras compartidas ofrecidas por proveedores como AWS, Azure o Google Cloud. Este modelo destaca por su escalabilidad, flexibilidad y reducción de costes iniciales, aunque requiere una correcta gestión de la seguridad y del cumplimiento normativo para garantizar la protección de los datos sanitarios.
-
-  - *Cloud privada:* La infraestructura cloud es de uso exclusivo para una organización sanitaria, ya sea gestionada internamente o por un proveedor externo. Combina ventajas del cloud, como la flexibilidad, con un mayor control sobre la seguridad y los datos, aunque con costes superiores a la cloud pública.
-
-  - *Modelo híbrido:* Este modelo combina infraestructuras on-premise y cloud, permitiendo alojar los sistemas más críticos o sensibles en entornos propios y utilizar la nube para servicios menos críticos o para escalado de recursos. Es una de las opciones más adoptadas en sanidad, ya que permite equilibrar seguridad, cumplimiento legal y flexibilidad.
+  - *On-premise:* Servidores locales. Máximo control y privacidad, pero con costes de mantenimiento muy altos y nula escalabilidad.
+  - *Cloud pública:* Servicios externos (como AWS o Azure). Económica y flexible, pero requiere una configuración de seguridad muy estricta para cumplir la ley.
+  - *Cloud privada:* Uso exclusivo para el hospital. Equilibra el control del entorno local con las ventajas tecnológicas de la nube, aunque a mayor coste.
+  - *Modelo híbrido:* La opción más equilibrada. Mantiene los sistemas críticos en local (on-premise) y utiliza la nube para servicios de apoyo o almacenamiento masivo.
 
 ---
 
-  En conclusión, el uso del cloud en entornos hospitalarios es viable y cada vez más habitual, siempre que se adopte un enfoque controlado y se seleccione el modelo de infraestructura más adecuado en función de los requisitos técnicos y legales del hospital.
+  En conclusión, el cloud es viable si se elige un modelo que priorice la seguridad técnica y el cumplimiento legal sobre el ahorro de costes.
 
-#line(length: 100%)
+
+#pagebreak()
 
 == Análisis y comparación de modelos de infraestructura
 
-#seccion[Infraestructura On-Premise (servidores propios del hospital)]
+#seccion[Infraestructura On-Premise]
 
-    La infraestructura *on-premise* se basa en el uso de servidores y sistemas alojados físicamente en las instalaciones del propio hospital o en centros de datos de su propiedad. Este modelo ha sido tradicionalmente el más utilizado en el sector sanitario, ya que permite un control total sobre la infraestructura y los datos gestionados.
+    La infraestructura on-premise se basa en servidores y sistemas instalados físicamente en el propio hospital. Este modelo ha sido tradicionalmente el más utilizado en el sector sanitario, ya que ofrece un control total sobre la infraestructura y los datos clínicos.
 
-    - *Costes iniciales y recurrentes:* El modelo on-premise implica elevados costes iniciales, derivados de la adquisición de servidores, sistemas de almacenamiento, licencias de software y la adecuación de espacios físicos. Además, existen costes recurrentes asociados al mantenimiento del hardware, consumo energético, personal técnico especializado y renovación periódica de los equipos.
+    - *Costes iniciales y recurrentes:* Requiere una elevada inversión inicial en hardware, licencias y espacios físicos. Además, genera costes recurrentes de mantenimiento, consumo energético, personal técnico y renovación de equipos.
 
-    - *Escalabilidad:* La escalabilidad es limitada, ya que aumentar la capacidad del sistema requiere la compra e instalación de nuevo hardware. Esto dificulta la adaptación rápida a incrementos de demanda, como picos de uso en situaciones de emergencia sanitaria.
+    - *Escalabilidad:* La capacidad de crecimiento es limitada, ya que aumentar recursos implica adquirir e instalar nuevo hardware, lo que dificulta la respuesta rápida ante picos de demanda.
 
-    - *Seguridad:* Al tratarse de una infraestructura controlada directamente por el hospital, se dispone de un alto nivel de control sobre la seguridad física y lógica. No obstante, la seguridad depende en gran medida de los recursos y conocimientos del equipo técnico interno, lo que puede suponer un riesgo si no se aplican medidas actualizadas de ciberseguridad.
+    - *Seguridad:* Ofrece un alto nivel de control sobre la seguridad, aunque depende en gran medida de los recursos y conocimientos del equipo técnico interno.
 
-    - *Disponibilidad:* Garantizar una alta disponibilidad en entornos on-premise requiere inversiones adicionales en sistemas redundantes, copias de seguridad y planes de recuperación ante desastres. Sin estas medidas, una avería física puede provocar interrupciones prolongadas del servicio.
+    - *Disponibilidad:* Para garantizar una alta disponibilidad es necesario invertir en sistemas redundantes y planes de recuperación, ya que una avería puede afectar gravemente al servicio.
 
-    - *Mantenimiento:* El mantenimiento recae íntegramente en el hospital, que debe encargarse de actualizaciones, parches de seguridad, monitorización y resolución de incidencias. Esto supone una carga operativa considerable y una dependencia directa del personal técnico interno.
+    - *Mantenimiento:* El hospital asume toda la gestión de actualizaciones, parches y resolución de incidencias, lo que supone una carga operativa elevada.
 
-    - *Flexibilidad:* La flexibilidad es reducida, ya que cualquier cambio en la infraestructura implica procesos lentos de adquisición e instalación. Esto dificulta la adaptación a nuevas aplicaciones o a cambios tecnológicos rápidos.
+    - *Flexibilidad:* Presenta poca flexibilidad, ya que los cambios en la infraestructura suelen ser lentos y costosos.
 
-    - *Adecuación al entorno hospitalario:* El modelo on-premise se adapta bien a entornos hospitalarios que requieren un control absoluto de los datos y cumplen estrictamente con la normativa vigente. Sin embargo, su elevado coste, menor escalabilidad y complejidad de mantenimiento hacen que, en muchos casos, resulte menos eficiente frente a modelos más modernos.
+    - *Adecuación al entorno hospitalario:* Es adecuado para centros que necesitan un control absoluto de los datos, aunque su coste y menor agilidad lo hacen menos eficiente frente a modelos cloud.
 
+
+#v(1.5em)
+
+
+#seccion[Cloud pública]
+
+    La cloud pública utiliza infraestructuras compartidas ofrecidas por proveedores externos como AWS, Azure o Google Cloud. Este modelo permite desplegar aplicaciones hospitalarias sin necesidad de gestionar servidores propios, accediendo a los recursos a través de Internet.
+
+    - *Costes iniciales y recurrentes:* Presenta bajos costes iniciales, ya que no requiere inversión en hardware. El gasto se basa en un modelo de pago por uso, lo que permite ajustar los costes a la demanda real.
+
+    - *Escalabilidad:* Permite escalar los recursos de forma rápida y flexible, adaptándose fácilmente a picos de demanda en situaciones excepcionales o periodos de alta actividad.
+
+    - *Seguridad:* Los proveedores ofrecen medidas de seguridad avanzadas, aunque es necesario que el hospital configure correctamente los accesos y la protección de los datos.
+
+    - *Disponibilidad:* Ofrece altos niveles de disponibilidad gracias a infraestructuras redundantes y distribuidas geográficamente.
+
+    - *Mantenimiento:* El mantenimiento de la infraestructura física recae en el proveedor, reduciendo la carga técnica del hospital.
+
+    - *Flexibilidad:* Facilita la incorporación de nuevos servicios y tecnologías de forma ágil.
+
+    - *Adecuación al entorno hospitalario:* Es adecuada para servicios no críticos o con alta demanda de recursos, siempre que se garantice el cumplimiento normativo y la protección de los datos clínicos.
+
+
+#seccion[Cloud privada]
+
+    La cloud privada utiliza una infraestructura en la nube de uso exclusivo para una organización sanitaria, ya sea gestionada internamente o por un proveedor externo, sin compartir recursos con otras entidades.
+
+    - *Costes iniciales y recurrentes:* Requiere menos inversión inicial que el modelo on-premise, aunque presenta costes recurrentes superiores a la cloud pública debido al uso de recursos dedicados.
+
+    - *Escalabilidad:* Permite escalar los recursos con mayor facilidad que en entornos tradicionales, aunque con más limitaciones que la cloud pública.
+
+    - *Seguridad:* Ofrece un alto nivel de seguridad y control sobre los datos, al tratarse de un entorno exclusivo para el hospital.
+
+    - *Disponibilidad:* Puede garantizar una alta disponibilidad mediante infraestructuras redundantes y planes de recuperación ante fallos.
+
+    - *Mantenimiento:* El mantenimiento puede delegarse en un proveedor, reduciendo la carga técnica interna respecto al modelo on-premise.
+
+    - *Flexibilidad:* Facilita la adaptación a nuevas aplicaciones y cambios tecnológicos de forma más ágil.
+
+    - *Adecuación al entorno hospitalario:* Es adecuada para hospitales que necesitan un elevado control de los datos y cumplir estrictamente la normativa sanitaria.
+
+
+#seccion[Modelo híbrido]
+
+    El modelo híbrido combina infraestructuras on-premise y cloud, permitiendo al hospital decidir qué sistemas se alojan en servidores propios y cuáles se despliegan en la nube, en función de su criticidad y requisitos de seguridad.
+
+    - *Costes iniciales y recurrentes:* Permite reducir los costes iniciales al aprovechar recursos cloud, manteniendo únicamente en on-premise los sistemas críticos. Los costes recurrentes se optimizan al usar la nube solo cuando es necesario.
+
+    - *Escalabilidad:* Ofrece una alta capacidad de escalado, ya que los recursos cloud pueden ampliarse rápidamente para absorber picos de demanda sin necesidad de adquirir nuevo hardware.
+
+    - *Seguridad:* Facilita un alto nivel de seguridad al permitir que los datos más sensibles permanezcan en infraestructuras propias, mientras se aplican medidas avanzadas de seguridad en la nube.
+
+    - *Disponibilidad:* Mejora la disponibilidad del sistema al combinar infraestructuras redundantes locales y cloud, reduciendo el impacto de posibles fallos.
+
+    - *Mantenimiento:* Reduce la carga de mantenimiento del hospital, ya que parte de la infraestructura es gestionada por el proveedor cloud.
+
+    - *Flexibilidad:* Ofrece una gran flexibilidad, permitiendo adaptar la infraestructura a nuevas necesidades tecnológicas y asistenciales.
+
+    - *Adecuación al entorno hospitalario:* Es uno de los modelos más adecuados para entornos hospitalarios, ya que equilibra control, seguridad, cumplimiento normativo y aprovechamiento de las ventajas del cloud.
+
+
+#pagebreak()
+
+#seccion[Resumen]
+
+#table(
+  columns: 5,
+
+  [*Criterio*], [*On-Premise*], [*Cloud pública*], [*Cloud privada*], [*Modelo híbrido*],
+
+  [Costes iniciales y recurrentes],
+  [Altos costes iniciales y de mantenimiento],
+  [Bajos costes iniciales, pago por uso],
+  [Costes iniciales moderados y recurrentes más elevados],
+  [Costes optimizados combinando ambos modelos],
+
+  [Escalabilidad],
+  [Limitada, requiere compra de hardware],
+  [Muy alta, escalado rápido y flexible],
+  [Media-alta, con ciertas limitaciones],
+  [Alta, uso de cloud para picos de demanda],
+
+  [Seguridad],
+  [Alto control, depende del equipo técnico interno],
+  [Seguridad avanzada del proveedor, requiere buena configuración],
+  [Muy alta, entorno exclusivo y mayor control],
+  [Muy alta, datos críticos en infraestructuras propias],
+
+  [Disponibilidad],
+  [Alta solo con inversiones adicionales],
+  [Muy alta gracias a infraestructuras distribuidas],
+  [Alta mediante sistemas redundantes],
+  [Muy alta al combinar entornos locales y cloud],
+
+  [Mantenimiento],
+  [Totalmente a cargo del hospital],
+  [Gestionado por el proveedor cloud],
+  [Compartido entre hospital y proveedor],
+  [Parcialmente delegado al proveedor cloud],
+
+  [Flexibilidad],
+  [Baja, cambios lentos y costosos],
+  [Muy alta, rápida adopción de nuevos servicios],
+  [Alta, más ágil que on-premise],
+  [Muy alta, adaptación continua a nuevas necesidades],
+
+  [Adecuación al entorno hospitalario],
+  [Adecuado para control total, pero poco eficiente],
+  [Adecuado para servicios no críticos],
+  [Muy adecuado para sistemas sensibles],
+  [El modelo más adecuado por equilibrio y versatilidad],
+)
+
+
+#seccion[Conclusión]
+
+La opción más indicada para un entorno hospitalario es el modelo híbrido.
+
+Este modelo permite mantener los sistemas más críticos y los datos clínicos sensibles en infraestructuras propias, garantizando un alto nivel de control, seguridad y cumplimiento normativo, con una vigilancia activa por parte de los trabajadores, mientras que aprovecha las ventajas del cloud para servicios menos críticos, escalado de recursos y mejora de la disponibilidad.
+
+Además, el modelo híbrido ofrece mayor flexibilidad y escalabilidad, reduce costes frente a un entorno completamente on-premise y permite una mejor continuidad de la actividad, que es vital en un hospital donde la disponibilidad y la protección de la información son prioritarias.
+
+
+#pagebreak()
+
+== Viabilidad del uso de la IA en entornos hospitalarios
