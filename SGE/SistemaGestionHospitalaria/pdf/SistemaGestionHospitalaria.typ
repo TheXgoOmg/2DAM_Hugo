@@ -60,26 +60,30 @@
 
 #set enum(indent: 10pt, body-indent: 5pt)
 #set par(justify: true)
-#let seccion(titulo) = text(size: 1.3em, weight: "semibold", titulo)
+#let seccion(titulo) = [
+  #v(1em)
+  #text(size: 1.3em, weight: "semibold", titulo)
+]
 #let subseccion(titulo) = text(size: 1.2em, weight: "bold", titulo)
 #show line: it => {
   v(2em)
   it
   v(2em)
 }
+#let link_azul(url, texto) = link(url, text(fill: blue, underline(texto)))
 
 #seccion[2.1.1 Pilares de la Regulación Comunitaria (nivel UE)]
 
-+ #subseccion[Protección de Datos y Privacidad: RGPD 2016/679]
++ #subseccion[Protección de Datos y Privacidad: #link_azul("https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es")[RGPD 2016/679]]
 
-  Es el estándar de referencia. Su aplicación en un hospital es de máximo rigor debido a que los datos clínicos son considerados *categorías especiales de datos* (Art. 9).
+  Es el estándar de referencia. Su aplicación en un hospital es de máximo rigor debido a que los datos clínicos son considerados *categorías especiales de datos* (#link_azul("https://www.privacy-regulation.eu/es/9.htm")[Art. 9]).
   - *Principio de Responsabilidad Proactiva:* El hospital debe ser capaz de demostrar que cumple con la norma, no solo cumplirla de forma pasiva.
   - *Gestión de Riesgos:* Es obligatoria la realización de una *Evaluación de Impacto en la Protección de Datos (EIPD)* antes de la implementación del SGH, identificando posibles brechas en el flujo de información del paciente.
 
   - *Derechos del Interesado:* El sistema debe facilitar técnicamente el ejercicio de derechos como la portabilidad de la historia clínica entre centros sanitarios.
 
 
-+ #subseccion[Resiliencia y Ciberseguridad: Directiva NIS2 2022/2555]
++ #subseccion[Resiliencia y Ciberseguridad: Directiva #link_azul("https://digital-strategy.ec.europa.eu/en/policies/nis2-directive")[NIS2 2022/2555]]
 
   Refuerza la seguridad de las infraestructuras críticas. Los hospitales son clasificados como *entidades esenciales*.
 
@@ -90,7 +94,7 @@
   - *Obligación de Notificación:* Establece canales formales para informar sobre incidentes de ciberseguridad a las autoridades nacionales (como el INCIBE en España) en tiempos definidos.
 
 
-+ #subseccion[Calidad y Seguridad Técnica: Reglamento MDR 2017/745]
++ #subseccion[Calidad y Seguridad Técnica: Reglamento #link_azul("https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A02017R0745-20250110")[MDR 2017/745]]
 
   El *Reglamento sobre Productos Sanitarios (Medical Device Regulation)* aplica directamente al software de gestión si este realiza funciones más allá del mero almacenamiento.
 
@@ -98,7 +102,7 @@
 
   - *Vigilancia Post-comercialización:* Obliga a los desarrolladores a realizar un seguimiento del rendimiento del software para detectar errores que puedan comprometer la salud del paciente.
 
-+ #subseccion[Inteligencia Artificial: Reglamento 2024/1689]
++ #subseccion[Inteligencia Artificial: #link_azul("https://eur-lex.europa.eu/legal-content/ES/ALL/?uri=CELEX:32024R1689")[Reglamento 2024/1689]]
 
   Es el marco legal que regula el uso de la IA en Europa. En entornos críticos como el sanitario, garantiza que la tecnología sea segura, ética y no genere discriminación.
 
@@ -112,7 +116,7 @@
 
 #seccion[2.1.2 Marco Legal Nacional (España)]
 
-+ #subseccion[Protección de Datos y Garantía de Derechos Digitales: LOPDGDD 3/2018]
++ #subseccion[Protección de Datos y Garantía de Derechos Digitales: #link_azul("https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673")[LOPDGDD 3/2018]]
 
   Adapta el RGPD al sistema jurídico español, detallando las responsabilidades de los profesionales y técnicos que operan el sistema.
 
@@ -120,7 +124,7 @@
   
   - *Delegado de Protección de Datos (DPD):* Es obligatoria la designación de un supervisor que vele por la integridad del flujo de datos dentro del hospital.
 
-+ #subseccion[Autonomía del Paciente y Documentación Clínica: Ley 41/2002]
++ #subseccion[Autonomía del Paciente y Documentación Clínica: #link_azul("https://www.boe.es/buscar/act.php?id=BOE-A-2002-22188")[Ley 41/2002]]
 
   Regula la gestión de la historia clínica digital, estableciendo los estándares de propiedad y custodia de la información.
 
@@ -128,7 +132,7 @@
   
   - *Trazabilidad de Accesos:* Obliga a que el SGH registre de forma inalterable quién accede a cada dato clínico, cuándo y con qué justificación.
 
-+ #subseccion[Esquema Nacional de Seguridad (ENS): Real Decreto 311/2022]
++ #subseccion[Esquema Nacional de Seguridad (ENS): #link_azul("https://www.boe.es/buscar/act.php?id=BOE-A-2022-7191")[Real Decreto 311/2022]]
 
   Define las medidas de seguridad técnicas necesarias para los sistemas que gestionan servicios públicos o datos sensibles.
 
@@ -136,21 +140,18 @@
   
   - *Certificación de Conformidad:* El software y su infraestructura deben estar auditados para garantizar que el sistema es resiliente frente a ciberamenazas modernas.
 
-+ #subseccion[Interoperabilidad Regional: Real Decreto 4/2010]
++ #subseccion[Interoperabilidad Regional: #link_azul("https://www.boe.es/buscar/act.php?id=BOE-A-2010-1331")[Real Decreto 4/2010]]
 
   En la Comunidad Valenciana, el cumplimiento normativo operativo pasa por la integración con los servicios centrales de la Conselleria de Sanitat.
 
   - *Receta Electrónica:* El SGH debe cumplir con los protocolos técnicos de la Generalitat para la prescripción farmacéutica digital y su posterior dispensación.
-  
-  - *Seguridad TIC (CSIRT-CV):* Todo software de gestión que se conecte a la red sanitaria valenciana debe seguir las guías de seguridad dictadas por el Centro de Seguridad TIC de la Comunitat Valenciana.
-
-
+ 
 
 #pagebreak()
 
 #seccion[2.1.3 Marco Legal Local (Comunidad Valenciana)]
 
-+ #subseccion[Ordenación de la Salud: Ley 10/2014 de la Generalitat]
++ #subseccion[Ordenación de la Salud: #link_azul("https://dogv.gva.es/va/eli/es-vc/l/2014/12/29/10")[Ley 10/2014 de la Generalitat]]
 
   La *Ley de Salud de la Comunitat Valenciana* establece el marco para la historia clínica compartida y la integración de sistemas digitales en el territorio regional.
 
@@ -158,7 +159,7 @@
   
   - *Identidad Digital:* Obliga a que el SGH sea compatible con los sistemas de identificación ciudadana y profesional de la Generalitat para el acceso a carpetas de salud.
 
-+ #subseccion[Regulación de la Historia Clínica: Ley 1/2003]
++ #subseccion[Regulación de la Historia Clínica: #link_azul("https://dogv.gva.es/va/eli/es-vc/l/2003/01/28/1/")[Ley 1/2003]]
 
   Este decreto regula la utilización de la historia clínica en la Comunidad Valenciana, detallando los requisitos técnicos para los soportes informáticos.
 
@@ -166,12 +167,16 @@
   
   - *Calidad Documental:* El sistema debe seguir las directrices de los comités de documentación clínica locales para asegurar que la digitalización no degrada la validez legal de las pruebas médicas.
 
-+ #subseccion[Protección de Datos en el DOGV: Instrucciones de la Conselleria]
 
-  A través del *Diari Oficial de la Generalitat Valenciana (DOGV)*, se publican instrucciones específicas sobre el uso de tecnologías de la información en el ámbito sanitario.
++ #subseccion[Seguridad de la Información: #link_azul("https://dogv.gva.es/es/resultat-dogv?L=1&sig=008251%2F2012&url_lista=")[Decreto 130/2012]]
 
-  - *Acceso Remoto y Movilidad:* Regula las condiciones de seguridad que debe cumplir el SGH cuando se accede a él desde fuera de la red física del hospital, exigiendo canales cifrados y auditorías de acceso locales.
+  Este decreto es la norma que organiza la seguridad de la información en la Generalitat Valenciana. Sus puntos clave son:
 
+  - *Centro de Ciberseguridad:* Establece al #link_azul("https://csirtcv.gva.es/csirt-cv/?lang=va")[CSIRT-CV] como el equipo encargado de proteger los sistemas públicos y responder ante ataques informáticos.
+
+  - *Protección de Datos:* Obliga a que la administración gestione los riesgos de forma unificada, evitando la inseguridad jurídica que menciona el RGPD.
+
+  - *Infraestructura Segura:* Garantiza que sistemas críticos (como el SGH en hospitales) funcionen bajo estándares de seguridad para proteger la información del ciudadano.
 
 
 
@@ -250,9 +255,6 @@
     - *Flexibilidad:* Presenta poca flexibilidad, ya que los cambios en la infraestructura suelen ser lentos y costosos.
 
     - *Adecuación al entorno hospitalario:* Es adecuado para centros que necesitan un control absoluto de los datos, aunque su coste y menor agilidad lo hacen menos eficiente frente a modelos cloud.
-
-
-#v(1.5em)
 
 
 #seccion[Cloud pública]
@@ -378,4 +380,172 @@ Además, el modelo híbrido ofrece mayor flexibilidad y escalabilidad, reduce co
 
 == Viabilidad del uso de la IA en entornos hospitalarios
 
+#seccion[¿Que papel juega la IA?]
 
+La inteligencia artificial se ha convertido en una herramienta de apoyo clave en cualquier oficio, incluida la medicina, ya que permite analizar grandes volúmenes de información médica con rapidez, algo difícil de lograr únicamente por medios humanos.
+
+  En el ámbito sanitario, la IA no sustituye al profesional médico, sino que actúa como un sistema de apoyo para decisiones clínicas, ayudando a:
+
+  - *Detectar patrones complejos* en datos clínicos e imágenes médicas.
+  - *Reducir los tiempos de diagnóstico*, especialmente en entornos importantes como urgencias.
+  - *Priorizar casos críticos* mediante sistemas de elección inteligentes.
+
+  Gracias a técnicas como el procesamiento del lenguaje natural y el aprendizaje profundo, la IA puede extraer información importante de historiales médicos, informes clínicos e imágenes diagnósticas, mejorando la precisión diagnóstica y reduciendo errores por factores humanos.
+
+  En conjunto, el uso de IA contribuye a una medicina más predictiva, preventiva y personalizada, siempre bajo la supervisión del personal sanitario, que mantiene la responsabilidad final en la toma de decisiones.
+
+
+#seccion[Especialidades y procesos médicos beneficiados]
+
+La aplicación de la inteligencia artificial en el diagnóstico médico tiene un impacto directo en múltiples especialidades, especialmente en aquellas que manejan grandes volúmenes de datos, requieren rapidez en la toma de decisiones o dependen de la interpretación de imágenes.
+
+Las áreas más beneficiadas son:
+
+  - *Radiología:* La IA ayuda a detectar anomalías en radiografías, TAC y resonancias magnéticas, como tumores, hemorragias o fracturas, actuando como segunda lectura y reduciendo errores de omisión.
+
+  - *Elección y urgencias:* Permite priorizar pacientes según la gravedad de sus síntomas mediante el análisis de datos clínicos iniciales, mejorando los tiempos de atención en situaciones críticas.
+
+  - *Dermatología:* Los sistemas de visión artificial pueden analizar imágenes de lesiones cutáneas para identificar posibles melanomas u otras patologías, facilitando el cribado temprano.
+
+  - *Laboratorio clínico:* La IA optimiza la interpretación de resultados analíticos, detectando patrones anómalos y correlaciones entre parámetros que pueden pasar desapercibidos.
+
+  - *Anatomía patológica:* El análisis automatizado de biopsias digitalizadas mejora la detección de células malignas y reduce la carga de trabajo del especialista.
+
+  - *Oftalmología:* El análisis de retinografías permite identificar enfermedades como la retinopatía diabética de forma precoz.
+
+En todos estos procesos, la IA aporta velocidad, apoyo diagnóstico y homogeneidad, pero siempre como complemento al criterio clínico del profesional sanitario.
+
+#pagebreak()
+
+#seccion[IA basada en datos clínicos (cuadro médico)]
+
++ #subseccion[Tipo de datos requeridos]
+
+  La IA basada en datos clínicos necesita grandes volúmenes de información sanitaria, procedente de los sistemas de información hospitalarios.
+
+  Principalmente utiliza:
+  - *Historias clínicas electrónicas:* antecedentes, diagnósticos previos, evolución del paciente.
+  - *Notas médicas:* informes de consultas, urgencias, altas hospitalarias.
+  - *Datos analíticos:* resultados de laboratorio (sangre, orina, etc).
+  - *Tratamientos y medicación:* dosis, duración, interacciones.
+  - *Constantes vitales:* tensión, frecuencia cardíaca, etc.
+  - *Datos demográficos básicos:* edad, sexo, factores de riesgo.
+
+
++ #subseccion[Precisión esperada]
+
+  La precisión de este tipo de IA suele ser alta en tareas de apoyo, pero no definitiva.
+
+  - Funciona mejor en *patologías frecuentes y bien documentadas*.
+  - Su precisión aumenta cuando los datos históricos son homogéneos y de calidad.
+  - No se espera que sustituya al médico, sino que reduzca *errores y omisiones humanas*.
+
+  En la práctica hospitalaria, se considera aceptable cuando:
+
+  - Mejora la detección temprana de riesgos.
+  - Aporta coherencia con guías clínicas.
+  - Reduce la diferencia de opinión entre profesionales.
+
+
++ #subseccion[Ámbitos donde se recomienda su uso]
+
+  Este tipo de IA es especialmente útil en:
+
+  - *Atención primaria y urgencias:* apoyo en la elección y priorización.
+  - *Medicina interna:* pacientes complejos con múltiples patologías.
+  - *Seguimiento de pacientes crónicos.*
+  - *Gestión clínica:* apoyo a decisiones basadas en protocolos.
+
+  No se recomienda como sistema autónomo en diagnósticos críticos sin supervisión humana.
+
++ #subseccion[Ventajas y desventajas]
+
+  Ventajas:
+
+  - Procesa información clínica muy extensa en segundos.
+  - Reduce la carga administrativa del médico.
+  - Ayuda a estandarizar decisiones clínicas.
+  - Detecta patrones que pueden pasar desapercibidos.
+
+  Desventajas:
+
+  - Depende totalmente de la calidad de los datos.
+  - Puede heredar sesgos clínicos que damos por correctos.
+  - No comprende factores emocionales o sociales del paciente.
+  - Riesgo de confiar demasiado en sus indicaciones si no se usa un sistema de apoyo.
+
+  #v(1em)
+
++ #subseccion[Exactitud y sensibilidad diagnóstica]
+
+  - *Alta sensibilidad:* suele detectar muchos posibles casos.
+  - *Exactitud variable:* depende de la condición y del contexto médico.
+
+  Por ello, se utiliza como herramienta de apoyo, no como diagnóstico definitivo.
+
+
++ #subseccion[Tasa de falsos positivos y falsos negativos]
+
+  - *Falsos positivos:* son relativamente frecuentes, generan falsas alarmas y alertas adicionales.
+  - *Falsos negativos:* son menos comunes, pero más críticos, ya que pueden ocasionar no dedicar recursos a un paciente que lo requiere.
+
+  En el entorno hospitalario:
+
+  - Los falsos positivos se pueden solucionar con la supervisión médica.
+  - Los falsos negativos deben minimizarse al máximo.
+
+
++ #subseccion[Impacto clínico del error]
+
+  En un entorno hospitalario este punto es de vital importancia, principalmente depende del contexto:
+
+  - *Errores leves:* recomendaciones no óptimas → bajo impacto.
+  - *Errores graves:* omisión de una patología crítica → alto impacto clínico y legal.
+
+  Por eso, la IA *no debe tomar decisiones finales*, solo apoyar al personal sanitario.
+
+
++ #subseccion[Necesidad de supervisión médica (human-in-the-loop)]
+
+  Este punto es clave para tratar de evitar al máximo los errores de los que acabamos de hablar en el punto anterior.
+
+  - El médico *valida, interpreta y decide*.
+  - La IA *propone, alerta o sugiere*.
+  - La responsabilidad clínica sigue siendo humana.
+
+  Este enfoque es el único aceptable en sanidad actualmente, tanto legal como éticamente.
+
+
++ #subseccion[Explicabilidad del modelo]
+
+  Es fundamental que el sistema:
+
+  - Explique *qué datos ha tenido en cuenta*.
+  - Justifique sus recomendaciones con datos objetivos del contexto del paciente.
+  - Permita al médico evaluar si la sugerencia tiene sentido y debe aplicarse o tener en cuenta.
+
+  Los modelos “caja negra” (no se sabe como han sacado la respuesta) no son atractivos en el entorno sanitario.
+
+
+
++ #subseccion[Validación clínica y auditorías periódicas]
+
+  Antes y durante su uso se debe validar que tiene información real, actualizada y coherente:
+
+  - Validación con datos reales del hospital.
+  - Comparación con decisiones médicas reales.
+  - Auditorías periódicas para detectar desviaciones o sesgos.
+
+  Actualización continua según nuevos avances en la IA y en la medicina.
+
+
++ #subseccion[Consideraciones éticas y legales]
+
+  Algunos aspectos clave en el ámbito hospitalario son:
+
+  - Protección de datos (RGPD, confidencialidad).
+  - Uso responsable y transparente.
+  - Consentimiento informado cuando sea necesario.
+  - Claridad sobre la responsabilidad en caso de error.
+
+  La IA se debe usar respetando estos principios.
