@@ -1,0 +1,492 @@
+[
+  {
+    "matricula": "1234ABC",
+    "modelo": "Corolla",
+    "color": "Blanco",
+    "kilometros": 15000,
+    "anyo_fabricacion": 2023,
+    "tipo": "SEDAN",
+    "estado": "VENDIDO",
+    "precio": 25000.00,
+    "cliente": {
+      "dni": "12345678A",
+      "nombre": "Carlos",
+      "apellidos": "García López",
+      "telefono": "611222333",
+      "fecha_registro": "2023-01-15"
+    },
+    "fabricante": {
+      "nombre": "Toyota",
+      "pais_origen": "Japón",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "5678DEF",
+    "modelo": "RAV4",
+    "color": "Negro",
+    "kilometros": 45000,
+    "anyo_fabricacion": 2021,
+    "tipo": "SUV",
+    "estado": "VENDIDO",
+    "precio": 32000.00,
+    "cliente": {
+      "dni": "87654321B",
+      "nombre": "Ana",
+      "apellidos": "Martínez Ruiz",
+      "telefono": "644555666",
+      "fecha_registro": "2023-02-20"
+    },
+    "fabricante": {
+      "nombre": "Toyota",
+      "pais_origen": "Japón",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "9012GHI",
+    "modelo": "Corolla",
+    "color": "Gris",
+    "kilometros": 8000,
+    "anyo_fabricacion": 2024,
+    "tipo": "SEDAN",
+    "estado": "DISPONIBLE",
+    "precio": 26000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Toyota",
+      "pais_origen": "Japón",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "3456JKL",
+    "modelo": "Golf",
+    "color": "Rojo",
+    "kilometros": 30000,
+    "anyo_fabricacion": 2022,
+    "tipo": "HATCHBACK",
+    "estado": "VENDIDO",
+    "precio": 28000.00,
+    "cliente": {
+      "dni": "23456789C",
+      "nombre": "Luis",
+      "apellidos": "Fernández Gómez",
+      "telefono": "677888999",
+      "fecha_registro": "2023-03-10"
+    },
+    "fabricante": {
+      "nombre": "Volkswagen",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "7890MNO",
+    "modelo": "Tiguan",
+    "color": "Azul",
+    "kilometros": 120000,
+    "anyo_fabricacion": 2019,
+    "tipo": "SUV",
+    "estado": "DISPONIBLE",
+    "precio": 15000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Volkswagen",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "1122PQR",
+    "modelo": "Mustang",
+    "color": "Amarillo",
+    "kilometros": 5000,
+    "anyo_fabricacion": 2024,
+    "tipo": "COUPE",
+    "estado": "REPARACION",
+    "precio": 55000.00,
+    "cliente": {
+      "dni": "98765432D",
+      "nombre": "Marta",
+      "apellidos": "Rodríguez Santos",
+      "telefono": "600111222",
+      "fecha_registro": "2023-04-05"
+    },
+    "fabricante": {
+      "nombre": "Ford",
+      "pais_origen": "Estados Unidos",
+      "anyo_fundacion": 1903
+    }
+  },
+  {
+    "matricula": "3344STU",
+    "modelo": "Mustang",
+    "color": "Negro",
+    "kilometros": 20000,
+    "anyo_fabricacion": 2023,
+    "tipo": "COUPE",
+    "estado": "DISPONIBLE",
+    "precio": 52000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Ford",
+      "pais_origen": "Estados Unidos",
+      "anyo_fundacion": 1903
+    }
+  },
+  {
+    "matricula": "5566VWX",
+    "modelo": "Serie 3",
+    "color": "Blanco",
+    "kilometros": 25000,
+    "anyo_fabricacion": 2022,
+    "tipo": "SEDAN",
+    "estado": "VENDIDO",
+    "precio": 42000.00,
+    "cliente": {
+      "dni": "34567890E",
+      "nombre": "Javier",
+      "apellidos": "Pérez Díaz",
+      "telefono": "633444555",
+      "fecha_registro": "2023-05-12"
+    },
+    "fabricante": {
+      "nombre": "BMW",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1916
+    }
+  },
+  {
+    "matricula": "7788YZA",
+    "modelo": "Serie 5",
+    "color": "Gris",
+    "kilometros": 60000,
+    "anyo_fabricacion": 2021,
+    "tipo": "SEDAN",
+    "estado": "DISPONIBLE",
+    "precio": 38000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "BMW",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1916
+    }
+  },
+  {
+    "matricula": "9900BCD",
+    "modelo": "Clase C",
+    "color": "Negro",
+    "kilometros": 35000,
+    "anyo_fabricacion": 2023,
+    "tipo": "SEDAN",
+    "estado": "VENDIDO",
+    "precio": 45000.00,
+    "cliente": {
+      "dni": "45678901F",
+      "nombre": "Sofía",
+      "apellidos": "Sánchez Martín",
+      "telefono": "666777888",
+      "fecha_registro": "2023-06-18"
+    },
+    "fabricante": {
+      "nombre": "Mercedes-Benz",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1926
+    }
+  },
+  {
+    "matricula": "2233EFG",
+    "modelo": "Clio",
+    "color": "Blanco",
+    "kilometros": 2000,
+    "anyo_fabricacion": 2024,
+    "tipo": "HATCHBACK",
+    "estado": "VENDIDO",
+    "precio": 18000.00,
+    "cliente": {
+      "dni": "12345678A",
+      "nombre": "Carlos",
+      "apellidos": "García López",
+      "telefono": "611222333",
+      "fecha_registro": "2023-01-15"
+    },
+    "fabricante": {
+      "nombre": "Renault",
+      "pais_origen": "Francia",
+      "anyo_fundacion": 1899
+    }
+  },
+  {
+    "matricula": "4456HIJ",
+    "modelo": "Megane",
+    "color": "Rojo",
+    "kilometros": 80000,
+    "anyo_fabricacion": 2020,
+    "tipo": "HATCHBACK",
+    "estado": "RESERVADO",
+    "precio": 12000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Renault",
+      "pais_origen": "Francia",
+      "anyo_fundacion": 1899
+    }
+  },
+  {
+    "matricula": "6678KLM",
+    "modelo": "F8 Tributo",
+    "color": "Rojo",
+    "kilometros": 3000,
+    "anyo_fabricacion": 2023,
+    "tipo": "DEPORTIVO",
+    "estado": "VENDIDO",
+    "precio": 250000.00,
+    "cliente": {
+      "dni": "87654321B",
+      "nombre": "Ana",
+      "apellidos": "Martínez Ruiz",
+      "telefono": "644555666",
+      "fecha_registro": "2023-02-20"
+    },
+    "fabricante": {
+      "nombre": "Ferrari",
+      "pais_origen": "Italia",
+      "anyo_fundacion": 1939
+    }
+  },
+  {
+    "matricula": "8890NOP",
+    "modelo": "Model 3",
+    "color": "Blanco",
+    "kilometros": 10000,
+    "anyo_fabricacion": 2023,
+    "tipo": "ELECTRICO",
+    "estado": "VENDIDO",
+    "precio": 42000.00,
+    "cliente": {
+      "dni": "23456789C",
+      "nombre": "Luis",
+      "apellidos": "Fernández Gómez",
+      "telefono": "677888999",
+      "fecha_registro": "2023-03-10"
+    },
+    "fabricante": {
+      "nombre": "Tesla",
+      "pais_origen": "Estados Unidos",
+      "anyo_fundacion": 2003
+    }
+  },
+  {
+    "matricula": "0012QRS",
+    "modelo": "Model Y",
+    "color": "Negro",
+    "kilometros": 500,
+    "anyo_fabricacion": 2024,
+    "tipo": "ELECTRICO",
+    "estado": "DISPONIBLE",
+    "precio": 45000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Tesla",
+      "pais_origen": "Estados Unidos",
+      "anyo_fundacion": 2003
+    }
+  },
+  {
+    "matricula": "2234TUV",
+    "modelo": "Tucson",
+    "color": "Gris",
+    "kilometros": 40000,
+    "anyo_fabricacion": 2022,
+    "tipo": "SUV",
+    "estado": "VENDIDO",
+    "precio": 32000.00,
+    "cliente": {
+      "dni": "98765432D",
+      "nombre": "Marta",
+      "apellidos": "Rodríguez Santos",
+      "telefono": "600111222",
+      "fecha_registro": "2023-04-05"
+    },
+    "fabricante": {
+      "nombre": "Hyundai",
+      "pais_origen": "Corea del Sur",
+      "anyo_fundacion": 1967
+    }
+  },
+  {
+    "matricula": "4456WXY",
+    "modelo": "Santa Fe",
+    "color": "Azul",
+    "kilometros": 25000,
+    "anyo_fabricacion": 2023,
+    "tipo": "SUV",
+    "estado": "REPARACION",
+    "precio": 34000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Hyundai",
+      "pais_origen": "Corea del Sur",
+      "anyo_fundacion": 1967
+    }
+  },
+  {
+    "matricula": "6678ZAB",
+    "modelo": "XC60",
+    "color": "Negro",
+    "kilometros": 18000,
+    "anyo_fabricacion": 2023,
+    "tipo": "SUV",
+    "estado": "VENDIDO",
+    "precio": 52000.00,
+    "cliente": {
+      "dni": "34567890E",
+      "nombre": "Javier",
+      "apellidos": "Pérez Díaz",
+      "telefono": "633444555",
+      "fecha_registro": "2023-05-12"
+    },
+    "fabricante": {
+      "nombre": "Volvo",
+      "pais_origen": "Suecia",
+      "anyo_fundacion": 1927
+    }
+  },
+  {
+    "matricula": "8890CDE",
+    "modelo": "XC90",
+    "color": "Blanco",
+    "kilometros": 70000,
+    "anyo_fabricacion": 2021,
+    "tipo": "SUV",
+    "estado": "RESERVADO",
+    "precio": 45000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Volvo",
+      "pais_origen": "Suecia",
+      "anyo_fundacion": 1927
+    }
+  },
+  {
+    "matricula": "0012FGH",
+    "modelo": "RAV4",
+    "color": "Plateado",
+    "kilometros": 22000,
+    "anyo_fabricacion": 2023,
+    "tipo": "SUV",
+    "estado": "VENDIDO",
+    "precio": 38000.00,
+    "cliente": {
+      "dni": "45678901F",
+      "nombre": "Sofía",
+      "apellidos": "Sánchez Martín",
+      "telefono": "666777888",
+      "fecha_registro": "2023-06-18"
+    },
+    "fabricante": {
+      "nombre": "Toyota",
+      "pais_origen": "Japón",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "1123IJK",
+    "modelo": "Passat",
+    "color": "Negro",
+    "kilometros": 55000,
+    "anyo_fabricacion": 2022,
+    "tipo": "SEDAN",
+    "estado": "VENDIDO",
+    "precio": 28000.00,
+    "cliente": {
+      "dni": "56789012G",
+      "nombre": "David",
+      "apellidos": "González Castro",
+      "telefono": "699000111",
+      "fecha_registro": "2023-07-22"
+    },
+    "fabricante": {
+      "nombre": "Volkswagen",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "2234LMN",
+    "modelo": "Focus",
+    "color": "Rojo",
+    "kilometros": 35000,
+    "anyo_fabricacion": 2023,
+    "tipo": "HATCHBACK",
+    "estado": "VENDIDO",
+    "precio": 22000.00,
+    "cliente": {
+      "dni": "67890123H",
+      "nombre": "Elena",
+      "apellidos": "Torres Navarro",
+      "telefono": "622333444",
+      "fecha_registro": "2023-08-30"
+    },
+    "fabricante": {
+      "nombre": "Ford",
+      "pais_origen": "Estados Unidos",
+      "anyo_fundacion": 1903
+    }
+  },
+  {
+    "matricula": "3345OPQ",
+    "modelo": "Yaris",
+    "color": "Azul",
+    "kilometros": 15000,
+    "anyo_fabricacion": 2023,
+    "tipo": "HATCHBACK",
+    "estado": "DISPONIBLE",
+    "precio": 19000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "Toyota",
+      "pais_origen": "Japón",
+      "anyo_fundacion": 1937
+    }
+  },
+  {
+    "matricula": "4456RST",
+    "modelo": "X5",
+    "color": "Negro",
+    "kilometros": 30000,
+    "anyo_fabricacion": 2022,
+    "tipo": "SUV",
+    "estado": "DISPONIBLE",
+    "precio": 65000.00,
+    "cliente": null,
+    "fabricante": {
+      "nombre": "BMW",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1916
+    }
+  },
+  {
+    "matricula": "5567UVW",
+    "modelo": "Clase A",
+    "color": "Blanco",
+    "kilometros": 10000,
+    "anyo_fabricacion": 2024,
+    "tipo": "SEDAN",
+    "estado": "VENDIDO",
+    "precio": 35000.00,
+    "cliente": {
+      "dni": "12345678A",
+      "nombre": "Carlos",
+      "apellidos": "García López",
+      "telefono": "611222333",
+      "fecha_registro": "2023-01-15"
+    },
+    "fabricante": {
+      "nombre": "Mercedes-Benz",
+      "pais_origen": "Alemania",
+      "anyo_fundacion": 1926
+    }
+  }
+]

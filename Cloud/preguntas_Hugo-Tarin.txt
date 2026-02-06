@@ -1,0 +1,30 @@
+¿Cuál de las siguientes opciones describe mejor la función de una "etapa" (stage) en Amazon API Gateway?
+A. Es una caché dedicada para mejorar el rendimiento de la API.
+B. Es una referencia lógica a un despliegue de la API, como 'dev' o 'prod'.
+C. Es el código backend donde se procesa la lógica de la aplicación.
+D. Es un grupo de usuarios que tienen permisos de lectura sobre la API.
+ANSWER: B
+¿Al utilizar Amazon API Gateway con AWS Lambda, qué tipo de integración permite que API Gateway pase la solicitud HTTP completa a la función Lambda sin modificaciones?
+A. Integración personalizada (Custom Integration).
+B. Integración proxy de Lambda.
+C. Integración de servicio de AWS.
+D. Integración HTTP Mock.
+ANSWER: B
+¿Qué característica de Amazon DynamoDB permite capturar cambios en los ítems de una tabla en tiempo real para activar una función Lambda?
+A. DynamoDB Accelerator (DAX).
+B. Global Secondary Indexes (GSI).
+C. DynamoDB Streams.
+D. Amazon CloudWatch Logs.
+ANSWER: C
+¿Qué servicio de AWS se utiliza para gestionar de forma centralizada secretos como credenciales de bases de datos, permitiendo su rotación automática?
+A. AWS Key Management Service (KMS).
+B. AWS Secrets Manager.
+C. IAM Access Analyzer.
+D. AWS Certificate Manager (ACM).
+ANSWER: B
+¿Qué comando de la CLI de Docker se utiliza para descargar una imagen desde un registro (como Docker Hub o ECR) a tu máquina local?
+A. docker push
+B. docker run
+C. docker pull
+D. docker build
+ANSWER: C
