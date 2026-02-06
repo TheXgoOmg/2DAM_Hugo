@@ -377,3 +377,5 @@ Además, el modelo híbrido ofrece mayor flexibilidad y escalabilidad, reduce co
 #pagebreak()
 
 == Viabilidad del uso de la IA en entornos hospitalarios
+
+
