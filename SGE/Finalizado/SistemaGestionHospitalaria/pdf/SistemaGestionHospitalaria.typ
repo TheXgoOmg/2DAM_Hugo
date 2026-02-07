@@ -66,15 +66,14 @@
 ]
 #let subseccion(titulo) = text(size: 1.2em, weight: "bold", titulo)
 #show line: it => {
-  v(2em)
+  v(1em)
   it
-  v(2em)
 }
 #let link_azul(url, texto) = link(url, text(fill: blue, underline(texto)))
 
 #seccion[2.1.1 Pilares de la Regulación Comunitaria (nivel UE)]
 
-+ #subseccion[Protección de Datos y Privacidad: #link_azul("https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es")[RGPD 2016/679]]
++ #subseccion[Protección de Datos y Privacidad: #link_azul("https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es")[RGPD 2016/679]] 
 
   Es el estándar de referencia. Su aplicación en un hospital es de máximo rigor debido a que los datos clínicos son considerados *categorías especiales de datos* (#link_azul("https://www.privacy-regulation.eu/es/9.htm")[Art. 9]).
   - *Principio de Responsabilidad Proactiva:* El hospital debe ser capaz de demostrar que cumple con la norma, no solo cumplirla de forma pasiva.
@@ -549,3 +548,121 @@ En todos estos procesos, la IA aporta velocidad, apoyo diagnóstico y homogeneid
   - Claridad sobre la responsabilidad en caso de error.
 
   La IA se debe usar respetando estos principios.
+
+
+#line(length: 100%)
+
+
+#seccion[IA basada en imágenes médicas]
+
++ *Tipo de datos requeridos*
+
+  La IA basada en imágenes médicas requiere grandes volúmenes de imágenes diagnósticas etiquetadas, obtenidas a partir de sistemas clínicos especializados. Principalmente utilizan imágenes de casos reales de estos tipos:
+  
+  - Radiografías.
+  - Tomografías computarizadas (TAC / CT).
+  - Resonancias magnéticas.
+  - Imágenes de ecografía.
+  - Imágenes de diopsias digitalizadas.
+  
+  Estas imágenes suelen almacenarse en sistemas PACS y deben estar correctamente anonimizadas, normalizadas y etiquetadas para su uso en IA.
+
++ *Precisión esperada*
+
+  La precisión de este tipo de IA puede ser muy alta en tareas concretas y bien definidas, especialmente en:
+  
+  - Detección de lesiones visibles.
+  - Identificación de patrones repetitivos.
+  - Comparación con grandes bases de datos previas.
+  
+  En muchos casos, la IA alcanza o incluso supera el rendimiento humano en tareas específicas, aunque siempre dentro de un contexto controlado.
+
++ *Ámbitos donde se recomienda su uso*
+
+  La IA basada en imágenes médicas es especialmente útil en:
+  
+  - Radiología: detección de fracturas, tumores, hemorragias.
+  - Oncology: identificación temprana de algunas condiciones.
+  - Neumología: análisis de radiografías torácicas.
+  - Cardiología: evaluación de imágenes cardíacas.
+  - Anatomía patológica: análisis de biopsias digitales.
+  
++ *Ventajas y desventajas*
+
+  *Ventajas:*
+  - Analiza imágenes con gran rapidez.
+  - Reduce la carga de trabajo del personal médico.
+  - Ayuda a detectar hallazgos sutiles.
+  - Aumenta la eficiencia en servicios saturados.
+  
+  *Desventajas:*
+  - Requiere grandes conjuntos de datos bien etiquetados.
+  - Puede verse afectada por imágenes de baja calidad.
+  - Riesgo de fallo si los datos no están completamente asentados en la medicina actual.
+  - No interpreta el contexto clínico completo del paciente.
+
++ *Exactitud y sensibilidad diagnóstica*
+
+  - Alta sensibilidad en detección de anomalías visibles.
+  - Exactitud elevada en patologías bien definidas.
+  - Especialmente eficaz como herramienta de detección temprana.
+  
+  La IA debe utilizarse siempre bajo un marco ético y legal sólido. Como usarlo en situaciones comunes para aligerar carga de trabajo, pero aún así con revisión humana. Nunca para casos poco estudiados o emergentes.
+
++ *Tasa de falsos positivos y falsos negativos*
+
+  - *Falsos positivos:* relativamente frecuentes, generan revisiones adicionales.
+  - *Falsos negativos:* menos frecuentes, pero con mayor impacto sin la correcta revisión objetiva por parte del personal sanitario.
+  
+  Por ello, la IA suele emplearse como primer filtro, nunca como veredicto final.
+
++ *Impacto clínico del error*
+
+  El impacto de un error depende del tipo de patología:
+  
+  - *Errores leves:* revisión adicional sin consecuencias graves.
+  - *Errores graves:* retraso en el diagnóstico con impacto clínico importante.
+  
+  Esto hace imprescindible que la IA actúe como sistema de apoyo, no como sustituto del especialista, siempre bajo vigilancia de él.
+
++ *Necesidad de supervisión médica (human-in-the-loop)*
+
+  La supervisión médica es obligatoria:
+  
+  - El especialista revisa y valida los resultados.
+  - La IA sugiere, marca o prioriza imágenes.
+  - La decisión final siempre es humana.
+  
+  Este modelo de trabajo mejora la eficiencia sin comprometer la seguridad.
+
++ *Explicabilidad del modelo*
+
+  Es fundamental que la IA:
+  
+  - Indique qué zonas de la imagen han influido en la decisión.
+  - Utilice mapas de calor u otros métodos visuales explicativos.
+  - Permita al médico comprender el razonamiento del sistema.
+  
+  La explicabilidad es clave para la confianza en un ámbito tan crítico como la medicina.
+
++ *Validación clínica y auditorías periódicas*
+
+  Antes de su uso clínico:
+  
+  - Validación con imágenes reales del propio hospital.
+  - Comparación con diagnósticos realizados por especialistas.
+  - Auditorías periódicas para detectar degradación del rendimiento.
+  - Reentrenamiento continuo del modelo.
+
+  Esto se debe realizar para mantener al punto el rendimiento del modelo, que no se quede anticuado y pueda ayudar a los especialistas todo lo posible, reduciendo errores.
+
++ *Consideraciones éticas y legales*
+
+  Aspectos fundamentales:
+  
+  - Protección y anonimización de imágenes médicas.
+  - Cumplimiento del RGPD y normativa sanitaria descrita en el apartado 2.1 Informe de cumplimiento normativo.
+  - Transparencia en el uso de estos sistemas (caja blanca).
+  - Definición clara de responsabilidades ante errores, la cual debe recaer sobre el personal sanitario.
+  
+  La IA debe utilizarse siempre bajo un marco ético y legal sólido, en la cual no se ponga en peligro a los pacientes por acomodamiento por las ayudas de esta nueva tecnología.

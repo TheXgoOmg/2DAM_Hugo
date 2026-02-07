@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===============================================================
+         ACCIÓN: Abre las vistas de atención sanitaria desde el menú
+         =============================================================== -->
+    <record id="atencion_sanitaria_action" model="ir.actions.act_window">
+        <field name="name">Atención Sanitaria</field>
+        <field name="res_model">hospital.atencion.sanitaria</field>
+        <field name="view_mode">list,form,search</field>
+    </record>
+
+    <!-- ===============================================================
+         MENÚ PRINCIPAL Y SUBMENÚ DE ATENCIÓN SANITARIA
+         =============================================================== -->
+    <menuitem name="Gestión Hospitalaria" id="hospital_menu_root"/>
+    <menuitem name="Atención Sanitaria"
+              id="atencion_sanitaria_menu"
+              parent="hospital_menu_root"
+              action="atencion_sanitaria_action"/>
+
+        <!-- ===============================================================
+         LIST VIEW: Lista tabular de equipos
+         =============================================================== -->
+    <record id="hospital_atencion_sanitaria_view_list" model="ir.ui.view">
+        <field name="name">Lista de Atención Sanitaria</field>
+        <field name="model">hospital.atencion.sanitaria</field>
+        <field name="arch" type="xml">
+            <list string="Listado de Atención Sanitaria">
+		<field name="icu"/>
+		<field name="paciente_id"/>
+		<field name="fecha_alta"/>
+		<field name="responsable"/>
+	    </list>
+        </field>
+    </record>
+
+    <!-- ===============================================================
+         SEARCH VIEW: Barra de búsqueda
+         =============================================================== -->
+    <record id="view_hospital_atencion_sanitaria_search" model="ir.ui.view">
+	<field name="name">hospital.atencion.sanitaria.search</field>
+    	<field name="model">hospital.atencion.sanitaria</field>
+	<field name="arch" type="xml">
+	    <search string="Buscar Atenciones">
+		<field name="paciente_id"/>
+		<field name="responsable"/>
+		<field name="aseguradora"/>
+		<field name="tipo_prueba"/>
+
+		<separator/>
+
+		<filter string="Profesional Responsable" name="group_by_responsable"
+			context="{'group_by': 'responsable'}"/>
+		<filter string="Especialidad (Tipo de Prueba)" name="group_by_especialidad"
+			context="{'group_by': 'tipo_prueba'}"/>
+		<filter string="Compañía Aseguradora" name="group_by_aseguradora"
+			context="{'group_by': 'aseguradora'}"/>
+	    </search>
+	</field>
+    </record>
+
+    <!-- ===============================================================
+         FORM VIEW: Formulario de Atención Sanitaria
+         =============================================================== -->
+    <record id="view_hospital_atencion_sanitaria_form" model="ir.ui.view">
+	    <field name="name">hospital.atencion.sanitaria.form</field>
+	    <field name="model">hospital.atencion.sanitaria</field>
+	    <field name="arch" type="xml">
+		<form string="Atención Sanitaria">
+		    <header>
+			</header>
+		    <sheet>
+			<div class="oe_title">
+			    <label for="icu" class="oe_edit_only"/>
+			    <h1>
+				<field name="icu"/>
+			    </h1>
+			</div>
+
+			<group string="Información del Paciente y Cita">
+			    <group>
+				<field name="paciente_id" options="{'no_create': True}"/>
+				<field name="dni"/>
+				<field name="sip"/>
+			    </group>
+			    <group>
+				<field name="fecha_alta"/>
+				<field name="responsable" options="{'no_create': True}"/>
+				<field name="otros_profesionales" widget="many2many_tags"/>
+			    </group>
+			</group>
+
+			<group string="Facturación y Seguro">
+			    <group>
+				<field name="tipo_atencion" widget="radio" options="{'horizontal': true}"/>
+			    </group>
+			    <group>
+				<field name="cuenta_bancaria" 
+				       invisible="tipo_atencion != 'privado'"
+				       required="tipo_atencion == 'privado'"/>
+				
+				<field name="aseguradora" 
+				       invisible="tipo_atencion != 'aseguradora'"
+				       required="tipo_atencion == 'aseguradora'"/>
+				<field name="n_asegurado" 
+				       invisible="tipo_atencion != 'aseguradora'"
+				       required="tipo_atencion == 'aseguradora'"/>
+			    </group>
+			</group>
+
+			<notebook>
+			    <page string="Evaluación Médica" name="medical_evaluation">
+				<group>
+				    <field name="anamnesis" widget="textarea" placeholder="Antecedentes y motivo de consulta..."/>
+				    <field name="diagnostico" widget="textarea"/>
+				    <field name="tratamiento" widget="textarea"/>
+				</group>
+				<group string="Evolución y Estado">
+				    <field name="datos_evolucion" widget="textarea"/>
+				    <field name="bool_hospitalizacion" widget="boolean_toggle"/>
+				    <field name="observaciones" widget="textarea"/>
+				</group>
+			    </page>
+
+			    <page string="Pruebas Diagnósticas" name="medical_tests">
+				<group>
+				    <group>
+					<field name="tipo_prueba"/>
+				    </group>
+				    <group>
+					<field name="documento_pruebas" filename="nombre_archivo_metadata"/>
+				    </group>
+				</group>
+			    </page>
+			</notebook>
+		    </sheet>
+		</form>
+	    </field>
+	</record>
+</odoo>

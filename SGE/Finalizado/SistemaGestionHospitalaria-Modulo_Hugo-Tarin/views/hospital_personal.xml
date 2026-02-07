@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===============================================================
+         ACCIÓN: Abre las vistas de personal desde el menú
+         =============================================================== -->
+    <record id="personal_action" model="ir.actions.act_window">
+        <field name="name">Personal</field>
+        <field name="res_model">hospital.personal</field>
+        <field name="view_mode">list,form,search</field>
+    </record>
+
+    <!-- ===============================================================
+         MENÚ PRINCIPAL Y SUBMENÚ DE PERSONAL
+         =============================================================== -->
+    <menuitem name="Gestión Hospitalaria" id="hospital_menu_root"/>
+    <menuitem name="Personal"
+              id="personal_menu"
+              parent="hospital_menu_root"
+              action="personal_action"/>
+
+    <!-- ===============================================================
+         FORM VIEW: Vista de formulario para editar un empleado
+         =============================================================== -->
+    <record id="view_hospital_personal_form" model="ir.ui.view">
+	    <field name="name">hospital.personal.form</field>
+	    <field name="model">hospital.personal</field>
+	    <field name="arch" type="xml">
+		<form string="Ficha de Personal">
+		    <sheet>
+			<div class="oe_title">
+			    <label for="nombre" class="oe_edit_only" string="Empleado"/>
+			    <h1>
+				<field name="nombre" placeholder="Seleccione empleado de RRHH..."/>
+			    </h1>
+			</div>
+
+			<group>
+			    <group string="Periodo de Actividad" name="periodo_laboral">
+				<field name="fecha_alta"/>
+				<field name="fecha_baja" 
+				       readonly="fecha_baja != False" 
+				       force_save="1"/>
+			    </group>
+			    
+			    <group string="Cese de Actividad" name="baja_logic" 
+				   invisible="not fecha_baja">
+				<field name="motivo_baja" 
+				       required="fecha_baja != False"/>
+			    </group>
+			</group>
+
+			<notebook>
+			    <page string="Información Adicional" name="info_extra">
+				<group>
+				    </group>
+			    </page>
+			</notebook>
+		    </sheet>
+		</form>
+	    </field>
+	</record>
+</odoo>
