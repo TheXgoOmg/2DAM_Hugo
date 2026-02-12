@@ -1,0 +1,69 @@
+¿Qué servicio de AWS se utiliza como solución de almacenamiento de objetos altamente duradera y escalable?
+A. Amazon EC2
+B. Amazon RDS
+C. Amazon S3
+D. AWS Lambda
+ANSWER: C
+
+¿Cómo se denominan las plantillas de solo lectura que se utilizan para crear contenedores Docker?
+A. Volúmenes
+B. Imágenes
+C. Registros
+D. Instancias
+ANSWER: B
+
+¿Cuál es el beneficio principal de utilizar una cola FIFO en Amazon SQS?
+A. Ofrece un rendimiento ilimitado de mensajes
+B. Es el tipo de cola más económico
+C. Garantiza el orden de los mensajes y evita duplicados
+D. Solo funciona con bases de datos relacionales
+ANSWER: C
+
+¿Qué servicio de AWS ayuda a coordinar múltiples funciones Lambda en flujos de trabajo sin servidor?
+A. Amazon CloudFront
+B. AWS Step Functions
+C. AWS CodeDeploy
+D. Amazon SNS
+ANSWER: B
+
+¿Cuál es el propósito principal de implementar una estrategia de caché en una aplicación?
+A. Aumentar la capacidad de la base de datos
+B. Mejorar el rendimiento y reducir la latencia
+C. Asegurar que los datos nunca caduquen
+D. Reemplazar el uso de servidores web
+ANSWER: B
+
+¿Qué herramienta permite definir infraestructura mediante archivos de plantilla en formato JSON o YAML?
+A. AWS CloudFormation
+B. Amazon Cognito
+C. AWS SDK
+D. Amazon Route 53
+ANSWER: A
+
+¿Qué componente de Amazon Cognito funciona como un directorio de usuarios para registro e inicio de sesión?
+A. Identity Pools
+B. User Pools
+C. IAM Roles
+D. Access Keys
+ANSWER: B
+
+¿Qué significan las siglas CI/CD en el desarrollo de software moderno?
+A. Computación Interna y Datos Compartidos
+B. Instalación de Código y Control de Dispositivos
+C. Integración Continua y Entrega Continua
+D. Interfaz de Cliente y Conexión de Datos
+ANSWER: C
+
+¿Cuál es la función principal de los AWS SDKs para un desarrollador?
+A. Proporcionar interfaces de programación (APIs) en lenguajes específicos
+B. Alojar físicamente los servidores de la aplicación
+C. Crear el diseño gráfico de la página web
+D. Gestionar la refrigeración de los centros de datos
+ANSWER: A
+
+¿Como se llama la gente que dice ¡¡¡JAI PAYO!!! ?
+A. Caucasicos
+B. Gitanos
+C. Moros
+D. Niggers
+ANSWER: B

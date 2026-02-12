@@ -1,0 +1,1279 @@
+=== PREGUNTAS MODULO 2 ===
+1. The systems development lifecycle (SDLC) has six phases. The first three phases are plan, define, and design. What are the last three phases of the SDLC?
+
+a. Code, build, and test
+b. Develop, deploy, and maintain
+c. Test, deploy, and maintain
+d. Code, build, and maintain
+
+Answer: b
+Reason: In the develop phase, developers write, build, and test code. The deploy phase focuses on deploying code to production environments. The maintain phase focuses on monitoring code that's in production.
+---
+2. Which task is performed during the develop stage of the systems development lifecycle (SDLC)?
+
+a. New components are obtained and installed.
+b. Deficiencies are identified.
+c. New system requirements are defined.
+d. The system is put into use.
+
+Answer: a
+Reason: In the develop phase, a new system is developed, new components are obtained and installed, system users are trained, and all aspects of the system's performance is tested.
+---
+3. A systems administrator must grant a new developer permissions that are associated with the developer role. This role is associated with the developer group. Which AWS service should the administrator use to assign the new developer to the developer group?
+
+a. Amazon Elastic Compute Cloud (Amazon EC2)
+b. AWS Identity and Access Management (IAM)
+c. AWS Resource Access Manager (AWS RAM)
+d. Amazon Simple Storage Service (Amazon S3)
+
+Answer: b
+Reason: IAM is used to grant permissions to users based on user, group, role, and policies.
+---
+4. Which of the following is an important benefit of AWS CloudShell?
+
+a. You manually patch and update the environment.
+b. You pay up front for reserved blocks of time and capacity.
+c. Users get 500 MB of storage per region.
+d. It inherits your credentials from the AWS Management Console.
+
+Answer: d
+Reason: CloudShell inherits your credentials from the AWS Management Console. This means there are not key files to manage when using the AWS CLI.
+---
+5. What are three ways to interact with AWS service application programming interfaces (APIs)? (Select the THREE best options.)
+
+a. AWS CloudTrail
+b. AWS software development kits (SDKs)
+c. AWS Identity and Access Management (IAM)
+d. AWS Management Console
+e. AWS X-Ray
+f. AWS Command Line Interface (AWS CLI)
+
+Answer: b, d, f
+Reason: Each user interaction with an AWS service makes an API call. Users interact with AWS service APIs through the AWS Management Console, by using an AWS SDK, or through the AWS CLI.
+---
+6. Which tool enables users to control their AWS services from the command line and automate service management with scripts?
+
+a. Amazon Q Developer
+b. AWS Tools for PowerShell
+c. AWS X-Ray
+d. AWS Identity and Access Management (IAM)
+
+Answer: b
+Reason: AWS Tools for PowerShell enables users to control their AWS services from the command line and automate service management with scripts.
+---
+7. What is Amazon Q Developer?
+
+a. A wizard that leads you through the steps to configure your integrated development environment (IDE)
+b. A generative AI-powered coding assistant
+c. A cloud-based integrated development environment (IDE)
+d. A browser-based CLI
+
+Answer: b
+Reason: Amazon Q Developer uses generative AI to accelerate coding tasks. For example, Amazon Q Developer can chat about code, provide in-line code completions, generate new code, and scan your code for security vulnerabilities.
+---
+8. Which statements describe AWS resource application programming interfaces (APIs)? (Select TWO.)
+
+a. They have objects for request and result data.
+b. They provide a lower-level abstraction than the higher-level calls made by service client APIs.
+c. They provide access to resources through objects and collections.
+d. They provide a higher-level abstraction than the low-level calls made by service
+client APIs.
+e. They have at least one class per conceptual resource.
+
+Answer: c, d
+Reason: Resource APIs provide a higher-level abstraction than the low-level calls made by service client APIs. They consist of classes that represent the conceptual resources you interact with (such as service resources like Amazon S3, and individual resources like a bucket).
+---
+9. A developer is using the AWS software development kit (SDK) for Python (Boto3) and must specify the Region. Which method enables the developer specify the Region?
+
+a. By setting the Region when they instantiate the service client
+b. By setting the AWS_PROFILE environment variable
+c. Users cannot specify the AWS Region in the service client
+d. By associating a default Region with their profile in the credentials file in the .aws folder within their "home" folder
+
+Answer: a
+Reason: Users can set the Region when they instantiate the service client, by setting the AWS_DEFAULT_REGION environment variable, or by setting the default Region in the AWS shared configuration file.
+---
+10. A developer makes an application programming interface (API) call to access an Amazon Simple Storage Service (Amazon S3) bucket that doesn't exist. Which HTTP response code does the developer receive from the AWS service?
+
+a. 300 series
+b. 200 series
+c. 500 series
+d. 400 series
+
+Answer: d
+Reason: A 400-series response code means that the application has an error that the developer must address.
+
+=== FIN PREGUNTAS MODULO 2 ===
+
+=== PREGUNTAS MODULO 3 ===
+1. A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?
+
+a. Shared file systems
+b. Hosting active databases
+c. Data lake
+d. Block-level storage
+
+Answer: c
+Reason: Amazon S3 use cases include content storage and distribution, backup and restore, archiving, data lakes, disaster recovery (DR), and static website hosting.
+---
+2. A ___ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.
+
+a. Container
+b. Region
+c. Group
+d. Bucket
+
+Answer: d
+Reason: A bucket is a container for objects that are stored in Amazon S3. They organize the Amazon S3 namespace at the highest level, and they identify the account that is responsible for storage and data transfer charges.
+---
+3. A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take to resolve this error?
+
+a. Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region.
+b. Bucket names go to the highest bidder. The developer must outbid the current bucket owner.
+c. Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.
+d. The developer must contact AWS Support to request approval to use the same bucket name.
+
+Answer: c
+Reason: Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.
+---
+4. A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-1 Region. Which URL is the virtual-hosted-style URL for the website?
+
+a. https://s3-website-us-east-1.amazonaws.com/frank-martha-cafe
+b. https://www.frank-martha-cafe.s3-website-us-east-1.amazonaws.com
+c. https://frank-martha-cafe.s3-us-east-1.amazonaws.com
+d. https://frank-martha-cafe.s3-website-us-east-1.amazonaws.com
+
+Answer: d
+Reason: The virtual-hosted-style URL of a static website on Amazon S3 contains website in the endpoint URL.
+---
+5. After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.
+
+a. True
+b. False
+
+Answer: b
+Reason: By default, versioning is disabled in S3 buckets. After you enable versioning, you can only suspend it (you cannot disable it).
+---
+6. What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?
+
+a. 5 GB
+b. 5 TB
+c. 100 MB
+d. 1 GB
+
+Answer: a
+Reason: A single PUT operation can upload or copy objects that are up to 5 GB in size.
+---
+7. A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?
+
+a. Cross-Origin Resource Sharing (CORS)
+b. IAM policy
+c. Bucket policy
+d. Bucket access control list (ACL)
+
+Answer: c
+Reason: A bucket policy is a resource-based IAM policy that is attached to an S3 bucket. The developer can define and add a bucket policy that allows the specific IAM user to perform any S3 operations on the bucket and its objects.
+---
+8. A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?
+
+a. A temporary token
+b. The bucket endpoint URL
+c. A presigned URL
+d. Their AWS account root user credentials
+
+Answer: c
+Reason: A presigned URL provides access to PUT or GET objects without granting permissions to perform any other actions.
+---
+9. Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?
+
+a. Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)
+b. Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)
+c. Secure Sockets Layer/Transport Layer Security (SSL/TLS)
+d. Server-Side Encryption with Customer-Provided Keys (SSE-C)
+
+Answer: c
+Reason: SSL/TLS is one way to protect data in transit.
+---
+10. A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?
+
+a. Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored.
+b. Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored.
+c. The security group of the S3 bucket does not include an inbound rule to allow HTTP traffic on port 80.
+d. Amazon S3 does not support object sharing between buckets.
+
+Answer: b
+Reason: CORS defines a way for client web applications that are loaded in one domain to interact with resources that are in a different domain.
+
+=== FIN PREGUNTAS MODULO 3 ===
+
+=== PREGUNTAS MODULO 4 ===
+1. Which option is the Amazon Web Services (AWS) customer responsible for under the AWS shared responsibility model? (Select TWO.)
+
+a. Security group configuration
+b. Physical servers
+c. Client-side data
+d. Edge location infrastructure
+e. Availability Zone security
+
+Answer: a, c
+Reason: AWS is responsible for the security of the cloud (physical servers and edge location infrastructure). The customer is responsible for security in the cloud (security group configuration and client-side data).
+---
+2. Which AWS Identity and Access Management (IAM) resource explicitly grants or denies permissions to a user or group of users?
+
+a. IAM roles
+b. IAM users
+c. IAM groups
+d. IAM policies
+
+Answer: d
+Reason: An IAM policy is a document that explicitly grants or denies permissions to a user or group of users.
+---
+3. What is the correct term for the process of verifying a user's identity as a developer?
+
+a. Endorsement
+b. Authentication
+c. Confirmation
+d. Authorization
+
+Answer: b
+Reason: Authentication refers to verifying a user’s identity.
+---
+4. Which statements about IAM user authentication are true? (Select TWO.)
+
+a. AWS credentials to authenticate with any supported services must be provided.
+b.  A user name and password to authenticate to the console must be provided.
+c. A .pem or .ppk file is used to authenticate programmatically to the AWS application programming interface (API).
+d. It is a best practice to use the account root user credentials to authenticate programmatically by using the AWS Command Line Interface (AWS CLI).
+e. Each AWS account can have only one administrator who manages other IAM users.
+
+Answer: a, b
+Reason: You need AWS credentials to authenticate with supported services. Credentials include a user name and password for console access, or an AWS access key (access key ID plus secret access key) for using AWS APIs, the AWS CLI, and AWS software development kits (SDKs).
+---
+5. Which suggestion is an Amazon Web Services (AWS) recommendation for securing AWS credentials for applications that run on Amazon Elastic Compute Cloud (Amazon EC2) instances?
+
+a. Embed AWS credentials in the software development kit (SDK) client code.
+b. Store credentials in local AWS configuration files.
+c. Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance.
+d. Create an AWS Identity and Access Management (IAM) user and attach it to the EC2 instance.
+
+Answer: c
+Reason: AWS recommends creating an IAM role and attaching it to EC2 instances. The role allows applications to securely make API requests from EC2 instances without requiring the user to manage the security credentials that the applications use.
+---
+6. What is the format of AWS Identity and Access Management (IAM) policies that define the allowable API calls an entity can invoke?
+
+a. YAML Ain't Markup Language (YAML)
+b. Security Assertion Markup Language (SAML)
+c. Comma-separated values (CSV)
+d. JavaScript Object Notation (JSON)
+
+Answer: d
+Reason: An IAM policy is a JSON document that defines the effect, actions, resources, and optional conditions for the API calls an entity can invoke.
+---
+7. An administrator created an AWS Identity and Access Management (IAM) group called managers within an AWS account. A ___ policy is attached to the managers group. It allows managers to read from and write to an Amazon Simple Storage Service (Amazon S3) bucket in the same AWS account. What is this type of policy?
+
+a. Identity-based
+b. Resource-based
+c. Cross-account access
+d. AdministratorAccess managed
+
+Answer: a
+Reason: Identity-based policies are attached to the IAM user, group, or role and indicate what that identity can do.
+---
+8. Which statement reflects best practices when granting permissions to users, groups, roles, and resources?
+
+a. Create policies that allow broad access and then limit permissions as needed,based on usage.
+b. Use the account root user for routine tasks that the administrator performs.
+c. Create policies that follow the principle of least privilege.
+d. Do not set policies for individual resources.
+
+Answer: c
+Reason: When granting permissions to users, groups, roles, and resources, follow the principle of least privilege. The principle of least privilege means that you grant the minimal permissions that are required to perform a task.
+---
+9. What is the effect of the following policy statement?
+
+```json
+{
+  "Effect": "Deny",
+  "Action": [
+    "dynamodb:*",
+    "s3:*"
+  ],
+  "NotResource": [
+    "arn:aws:dynamodb:region:account-number:table/pollynotes",
+    "arn:aws:s3:::polly-notes-web",
+    "arn:aws:s3:::polly-notes-mp3/*"
+  ]
+}
+```
+
+a. Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element
+b. Denies the ability to write to the pollynotes DynamoDB table
+c. Denies the ability to read from the polly-notes-web S3 bucket
+d. Denies actions on the DynamoDB table or S3 buckets that are listed in the NotResources element
+
+Answer: a
+Reason: The explicit deny ("Effect":"Deny" element) with the actions of dynamodb:* and s3:* prevents the entity from taking any action with DynamoDB or Amazon S3 resources. The exception is for those resources that are listed in the NotResource element.
+---
+10. Which statements are true about evaluation logic for AWS Identity and Access Management (IAM) policies? (Select TWO.)
+
+a. You cannot have deny and allow statements in the same policy.
+b. An explicit allow overrides an explicit deny.
+c. An explicit deny overrides an explicit allow.
+d. By default, all requests are denied.
+e. By default, all requests are allowed.
+
+Answer: c, d
+Reason: By default, all requests are denied. An explicit deny overrides an explicit allow.
+
+=== FIN PREGUNTAS MODULO 4 ===
+
+=== PREGUNTAS MODULO 5 ===
+1. Which statement best describes Amazon DynamoDB?
+
+a. An in-memory data store that can boost the performance of databases
+b. A graph database engine that is optimized for storing billions of relationships
+c. A relational database that is built for the cloud and is compatible with MySQL and PostgreSQL
+d. A key-value and document database that scales horizontally and works well for internet-scale applications
+
+Answer: d
+Reason: Amazon DynamoDB is a key-value and document database. It is a multi-Region, multi-active, and durable database that delivers single-digit millisecond performance. It works well for internet-scale applications.
+---
+2. Which component is part of an Amazon DynamoDB table?
+
+a. Predefined schema
+b. SQL-based queries
+c. Attributes
+d. Columns
+
+Answer: c
+Reason: The basic components of DynamoDB are tables, items, attributes, and primary keys. A table contains items with attributes. A table has a primary key that uniquely identifies each item in the table.
+---
+3. An Amazon DynamoDB table called SensorReadings captures sensor readings. These readings include a sensor ID attribute that acts as the partition key, and a timestamp attribute that is the sort key. Which statement is true?
+
+a. The sensor ID together with the timestamp represent a simple primary key.
+b. It is impossible for two items in the SensorReadings table to have the same partition key.
+c. It is impossible for two items in the SensorReadings table to have the same sort key.
+d. It is impossible for two items in the SensorReadings table to have the same primary key.
+
+Answer: d
+Reason: The primary key itself, which is made up of the combination of partition key plus sort key, must be unique.
+---
+4. Which statement about Amazon DynamoDB partitions is true?
+
+a. DynamoDB stores data in partitions and chooses the partition based on the range attribute.
+b. If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute.
+c. If a table has a composite primary key, DynamoDB will sort the items based on the sort key before selecting the partition for the item.
+d. A developer writes a hash function to tell DynamoDB how to partition the items.
+
+Answer: b
+Reason: If a table has a simple primary key (partition key only),  DynamoDB stores and retrieves each item based on its partition key value. The partition key of an item is also  known as its hash attribute.
+---
+5. Suppose that a developer has a restaurants database table that can be queried by name (the partition key), or by name and location (the sort key). What should the developer do if they also want to query by type of cuisine and average customer rating?
+
+a. Set up a local secondary index on cuisine and customer rating.
+b. Set up a global secondary index on cuisine and customer rating.
+c. Change the primary key on the restaurant table to be a complex primary key based on cuisine and customer rating.
+d. Perform a query that uses the cuisine and average customer rating attributes.
+
+Answer: b
+Reason: Global secondary indexes can be based on two entirely different attributes than the base table for the partition and sort key.
+---
+6. A video game developer who uses Amazon DynamoDB wants to ensure that players’ profiles are updated correctly when they make in-game purchases. This process requires multiple updates as part of a single user action. What is the best choice to write this developer's application to manage these complex, all-or-nothing changes?
+
+a. Add an Amazon DynamoDB Accelerator (DAX) cluster.
+b. Implement global tables.
+c. Create application code to check that all parts of the transaction were written successfully, and then roll back the update if any part failed.
+d. Use DynamoDB transactions.
+
+Answer: d
+Reason: Amazon DynamoDB transactions simplify the developer experience of making coordinated, all-or-nothing changes to multiple items both within and across tables.
+---
+7. Which scenarios are example use cases for Amazon DynamoDB Streams? (Select TWO.)
+
+a. An application that requires the fastest possible response time for reads to support real-time bidding 
+b. An application that requires repeated reads against a large set of regional weather data to perform a long-running analysis 
+c. An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture 
+d. An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold 
+e. An application that requires an in-memory data store 
+
+Answer: c, d
+Reason: Amazon DynamoDB Streams captures a time-ordered sequence of modifications in a DynamoDB table. The stream could be used to send notifications when an item is added to the table, or take an automated action based on some threshold.
+---
+8. Which statement about global tables is true? 
+
+a. Global tables provide a managed solution for replicating tables within a single AWS Region. 
+b. Global tables use Amazon Simple Storage Service (Amazon S3) to propagate changes between replicas. 
+c. When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions. 
+d. With a global table, Amazon DynamoDB supports partial replication of some of the items in a table. 
+
+Answer: c
+Reason: When developers create a global table, they specify the AWS Regions where they want the table to be available. Then, DynamoDB performs all of the necessary tasks to create identical tables and propagate updated data. 
+---
+9. How far back in days can an Amazon DynamoDB table be restored by using point-in- time recovery? 
+
+a. The last week 
+b. The last 10 days 
+c. The last 35 days 
+d. The last calendar month 
+
+Answer: c
+Reason: With point-in-time recovery, that table can be restored to any point in time during previous last 35 days.
+---
+10. Which statement describes Amazon DynamoDB application programming interface (API) control operations that can be invoked by an application? 
+
+a. Create and manage DynamoDB tables. 
+b. Create, read, update, and delete data in a table. 
+c. Get and write batches of items in a DynamoDB table. 
+d. Make coordinated, all-or-nothing changes to multiple items both within and across tables. 
+
+Answer: a
+Reason: These are control operations that an application can invoke using the Amazon DynamoDB API.
+
+=== FIN PREGUNTAS MODULO 5 ===
+
+=== PREGUNTAS MODULO 6 ===
+1. Which phrase best describes a RESTful API? 
+
+a. An API that uses HTTP to communicate between client and server 
+b. A proxy that exists between client and server to handle common problems that occur with API-driven applications 
+c. An API that follows the principles of the Representational State Transfer style 
+d. An API that resides on the web server 
+
+Answer: c
+Reason: An API that adheres to Representational State Transfer (REST) principles is considered a RESTful API.
+---
+2. Which option suggests the use of WebSocket APIs? 
+
+a. An order processing application returns an order number to each customer when they submit an order. 
+b. A batch process bundles orders and sends them to a fulfillment center application. 
+c. A real-time chat application lets customers talk to customer support about their orders. 
+d. A reporting application gives the sales team access to static daily reports from their phones. 
+
+Answer: c
+Reason: WebSockets APIs provide a two-way pipe. WebSockets are used for real-time, two-way communication applications, such as chat applications and streaming dashboards.
+---
+3. Which use case suggests using Amazon API Gateway HTTP APIs? 
+
+a. An application needs an API proxy in front of an AWS Lambda function. 
+b. An application must transform a response from an AWS Lambda function before returning the response to the client. 
+c. A developer wants to use mock endpoints to test their API. 
+d. A developer wants to assign different API quotas by client. 
+
+Answer: a
+Reason: If a developer needs lightweight API proxy functionality, they should use HTTP APIs instead of REST in API Gateway. HTTP APIs have the lowest latency and lowest cost.
+---
+4. Which statement about Amazon API Gateway integrations is true? 
+
+a. A first-class integration connects an API Gateway HTTP API route to an external third-party service API. 
+b. A developer can use HTTP proxy integrations to direct a route to a resource on the internet. 
+c. API Gateway cannot access resources within a virtual private cloud (VPC). 
+d. An API integration request encapsulates an HTTP request that the backend receives and is always different from the method request that the client submits. 
+
+Answer: b
+Reason: A developer can use HTTP proxy integrations to direct a route to a resource on the internet. This method is useful when migrating from a monolithic application to web services.
+---
+5. An application that uses Amazon API Gateway must capture contact information from a third-party client application. The client application sends given name, surname, business phone, and cell phone. The backend application database has only two fields: name and mobile phone. Which option requires the fewest application changes? 
+
+a. Export the API definition and use it to update the client. 
+b. Use a mapping template to transform the request before it is sent to the database. 
+c. Create a usage plan that describes the fields and applies only to this client. 
+d. Use a first-class integration to connect the client to the database. 
+
+Answer: b
+Reason: With a mapping template, the team can use Apache Velocity Template Language to transform the incoming request before sending it to their backend. In this way, they can support the new client without modifying any application code.
+---
+6. Which elements are part of the base URI that AWS generates for an Amazon API Gateway API? 
+
+a. Region and stage name 
+b. API identifier and version 
+c. Account ID and stage name 
+d. Region and version 
+
+Answer: a
+Reason: The base URI for an API Gateway API includes the API identifier, Region, and stage name.
+---
+7. Given this snippet:
+```bash
+aws apigatewayv2 create-route --api-key 03z50l670a --<?> --target arn:aws:lambda:us-east-2:AcctID:function:readFn
+```
+Which option could replace the <?> to create an API route that returns an individual product value from an online catalog?
+
+a. route-key 'GET /products/{product_id}'
+b. route-key 'PUT /products'
+c. route-selection-expression '$GET/product'
+d. route-selection-expression 'PUT /products/{proxy+}'
+
+Answer: a
+Reason: This option would create a GET route that could be used for retrieving the value of an individual product by using the product_id.
+---
+8. Which statement about Amazon API Gateway stages is true? 
+
+a. Stage names are sequentially assigned based on the API version. 
+b. Any stage on any API type can be set to autodeploy. 
+c. Developers can use stage variables to connect different stages to different backends. 
+d. Developers should avoid creating different stages for each development environment.
+
+Answer: c
+Reason: Stage variables are used to connect different stages to different backends, for example, different AWS Lambda function versions.
+---
+9. A security team wants to know how to protect APIs in their internet application from common web exploits, like SQL injection or cross-site scripting. Which solution most directly addresses their specific concern? 
+
+a. Set throttling limits on their API methods in Amazon API Gateway. 
+b. Set all of their APIs to use private endpoints. 
+c. Configure a JSON Web Token (JWT)-based authorizer for Amazon API Gateway. 
+d. Use AWS WAF with Amazon API Gateway. 
+
+Answer: d
+Reason: AWS WAF is a web application firewall that helps developers protect their APIs against common web exploits. They can use preconfigured rules that address common security risks. 
+---
+10. What does the Amazon API Gateway integration Latency metric tell the user? 
+
+a. Frequency of server-side errors that affect latency 
+b. Speed of the API response back to the client 
+c. Responsiveness of the backend 
+d. How often requests are throttled 
+
+Answer: c
+Reason: The integrationLatency metric measures the time that it takes for the backend to provide a response to API Gateway.
+
+=== FIN PREGUNTAS MODULO 6 ===
+
+=== PREGUNTAS MODULO 7 ===
+1. Which statement describes a characteristic of AWS Lambda? 
+
+a. Lambda runs code only when it is activated by an event and uses only the compute resources that are needed. 
+b. A developer's methods and configuration options for ensuring high availability with Lambda are similar to their approach with Amazon Elastic Compute Cloud (Amazon EC2). 
+c. Lambda functions run in on-demand, temporary environments, and the developer controls when new environments are created or shut down. 
+d. A developer must write Lambda functions that use one of the runtimes that the Lambda service provides. 
+
+Answer: a
+Reason: Lambda invokes function code in response to events, and functions run in temporary environments. A developer does not need to allocate idle resources to be available when the function is invoked. 
+---
+2. Which constraint cannot be modified? 
+
+a. Function timeout 
+b. Reserved concurrency 
+c. Burst quota 
+d. Regional quota 
+
+Answer: c
+Reason: Each Region has a burst limit, which prevents concurrency from increasing too quickly if a large spike of requests occurs in a short time period. This limit cannot be modified. 
+---
+3. Which option describes how Amazon API Gateway invokes AWS Lambda? 
+
+a. API Gateway directly invokes a function with a synchronous invocation. 
+b. Lambda processes API Gateway requests asynchronously and retries each request up to two times. 
+c. Lambda uses an event source mapping and polls API Gateway for requests. 
+d. API Gateway directly invokes a function and retries the request until it succeeds or expires. 
+
+Answer: a
+Reason: With API Gateway as the event source for a Lambda function, the requesting client gets a response that includes the function results immediately. This invocation is synchronous. 
+---
+4. Which actions require permissions that are defined in the AWS Lambda execution role? (Select TWO.) 
+
+a. A Lambda function writes to an Amazon DynamoDB table. 
+b. An object that is written to an Amazon Simple Storage Service (Amazon S3) bucket initiates invocation of a Lambda function. 
+c. Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function. 
+d. An Amazon API Gateway GET route initiates invocation of a Lambda function. 
+e. A message that is posted to an Amazon Simple Notification Service (Amazon SNS) topic initiates invocation of a Lambda function. 
+
+Answer: a, c
+Reason: The execution role gives Lambda permission to do things like writing to a DynamoDB table or polling a queue. The execution role does not define the permissions to invoke the function when using a push event source like Amazon S3 or API Gateway. 
+---
+5. Which statement about the function handler in an AWS Lambda function is true? 
+
+a. The function handler is the entry point that Lambda calls to start running the Lambda function. 
+b. The function handler method might take an event object or a context object. 
+c. The event object provides information about the event that invoked the Lambda function. It must be a predefined object that an AWS service generates. 
+d. The context object provides runtime information, and the developer must create a context object that matches the runtime that was selected for the function. 
+
+Answer: a
+Reason: The Lambda function handler is the entry point that Lambda calls to start running the Lambda function. The handler method always takes two objects: the event object and the context object. 
+---
+6. Which issue might be addressed by adding provisioned concurrency to an AWS Lambda function? 
+
+a. Another Lambda function runs in the same account and Region. It sometimes spikes and consumes all available concurrency, causing the function to fail. 
+b. An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests. 
+c. A legacy backend system fails intermittently when the developer connects to it. To avoid extra costs, they want to reduce the function's wait time when the backend fails. 
+d. The developer wants more visibility into transactions that use the Lambda function to identify bottlenecks. 
+
+Answer: b
+Reason: The timing of the issue suggests that the first users are probably getting cold starts because the function hasn't been invoked for a while. This situation might be resolved by adding provisioned concurrency. 
+---
+7. Which AWS Lambda configuration setting might a developer use to manage function errors when configuring an Amazon Simple Notification Service (Amazon SNS) topic as the event source for a Lambda function? (Select TWO.) 
+
+a. State machines 
+b. File systems. 
+c. Destinations 
+d. Virtual private cloud 
+e. Asynchronous invocations 
+
+Answer: c, e
+Reason: Amazon SNS invokes Lambda asynchronously. Thus, a developer can use the asynchronous invocation settings to modify the retry settings and set an on-failure destination for failed invocations. 
+---
+8. A zipped deployment package including code and custom libraries is 75 MB in size. Which AWS Lambda deployment option should be used? 
+
+a. Copy the code into the Lambda console editor to create and deploy the function. 
+b. Upload a .zip file from an integrated development environment (IDE) to load the deployment package directly into the Lambda console. 
+c. Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console. 
+d. Upload the deployment package to an Amazon Elastic Block Store (Amazon EBS) volume, and use the File Systems configuration to reference it. 
+
+Answer: c
+Reason: If the deployment package is larger than 50 MB, the recommended option is to upload the zipped deployment package to an S3 bucket in the AWS Region where the Lambda function will be created. 
+---
+9. A function's Amazon Resource Name (ARN) is as follows: 
+arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD
+
+Which statement about this function is correct, based on its ARN? 
+
+a. This ARN will invoke the immutable PROD version of the function. 
+b. This ARN will invoke the version of the function that is currently associated with the PROD alias. 
+c. This ARN will invoke the function and include the AWS Lambda layer that is named PROD. 
+d. This ARN will deploy the helloworld function into the PROD account. 
+
+Answer: b
+Reason: The PROD alias in the ARN references the Lambda function version that is currently associated with that alias. Aliases abstract the need to know which version is being referenced. 
+---
+10. Users of a serverless application have reported errors that occur when they try to retrieve order information. Assuming that AWS X-Ray is enabled, what is the first step the developer might take in X-Ray to start troubleshooting the reported issues  quickly? 
+
+a. Drill down into the most recent traces to look for errors. 
+b. Search for metadata that is related to the users who are reporting issues. 
+c. Add annotations that the developer can use to start grouping and filtering traces. 
+d. Use the service map to visually locate errors across the application. 
+
+Answer: d
+Reason: The service map provides a quick visual representation of transactions in the application, and the developer can drill down into problem areas. This method might be a quick way to get to the cause of the issue. 
+---
+
+=== FIN PREGUNTAS MODULO 7 ===
+
+=== PREGUNTAS MODULO 8 ===
+1. Which option describes a benefit that led the shipping industry and the software industry to use containers? 
+
+a. Infrastructure providers can create strong dependencies between their platform and the types of containers that they choose to work with. 
+b. The abstraction of details of what's being "shipped" increases the agility of a system. 
+c. Increased visibility into the details of what's being "shipped" helps each point in the system to provide the right type of support. 
+d. The ability to use nonstandard types of containers gives producers flexibility. 
+
+Answer: b
+Reason: Containerization is an example of how abstraction increases agility by making it possible for components to work together without knowing all of the details of each other. 
+---
+2. Which options are components of a container? (Select TWO.) 
+
+a. Host server 
+b. Runtime engine 
+c. Operating system 
+d. Application code 
+e. Virtual machine 
+
+Answer: b, d
+Reason: A container is a lightweight, standalone software package that contains everything a software application needs to run, such as the application code, runtime engine, system tools, system libraries, and settings. 
+---
+3. Which statement about Docker containers is true? 
+
+a. A container is a runnable instance of an image. 
+b. A container registry is a template to launch containers. 
+c. A container image is a writeable template. 
+d. A container layer is a thin read-only layer that is associated with a running container. 
+
+Answer: a
+Reason: A container is a runnable instance of an image. You can start up one container or several containers based on an image. 
+---
+4. Which Docker CLI command creates a container named my_app_1 from the image named node_app? 
+
+a. docker run --name my_app_1 node_app 
+b. docker build --tag my_app_1 
+c. docker exec -it my_app_1 sh 
+d. docker images my_app_1 from node_app 
+
+Answer: a
+Reason: The docker run command creates a container from the image named in the command. In this case, the node_app image is used to create the my_app_1 container. 
+---
+5. Which statement about a Dockerfile is true? 
+
+a. A Dockerfile is a YAML file that provides instructions to create a container image. 
+b. Each instruction in a Dockerfile creates a read-only layer in the image. 
+c. If a developer changes the Dockerfile and rebuilds the image, all layers of the image must be rebuilt. 
+d. Developers cannot use the Dockerfile to run scripts that would run after the container is instantiated. 
+
+Answer: b
+Reason: Each instruction in the plain text Dockerfile creates a read-only layer in the container image. 
+---
+6. A developer wants to migrate a monolithic shopping website to a microservice- based application. Which option reflects a reason to choose containers? 
+
+a. Each container can use the language and technology that are best suited for the service. 
+b. Containerized components are not isolated, so the application will evolve as a singular system. 
+c. Containers are well-suited to designs that avoid the use of temporary resources. 
+d. Containers separate your dependencies and libraries into their own objects. 
+
+Answer: a
+Reason: Microservices should be able to evolve and scale independently. Containers can use the language and technology that are best suited for the service. 
+---
+7. A developer recently built a proof-of-concept application using containers, and the business owner wants to roll it out to production. Which option reflects a primary reason that the developer might use a container orchestration service? 
+
+a. To schedule container starts and stops and determine where to place containers 
+b. To base their containers on third-party images 
+c. To remove the requirement to use a container registry 
+d. To receive automated recommendations about how to improve their application code to run on containers 
+
+Answer: a
+Reason: Container orchestration services handle the scheduling and placement of containers based on the underlying hardware infrastructure and needs of the application. 
+---
+8. Which statement about the Amazon Elastic Container Service (Amazon ECS) is true? 
+
+a. Amazon ECS is a highly scalable container orchestration service that supports Docker containers. 
+b. Amazon ECS requires the use of the Amazon Elastic Container Registry (Amazon ECR) for container images. 
+c. Amazon ECS supports launching containers in Amazon EC2 or AWS Lambda. 
+d. With Amazon ECS, you can deploy applications to containers even if they have not been architected specifically to run on containers. 
+
+Answer: a
+Reason: Amazon ECS is a highly scalable, highly performing container orchestration service that supports Docker containers. 
+---
+9. What is the name for a logical collection of AWS Elastic Beanstalk components, which is conceptually similar to a folder? 
+
+a. Environment 
+b. Platform 
+c. Application 
+d. Environment tier 
+
+Answer: c
+Reason: An application is the name for a logical collection of Elastic Beanstalk components. 
+---
+10. A developer wants to do canary testing on a new deployment. Which AWS Elastic Beanstalk deployment policy option should the developer use? 
+
+a. Immutable 
+b. Rolling with batch 
+c. Traffic Splitting 
+d. Blue/Green 
+
+Answer: c
+Reason: The traffic splitting option deploys a full set of instances like the immutable option. However, with this option, you can specify a percentage of traffic to send to the new version before automatically shifting all traffic to the new version after a period of time. 
+---
+
+=== FIN PREGUNTAS MODULO 8 ===
+
+=== PREGUNTAS MODULO 9 ===
+1. An architect suggests that the developers implement caching on an existing application to address performance issues. Which option describes factors that the developers should consider when they decide where to add caching? 
+
+a. Avoid caching for data queries that are slow and expensive to run. 
+b. Review the data and its access patterns. Data that changes rapidly but is infrequently accessed should be cached. 
+c. Consider the tolerance for stale data in each context where the data is used. 
+d. Add as much caching in as many places as you can as early in development as possible. 
+
+Answer: c
+Reason: Cached data should always be treated as stale. The context might impact what is tolerable. For example, a stock price that is a few minutes old might be acceptable on a website but not when serving the stock price to a  broker during a sale. 
+---
+2. A developer has determined that an in-memory key-value store would improve performance of their application's queries. They want to keep the solution as simple as possible and need to support read replicas. Which option should they choose? 
+
+a. Amazon ElastiCache for Memcached 
+b. Amazon ElastiCache for Redis 
+c. Amazon CloudFront Functions 
+d. Lambda@Edge 
+
+Answer: b
+Reason: The scenario describes a use case for an in-memory store such as ElastiCache. ElastiCache for Redis supports read replicas, but ElastiCache for Memcached does not. 
+---
+3. Amazon ElastiCache is being added to an application to improve response times and alleviate database pressure. The backend database for the application is an Amazon Relational Database Service (Amazon RDS) database. Which task would be the responsibility of the application developer? 
+
+a. Applying software patches to the cache instances 
+b. Writing code to check the health of the cluster before writing to the cache 
+c. Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin 
+d. Write code to integrate the cache with the Amazon RDS instances that it will be reading from 
+
+Answer: c
+Reason: Developers must handle the logic to check the cache and return cached data to the requestor. They must also write code to retrieve data from the origin when the data is not available or is expired in the cache, and then update the cache with the retrieved value. 
+---
+4. Which statement about Amazon ElastiCache is true? 
+
+a. A node is a variable-size chunk of secure, network-attached RAM. 
+b. Your application connects to an ElastiCache node by using a unique address called an endpoint. 
+c. With the Memcached engine, data is partitioned across shards in a cluster. 
+d. Every node within a cluster must run the same cache engine, but the nodes can run on different instance types. 
+
+Answer: b
+Reason: Your application connects to an ElastiCache node or cluster by using a unique address called an endpoint. You need to know the endpoint to connect to the node or cluster. 
+---
+5. A developer has been asked to address complaints from customers in the London area about the performance of a web-based application that is hosted in New York. Which option might the developer implement? 
+
+a. Use Amazon CloudFront to replicate the application code on Amazon Elastic Compute Cloud (Amazon EC2) instances in the London Region. 
+b. Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users. 
+c. Set up a CloudFront regional edge location in the London Region. 
+d. Set up one CloudFront edge location in New York and one in London. 
+
+Answer: b
+Reason: When a user requests content that you are serving with CloudFront, the user is routed to the edge location that provides the lowest latency (or time delay). The content is delivered with the best possible performance. 
+---
+6. A developer has been asked to increase the cache hit ratio for their Amazon CloudFront distribution. Which option should they try? 
+
+a. Include only the minimum necessary values in the cache key. 
+b. Decrease the maximum time to live (TTL) setting in a cache policy. 
+c. Decrease the max-age setting in a file's Cache-Control header. 
+d. Increase the cache hit setting in a cache policy. 
+
+Answer: a
+Reason: Including only the minimum necessary values in the cache key can improve the cache hit ratio. 
+---
+7. Which statement about Amazon CloudFront cached file expiration is true? 
+
+a. Each file in the cache automatically expires after 24 hours, and you cannot modify this setting. 
+b. After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server. 
+c. When the origin receives a request, the origin sends the latest version of the file regardless of whether it is the same as the expired version in the cache. 
+d. You can control cache file duration with CloudFront cache policy settings or through Cache-Control settings in the origin file headers. However, you cannot combine these options. 
+
+Answer: b
+Reason: After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server. If the origin version is newer than the cached version, the origin sends the latest version to the cache. 
+---
+8. Which use case suggests the use of Amazon CloudFront Functions? 
+
+a. A function that redirects the viewer to a different URL and adds a custom response header 
+b. A function that uses a third-party library 
+c. A function that requires network access to use external services for processing 
+d. A function that requires access to the body of HTTP requests 
+
+Answer: a
+Reason: This is an example of a lightweight function that can be implemented with CloudFront Functions. 
+---
+9. Which statement reflects a benefit of lazy loading as a caching strategy? 
+
+a. Lazy loading avoids filling up the cache with data that is not requested. 
+b. With lazy loading, data in the cache never becomes stale. 
+c. With lazy loading, every write involves two trips—a write to the cache and a write to the database—which adds latency to the process. 
+d. Lazy loading might result in cache churn. The cache might be updated often if certain records are updated repeatedly. 
+
+Answer: a
+Reason: With lazy loading, only requested data is cached. The advantage to this approach is that lazy loading avoids filling up the cache with data that is not requested. 
+---
+10. A developer has been asked whether caching might improve the performance of their online bidding application. How should they answer this question? 
+
+a. Caching probably will not yield much performance improvement for this type of application. 
+b. Caching might improve performance by reducing the number of hits to the backend database. However, caching cannot improve performance issues that occur between the client and the web server. 
+c. Using different types of caching at each application layer might improve both the frontend and backend performance. 
+d. Caching might greatly improve performance if the application is compute heavy, but if the application is read heavy, a cache will not provide much benefit. 
+
+Answer: c
+Reason: Caching might be applied at all application layers to accelerate retrieval of web content, accelerate application performance, and reduce the latency associated with database query requests. 
+---
+
+=== FIN PREGUNTAS MODULO 9 ===
+
+=== PREGUNTAS MODULO 10 ===
+1. Which option describes how a message queue processes messages? 
+
+a. The queue polls producers for new messages. 
+b. Consumers poll the queue for messages. 
+c. The queue broadcasts messages to consumers. 
+d. Consumers notify the queue when a message has been successfully processed. The queue configuration determines whether the message should be available to other consumers. 
+
+Answer: b
+Reason: Consumers poll the queue and retrieve messages to be processed. 
+---
+2. Which option describes how publish/subscribe (pub/sub) messaging works? 
+
+a. Producers send messages to subscribers. 
+b. Subscribers poll topics for new messages. 
+c. When a topic receives a new message, the topic sends the message to the first subscriber who responds to a notification. 
+d. A new topic message is pushed out to all topic subscribers. 
+
+Answer: d
+Reason: When a topic receives a new message from a producer, the topic pushes that message out to its subscribers. 
+---
+3. A developer wants to add an Amazon Simple Queue Service (Amazon SQS) queue to decouple incoming order requests from a backend database. Which Amazon SQS operations might be part of this update? 
+
+a. Use the SendMessage operation with the QueueURL mapped to the database endpoint to put messages on the queue. 
+b. Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time. 
+c. Use the DeleteMessage operation to change the visibility of the message as soon as the ReceiptHandle is received. 
+d. Use the ReceiveMessage operation with the WaitTimeSeconds parameter set to 0 to reduce the number of empty requests. 
+
+Answer: b
+Reason: With ReceiveMessage, you can retrieve one or more messages from the queue. With the MaxNumberOfMessages parameter, you can retrieve up to 10 messages at one time. If this parameter is set to 5, you can retrieve up to 5 messages at a time. 
+---
+4. A tester reports that Amazon Simple Queue Service (Amazon SQS) messages are being processed more than once. The developer finds that processing servers are not completing as quickly as expected, and messages are made available to other consumers before the prior consumer deletes them. Which option might reduce occurrences of this issue? 
+
+a. Increase the visibility timeout. 
+b. Increase maxReceiveCount. 
+c. Increase MaxNumberOfMessages. 
+d. Increase the number of producers on the queue. 
+
+Answer: a
+Reason: The visibility timeout might be expiring before a consumer has completed processing and deleted the record. Increasing the visibility timeout might provide enough time for the initial consumer to complete processing. 
+---
+5. For an order-processing application that uses an Amazon Simple Queue Service (Amazon SQS) queue, a developer finds that an older version of the client generates order records that fail the backend process. The failures cause a bottleneck on the queue. How might the developer reduce the impact of the failed records? 
+
+a. Increase the visibility timeout and set a high value for MaxNumberOfMessages. 
+b. Add a dead-letter queue and set a low maxReceiveCount. 
+c. Use long polling and set a high wait time. 
+d. Change the queue type from standard to First-In-First-Out (FIFO) and set a high throughput rate. 
+
+Answer: b
+Reason: By configuring a dead-letter queue with a low maxReceiveCount, the corrupt records would not continue to be retried. The messages that are sent to the dead-letter queue can be processed separately. 
+---
+6. Which statement about Amazon Simple Queue Service (Amazon SQS) polling options is true? 
+
+a. By default, when you make a ReceiveMessage API call, Amazon SQS performs long polling. 
+b. When long polling is configured, WaitTimeSeconds is set to 0. 
+c. When short polling is configured, Amazon SQS queries all of its servers. 
+d. When short polling is configured, Amazon SQS samples a subset of its servers. 
+
+Answer: d
+Reason: When short polling is configured, Amazon SQS samples a subset of its servers based on a weighted random distribution. 
+---
+7. Which statement about Amazon Simple Notification Service (Amazon SNS) is true? 
+
+a. An SNS topic is a logical access point, which acts as a communication channel. 
+b. A publisher can only send messages to topics that they have created. 
+c. By default, different subscribers to a topic receive different messages. 
+d. Amazon SNS defines a single delivery policy, which is applied to all delivery protocols. 
+
+Answer: a
+Reason: A publisher sends a message to the topic. Amazon SNS matches the topic to a list of subscribers for that topic and sends the published messages to the subscribers. 
+---
+8. An Amazon Simple Notification Service (Amazon SNS) topic receives messages about orders. An AWS Lambda function that processes canceled orders is subscribed to the topic. How might the developer reduce costs by only invoking the Lambda function for canceled orders? 
+
+a. Put an Amazon Simple Queue Service (Amazon SQS) queue in front of the Lambda function. 
+b. Separate the new order and cancel order messages to be sent by two different publishers. 
+c. Set up a filter policy so that the Lambda function subscription only receives cancel order messages. 
+d. Use the ConfirmSubscription operation to limit which messages the Lambda function receives. 
+
+Answer: c
+Reason: To receive a subset of the messages, assign a filter policy to the topic subscription. A filter policy is a JSON object that contains attributes that define which messages the subscriber receives. 
+---
+9. A developer needs to build a custom application to put customer application log records onto an Amazon Kinesis data stream. What should they use to build the application?  
+
+a. Use the Kinesis API. 
+b. Use the Kinesis Producer Library (KPL). 
+c. Use the Kinesis Client Library (KCL). 
+d. Use Amazon Managed Service for Apache Flink. 
+
+Answer: b
+Reason: The KPL is a highly configurable library that helps you write to a Kinesis data stream. The library acts as an intermediary between the producer application code and the Amazon Kinesis Data Streams API actions. 
+---
+10. Which statement about Amazon Kinesis Data Streams is true? 
+
+a. When a record is added to the stream, the record is available until a consumer deletes it. 
+b. The data records in a data stream are distributed into shards. 
+c. A standard data stream can have one consumer. With the enhanced fanout option, you can add multiple consumers. 
+d. A stream consumer must delete the records that it processes successfully. 
+
+Answer: b
+Reason: The Kinesis Data Streams service adds shards to scale horizontally. Each shard has a uniquely identified sequence of data records, and Kinesis assigns a sequence number to each data record. 
+---
+
+=== FIN PREGUNTAS MODULO 10 ===
+
+=== PREGUNTAS MODULO 11 ===
+1. Which scenario suggests the need for a task coordination service such as AWS Step Functions? 
+
+a. A website that serves static content is expanding its reach to a global audience. 
+b. A serverless application must run a series of AWS Lambda functions that are dependent on each other. 
+c. A monolithic application that is written in Java is updating its technology stack. 
+d. A reporting application must update its calculation logic to provide more analytical data to business users. 
+
+Answer: b
+Reason: This application is a good candidate for using a coordination service to handle errors and timeouts. In this way, the functions themselves can focus on business logic. 
+---
+2. Which statement describes a benefit of using AWS Step Functions for an application? 
+
+a. Step Functions integrates with state machines so that developers can transition between their Step Functions workflow and their state machine workflow. 
+b. Step Functions can be configured with Amazon EC2 Auto Scaling to scale up and down. 
+c. Step Functions can be defined by using either Python or Node.js. 
+d. Developers can use Step Functions to build visual workflows. 
+
+Answer: d
+Reason: Step Functions offers a graphical console to visualize the components of an application as a series of steps. 
+---
+3. What is the role of the Task state type in AWS Step Functions? 
+
+a. Task states are used to stop a failed workflow. 
+b. Task states perform a unit of work. 
+c. Task states provide branching logic. 
+d. Task states tell the state machine the order to perform the steps in. 
+
+Answer: b
+Reason: Tasks do all of the work in a state machine. A task can perform work by using an activity or an AWS Lambda function. 
+---
+4. An application that processes order returns must complete different steps depending on whether the return is within 30 days of purchase. Which AWS Step Functions state could a developer use to implement this logic? 
+
+a. Parallel 
+b. Task 
+c. Choice 
+d. Wait 
+
+Answer: c
+Reason: A Choice state can be used to branch code to complete different actions. The choice in this example is whether it has been more than 30 days since the purchase. 
+---
+5. An application that processes order returns must run the same AWS Lambda function for each item in an order. Which AWS Step Functions state could a developer use to implement this logic? 
+
+a. Parallel 
+b. Pass 
+c. Map 
+d. Task 
+
+Answer: c
+Reason: A Map state dynamically iterates on a step for each item in an array. In this example, the developer would want the workflow to iterate on the step that runs the Lambda function for all items in an order. 
+---
+6. Which statement is true for both Succeed states and Fail states? 
+
+a. Succeed states and Fail states do not include the Next field. 
+b. The End field is not required because Succeed states and Fail states are not terminal states. 
+c. The Type field is optional for Succeed states and Fail states. 
+d. The End field is required because Succeed states and Fail states are terminal states. 
+
+Answer: a
+Reason: Because both states are terminal states, they have no Next field. 
+---
+7. An application that processes order returns must run two independent audit checks. When both checks are successfully completed, the return authorization step is run. Which AWS Step Functions state could a developer use to implement this logic? 
+
+a. Parallel 
+b. Task 
+c. Choice 
+d. Wait 
+
+Answer: a
+Reason: A developer can use a Parallel state to branch code into two independent tasks that must both complete before the next step begins. 
+---
+8. How is a taskToken used in an AWS Step Functions use case that includes a manual approval step? 
+
+a. A taskToken is generated when the workflow hits a Wait state. The taskToken tracks how long the workflow has been waiting for a task to finish. 
+b. A taskToken is used to transition between each state in the workflow and is defined in the Next field. 
+c. A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task. 
+d. A taskToken is an output of the Success state in a synchronous Step Functions Express workflow. A taskToken is used to confirm success of all tasks. 
+
+Answer: c
+Reason: The GetActivityTask action returns a response (including input) and a taskToken (a unique identifier for the task). The SendTaskSuccess or SendTaskFailure actions use the token to associate results with the task. 
+---
+9. Which use case is a good fit for AWS Step Functions Express workflows? 
+
+a. All workflows in the application must be auditable up to 90 days after a completed run. 
+b. The workflow requires a step that will run an application that is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance. 
+c. The workflow takes between 30 minutes and 1 hour to run. 
+d. The workflow must support a very high rate of events that come from Internet of Things (IoT) devices. 
+
+Answer: d
+Reason: Express workflows are designed for very fast, high-volume workloads and would be a good choice for this scenario. 
+---
+10. Which statement about AWS Step Functions is true? 
+
+a. A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API. 
+b. Step Functions has quotas at the account level regarding the number of registered state machines, but no quotas are related to individual Step Functions runs. 
+c. Step Functions must be created in the visual editor on the Step Functions console but can be edited with the AWS SDKs. 
+d. A developer can use the Describe API action to get a summary of all state machines and the number of times that each has been run. 
+
+Answer: a
+Reason: A developer can associate their Step Functions APIs with API operations in API Gateway. When an HTTPS request is sent to an API operation, API Gateway invokes the developer's Step Functions API actions. 
+---
+
+=== FIN PREGUNTAS MODULO 11 ===
+
+=== PREGUNTAS MODULO 12 ===
+1. Which statement about creating secure connections is true? 
+
+a. Both Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are standards that AWS developed for secure communications. 
+b. SSL uses certificates to establish website identity, but TLS does not. 
+c. Both SSL and TLS encrypt network communications between connected resources. 
+d. SSL is a newer version of TLS. Both are used to establish the identify of websites. 
+
+Answer: c
+Reason: Both TLS and its predecessor SSL encrypt network communications between connected resources. TLS is typically used now although the term SSL is often still used. 
+---
+2. Which step in the secure connection process is the responsibility of the certificate authority (CA)? 
+
+a. Issue a certificate. 
+b. Verify whether the certificate is from a trusted source. 
+c. Send an encrypted session key. 
+d. Send a certificate and public key to the client. 
+
+Answer: a
+Reason: CAs issue certificates to specific domains. 
+---
+3. Which statement about AWS Certificate Manager (ACM) is true? 
+
+a. ACM can provision public certificates, but for private certificates, developers must produce their own certificate and connect it to ACM. 
+b. ACM manages certificate renewals for both public and private certificates. 
+c. ACM costs are based on the number of active public certificates in an AWS account. 
+d. A developer must configure a load balancer to use ACM certificates. 
+
+Answer: b
+Reason: ACM manages certificate renewals, which reduces the effort to ensure that certificates don't expire. 
+---
+4. Which statement reflects a best practice for security credentials? 
+
+a. Only share access keys between users in the same AWS account. 
+b. Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials. 
+c. If there are unencrypted access keys, embed them in code that is available only to developers but not accessible to users. 
+d. Do not allow programmatic authentication to AWS services. 
+
+Answer: b
+Reason: A best practice is to use temporary security credentials. Use IAM roles to retrieve temporary security credentials if possible. If IAM roles are not an option, use AWS Security Token Service (AWS STS) to retrieve credentials.  
+---
+5. What is the primary difference between AWS Security Token Service (AWS STS) authentication by federated users and AWS STS authentication by AWS Identity and Access Management (IAM) users? 
+
+a. With federated users, the application calls an identity broker, but this step is skipped with IAM users. 
+b. With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM. 
+c. With federated users, the second authentication is made against an IdP. With IAM users, the second authentication is made against IAM 
+d. With federated users, applications use the temporary security credentials and token to make requests to an AWS service. No token is necessary with IAM users. 
+
+Answer: b
+Reason: The first authentication is made against an identity provider (IdP) for federated users and against IAM for IAM users 
+---
+6. A developer has been asked to investigate how website files have been deleted from an Amazon Simple Storage Service (Amazon S3) bucket. Which approach should they take? 
+
+a. Use AWS CloudTrail to search for information about delete object events on the S3 bucket. 
+b. Use AWS Security Token Service (AWS STS) to block deletions from the S3 bucket. 
+c. Use AWS Identity and Access Management (IAM) to search for users who have used their delete permissions on the S3 bucket. 
+d. Use the AWS STS GetSessionToken API call to retrieve information about users who deleted files from the S3 bucket. 
+
+Answer: a
+Reason: A developer can use CloudTrail to track the activity of authenticated users. They could search the CloudTrail event logs to find file deletion requests and the user who made them. 
+---
+7. A developer has been asked to add a sign-up and sign-in service to their application. Which Amazon Cognito feature should they use? 
+
+a. Amazon Cognito identity pool 
+b. Amazon Cognito user pool 
+c. Amazon Cognito Lambda trigger 
+d. Amazon Cognito access token 
+
+Answer: b
+Reason: User pools provide sign-up and sign-in options for application users. Users can sign in to a web or mobile application and federate through a third-party identity provider (IdP). 
+---
+8. A developer has been asked to reduce the security risk of users who sign in to their application with username and password pairs that they use on other websites. Which Amazon Cognito user pool feature might the developer configure? 
+
+a. Identity tokens 
+b. Phone and email verification 
+c. Adaptive authentication 
+d. Compromised credentials check 
+
+Answer: d
+Reason: This feature addresses the issue of users who reuse the same credentials for multiple websites. The feature protects users’ accounts by preventing them from reusing credentials that have been exposed elsewhere. 
+---
+9. Which statement about Amazon Cognito identity pools is true? 
+
+a. With an identity pool, users can obtain temporary, limited-privilege AWS credentials to access other AWS services. 
+b. Identity pools replace the need for a third-party identity provider. 
+c. When using Amazon Cognito identity pools, a user would not also use Amazon Cognito user pools. 
+d. Identity pools provide sign-up and sign-in functionality for mobile apps. 
+
+Answer: a
+Reason: With an identity pool, a user can trade an authentication token from an identity provider for temporary AWS security credentials. 
+---
+10. A developer plans to use Amazon Cognito user pools with Amazon API Gateway. Which step is part of the user pool authentication flow with API Gateway? 
+
+a. A mobile app sends a request to API Gateway, and API Gateway gets JSON Web Tokens (JWTs) from the user pool. 
+b. A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app. 
+c. The user pool validates the tokens against an identity pool. 
+d. Amazon Cognito invokes the API after successfully validating the permissions. 
+
+Answer: b
+Reason: The mobile app authenticates with the user pool and gets JWTs, which the app uses to call API Gateway. 
+---
+
+=== FIN PREGUNTAS MODULO 12 ===
+
+=== PREGUNTAS MODULO 13 ===
+1. Which option describes the philosophy of DevOps? 
+
+a. DevOps is about teaching development and operations teams to use the same set of tools to shorten testing and deployment cycles. 
+b. DevOps is about removing barriers between development and operations functions to optimize productivity and reliability. 
+c. DevOps culture is reflected in the idea of "Processes over people," which means that, with strong processes, any team member can perform any task. 
+d. DevOps culture is reflected in the idea that tight coupling leads to tighter parity between development, test, and production environments. 
+
+Answer: b
+Reason: With DevOps, teams work together to optimize both the productivity of developers and the reliability of operations. 
+---
+2. How are DevOps practices reflected in the software development lifecycle for cloud architectures? 
+
+a. Every phase of the software development lifecycle is automated. 
+b. Developers can use continuous integration to merge code into their local repository and connect to the test environment for authentic test scenarios. 
+c. With continuous delivery, developers can deploy code without the need for continuous monitoring. 
+d. Infrastructure tools compare local development environments to test environments and staging environments, and report on environmental differences so that the operations team can ensure parity. 
+
+Answer: a
+Reason: Automation reduces the level of human effort in each phase and reduces errors that manual processes cause. The technical side can deliver business value to the company more quickly. This automation from beginning to end is an element of continuous deployment (CD). 
+---
+3. How might a developer use AWS CodePipeline in their continuous integration and continuous deployment (CI/CD) process? 
+
+a. Compile source code, run tests, and produce software packages that are ready to deploy. 
+b. Host Git-based repositories and provide source control. 
+c. Deploy to a variety of compute services. 
+d. Automate the steps that are required to release software based on a release model that the developer defines. 
+
+Answer: d
+Reason: AWS CodePipeline is a fully managed, continuous delivery service that helps developers automate their release pipelines for fast and reliable application and infrastructure updates. 
+---
+4. Which statement about continuous integration and continuous delivery/deployment (CI/CD) is true? 
+
+a. Continuous deployment reduces the risk of production bugs, but it might increase the time that it takes to deliver new features. 
+b. Continuous integration requires teams to write automated tests. 
+c. Continuous delivery extends all the way to production deployment without human intervention. 
+d. Continuous deployment extends from check-in through production, but some manual intervention occurs after code is checked in and before that code is released to customers. 
+
+Answer: b
+Reason: Continuous integration requires teams to write automated tests that improve the quality of the software that is being released. Tests also must reduce the time that it takes to validate that the new version of the software is good. 
+---
+5. A developer wants to use infrastructure as code for their Java-based web application on AWS. Which task might be part of their work? 
+
+a. Create an Amazon Elastic Compute Cloud (Amazon EC2) instance by using AWS CodeBuild, and use AWS CodeDeploy to automatically push the application to the EC2 instance. 
+b. Create a Java AWS CloudFormation template that defines the application and database layers for the application. 
+c. Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application. 
+d. Use AWS CodePipeline to create a pipeline that automates the complete release of the application. 
+
+Answer: c
+Reason: CloudFormation reads template files, which provide instructions to determine which resources must be provisioned. CloudFormation constructs the resources that are listed in the template file. 
+---
+6. A developer wants to use a single AWS CloudFormation template for both the test and production environments. Which section of the template might they use to support this approach? 
+
+a. Use the Transform section to define the variables that must be changed for each environment during stack creation or update. 
+b. Use the Format Version section to define the parameters to be passed for each environment during stack creation or update. 
+c. Use the Outputs section to define each environment that the template should create during stack creation or update. 
+d. Use the Conditions section to control whether certain resources are created during stack creation or update. 
+
+Answer: d
+Reason: The Conditions section controls whether certain resources or resource properties are created or assigned. A developer might conditionally create a resource that depends on whether the stack is for a production or test environment. 
+---
+7. Which statement about AWS CloudFormation stacks is true? 
+
+a. Deleting a stack deletes its CloudFormation template but does not delete any resources that the most recent deployment created. 
+b. A CloudFormation stack is a unit of deployment. 
+c. An existing stack must be deleted before deploying an updated template to modify the resource parameters of that stack. 
+d. CloudFormation has some quotas that are related to the resources defined in each stack, but no quotas are related to the number of stacks themselves. 
+
+Answer: b
+Reason: A stack is a unit of deployment that contains the resources that a template generates. 
+---
+8. A developer is building their first serverless application on AWS. What must they think about differently with respect to deploying the application? 
+
+a. They can't replicate the production environment locally in the same way that they might with a server-based deployment. 
+b. They can't use AWS CloudFormation for infrastructure as code to deploy the application. 
+c. The steps to connect to the AWS Lambda server for debugging are different than those to connect to a traditional server. 
+d. Serverless development tools are not integrated with other AWS development tools that are used in the deployment pipeline. 
+
+Answer: a
+Reason: Serverless applications are deployed to an AWS account. Developers need a tool such as the AWS Serverless Application Model command line interface (AWS SAM CLI) to invoke AWS Lambda functions locally. 
+---
+9. How does an AWS Serverless Application Model (AWS SAM) template differ from an AWS CloudFormation template? 
+
+a. AWS SAM templates are written in the same language as the AWS Lambda runtime that is used in the functions that are being deployed. 
+b. The Globals section is found only in AWS SAM templates. 
+c. The Resources section in an AWS SAM template may only contain serverless resources. 
+d. The Transform declaration is not required for AWS SAM templates. 
+
+Answer: b
+Reason: The Globals section is unique to AWS SAM and is used to define properties that are common to all serverless functions and APIs. 
+---
+10. The following lines are in the Resources section of an AWS Serverless Application Model (AWS SAM) template. What would these lines create?
+```
+Resources:
+	Orders:
+		Type: AWS::Serverless::SimpleTable
+```
+
+a. An AWS Lambda function that is named Orders and is connected to an Amazon DynamoDB table 
+b. An Amazon DynamoDB table that is called Orders 
+c. An API GET method that reads from the Orders table 
+d. A MySQL table that is called Orders 
+
+Answer: b
+Reason: SimpleTable creates a DynamoDB table by using the name that is provided (in this example, Orders). 
+---
+
+=== FIN PREGUNTAS MODULO 13 ===
+

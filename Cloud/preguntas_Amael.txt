@@ -1,0 +1,85 @@
+Preguntas Examen AWS
+
+TEMA: AWS Academy Cloud Developing
+----------------------------------
+
+
+¿Qué servicio de AWS permite ejecutar código en respuesta a eventos (como la subida de un archivo a S3) sin necesidad de aprovisionar ni administrar servidores?
+
+A. Amazon EC2
+B. AWS Lambda
+C. Amazon RDS
+D. AWS Elastic Beanstalk
+ANSWER: B
+
+Un desarrollador necesita alojar el frontend de una aplicación web estática (archivos HTML, CSS y JavaScript) de la manera más rentable y escalable. ¿Qué servicio de AWS es el más adecuado?
+
+A. Amazon S3 configurado como alojamiento de sitios web estáticos.
+B. Una instancia de Amazon EC2 con un servidor web Apache.
+C. Una base de datos Amazon DynamoDB.
+D. AWS Lambda.
+ANSWER: A
+
+¿Cuál es la función principal de Amazon API Gateway en una arquitectura sin servidor (serverless)?
+
+A. Almacenar los datos de los usuarios de forma persistente.
+B. Actuar como una "puerta de entrada" para que los clientes accedan a los servicios backend (como funciones Lambda).
+C. Monitorizar el rendimiento de las instancias EC2.
+D. Enviar notificaciones por correo electrónico a los usuarios.
+ANSWER: B
+
+¿Qué tipo de base de datos es Amazon DynamoDB?
+
+A. Base de datos relacional tradicional (SQL).
+B. Base de datos en memoria (cache).
+C. Base de datos NoSQL de clave-valor y documentos totalmente administrada.
+D. Base de datos orientada a grafos.
+ANSWER: C
+
+Un desarrollador está escribiendo una función AWS Lambda en Python que necesita leer un archivo de un bucket de S3. ¿Cuál es la forma más segura de otorgar los permisos necesarios?
+
+A. Escribir las claves de acceso (Access Key ID y Secret Access Key) de un usuario administrador directamente en el código Python.
+B. Hacer que el bucket de S3 sea público para todo el mundo.
+C. Crear un Rol de IAM con permisos de lectura de S3 y asignarlo a la función Lambda.
+D. Crear un nuevo usuario IAM para cada ejecución de la función.
+ANSWER: C
+
+¿Qué herramienta de AWS utilizan principalmente los desarrolladores para interactuar con los servicios de AWS directamente desde el código de su aplicación (usando lenguajes como Java, Python, Node.js)?
+
+A. AWS Management Console (Consola web).
+B. AWS SDK (Software Development Kit).
+C. AWS Config.
+D. Amazon CloudWatch.
+ANSWER: B
+
+Al trabajar con DynamoDB, si necesitas recuperar un solo elemento específico de forma eficiente utilizando su clave principal (Partition Key), ¿qué operación debes utilizar?
+
+A. Scan
+B. GetItem (Query)
+C. Search
+D. Filter
+ANSWER: B
+
+¿Qué servicio de AWS se utiliza para desacoplar componentes de una aplicación distribuida mediante el uso de colas de mensajes, asegurando que los mensajes se procesen aunque una parte del sistema esté temporalmente inactiva?
+
+A. Amazon SNS (Simple Notification Service)
+B. Amazon SES (Simple Email Service)
+C. Amazon SQS (Simple Queue Service)
+D. AWS Step Functions
+ANSWER: C
+
+¿Qué servicio permite a los desarrolladores definir y aprovisionar su infraestructura de AWS utilizando código (plantillas en formato JSON o YAML), conocido como Infraestructura como Código (IaC)?
+
+A. AWS CloudFormation
+B. Amazon CloudWatch
+C. AWS Systems Manager
+D. AWS X-Ray
+ANSWER: A
+
+Un desarrollador necesita depurar una aplicación sin servidor compleja y quiere rastrear (trace) una solicitud a medida que viaja a través de API Gateway, funciones Lambda y DynamoDB para identificar cuellos de botella de rendimiento. ¿Qué servicio debería usar?
+
+A. AWS CloudTrail
+B. Amazon CloudWatch Logs
+C. AWS X-Ray
+D. Amazon Inspector
+ANSWER: C

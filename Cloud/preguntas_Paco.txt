@@ -1,0 +1,69 @@
+¿Qué componente de IAM es esencial para autenticar solicitudes a través del SDK de AWS?
+A. Access Key ID y Secret Access Key
+B. Nombre de usuario y contraseña
+C. Certificados SSL/TLS
+D. Amazon Resource Name (ARN)
+ANSWER: A
+
+¿Cuál es la mejor práctica para otorgar permisos a una aplicación en EC2 para acceder a S3?
+A. Almacenar claves de acceso en el código
+B. Asignar un rol de IAM a la instancia de EC2
+C. Crear un usuario de IAM con permisos de administrador
+D. Configurar una política de bucket S3 pública
+ANSWER: B
+
+¿Cuál es la función principal de AWS X-Ray?
+A. Almacenar archivos de registro (logs)
+B. Cifrar datos en reposo
+C. Analizar y depurar aplicaciones distribuidas (tracing)
+D. Realizar pruebas de carga
+ANSWER: C
+
+¿Qué determina el costo de ejecución de una función AWS Lambda?
+A. El número de líneas de código
+B. Número de peticiones y duración según la memoria configurada
+C. El tipo de lenguaje de programación
+D. La cantidad de tráfico de red saliente únicamente
+ANSWER: B
+
+¿Cuál es la ventaja de usar variables de entorno en Lambda?
+A. Aumentar la velocidad de ejecución
+B. Permitir acceso a Internet sin VPC
+C. Cifrar automáticamente todos los datos
+D. Portabilidad del código entre entornos sin cambiarlo
+ANSWER: D
+
+En API Gateway, ¿qué es un "Stage"?
+A. Un entorno lógico (como prod o beta) para desplegar la API
+B. El lenguaje de programación del backend
+C. Un límite de velocidad de peticiones
+D. Una copia de seguridad de la configuración
+ANSWER: A
+
+¿Qué herramienta permite definir infraestructura mediante archivos JSON o YAML?
+A. AWS CloudFormation
+B. AWS Config
+C. Amazon Inspector
+D. AWS Systems Manager
+ANSWER: A
+
+¿Qué técnica reduce la latencia de DynamoDB a microsegundos para datos frecuentes?
+A. Aumentar las RCU
+B. Implementar Amazon DynamoDB Accelerator (DAX)
+C. Usar una clave de partición más corta
+D. Cambiar a Amazon RDS
+ANSWER: B
+
+¿Qué servicio de AWS registra las llamadas a la API y las acciones de los usuarios en toda la infraestructura de AWS? 
+A. Amazon CloudWatch 
+B. AWS CloudTrail 
+C. AWS Config 
+D. Amazon Inspector 
+ANSWER: B
+
+En DynamoDB, ¿qué atributo se utiliza obligatoriamente para distribuir los datos en múltiples particiones? 
+A. Sort Key (Clave de ordenación) 
+B. Local Index
+C. Global Index 
+D. Partition Key (Clave de partición)
+ANSWER: D
