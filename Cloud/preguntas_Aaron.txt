@@ -1,0 +1,48 @@
+¿Cual de estas restricciones no se puede modificar?
+A. Tiempo de espera de la funcion
+B. Concurrencia reservada
+C. Cuota de rafaga
+D. Cuota regional
+ANSWER: C
+
+¿Que afirmacion sobre Amazon ElastiCache es verdadera?
+A. Un nodo es un fragmento de tamaño variable de RAM segura conectada a la red.
+B. Tu aplicacion se conecta a un nodo de ElastiCache mediante una direccion unica llamada endpoint.
+C. Con el motor Memcached, los datos se dividen en fragmentos (shards) dentro de un clúster.
+D. Cada nodo dentro de un clúster debe ejecutar el mismo motor de cache, pero los nodos pueden ejecutarse en diferentes tipos de instancia.
+ANSWER: B
+
+¿Que caso de uso sugiere el uso de Amazon CloudFront Functions?
+A. Una funcion que redirige al espectador a una URL diferente y agrega un encabezado de respuesta personalizado.
+B. Una funcion que utiliza una biblioteca de terceros.
+C. Una funcion que requiere acceso a la red para utilizar servicios externos para el procesamiento.
+D. Una funcion que requiere acceso al cuerpo (body) de las solicitudes HTTP.
+ANSWER: A
+
+¿Que afirmacion refleja un beneficio del "lazy loading" como estrategia de almacenamiento en cache?
+A. El lazy loading evita llenar la cache con datos que no han sido solicitados.
+B. Con el lazy loading, los datos en la cache nunca se vuelven obsoletos.
+C. Con el lazy loading, cada escritura implica dos viajes: una escritura a la cache y una a la base de datos.
+D. El lazy loading puede provocar una rotacion excesiva de la cache.
+ANSWER: A
+
+¿Cual es el rol del tipo de estado "Task" (Tarea) en AWS Step Functions?
+A. Los estados Task se utilizan para detener un flujo de trabajo fallido.
+B. Los estados Task realizan una unidad de trabajo.
+C. Los estados Task proporcionan logica de ramificacion.
+D. Los estados Task le indican a la maquina de estados el orden en que debe realizar los pasos.
+ANSWER: B
+
+¿Mejor deportista español de la historia?
+A. Rafael Nadal
+B. Marcos Alonso
+C. Andres Iniesta
+D. Pau Gasol
+ANSWER: A
+
+¿Cual no es un ingrediente de la tortilla de patatas?
+A. Patatas
+B. Huevo
+C. Romero
+D. Aceite
+ANSWER: C
