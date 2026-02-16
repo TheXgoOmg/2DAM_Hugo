@@ -1,0 +1,96 @@
+Aquí tienes una propuesta de examen práctico diseñada para realizarse en 1 hora. El examen plantea un escenario realista que obliga a utilizar todos los componentes técnicos que has solicitado.
+
+---
+
+# Examen Práctico de Java: "El Servidor de Archivos Seguro (SafeBox)"
+
+**Tiempo estimado:** 60 minutos
+**Objetivo:** Desarrollar una aplicación Cliente/Servidor para la transferencia de archivos binarios, gestionando la concurrencia y la sincronización de recursos compartidos.
+
+---
+
+## Escenario del Problema
+
+La empresa "SecureData" necesita un prototipo de servidor de almacenamiento. Este servidor debe aceptar conexiones de múltiples clientes simultáneamente. Sin embargo, para no saturar el disco, el servidor tiene una restricción estricta: **solo puede haber un número limitado de transferencias (subidas/bajadas) ocurriendo exactamente al mismo tiempo en la "zona crítica" de escritura/lectura**, aunque haya muchos clientes conectados.
+
+Deberás implementar el **Servidor (SafeBoxServer)** y el **Cliente (SafeBoxClient)** cumpliendo las siguientes secciones.
+
+---
+
+## Sección 1: Protocolo de Comunicación (Binario)
+
+Diseña un protocolo binario estricto utilizando `DataInputStream` y `DataOutputStream`. No se permite el uso de `PrintWriter` o `BufferedReader` para el envío de datos, excepto para logs en consola.
+
+**Formato del mensaje:**
+
+1. **Comando (int):** `1` para SUBIR (UPLOAD), `2` para DESCARGAR (DOWNLOAD), `3` para SALIR.
+2. **Longitud del Nombre (int):** Tamaño en bytes del nombre del archivo.
+3. **Nombre del Archivo (UTF/Bytes):** El nombre del archivo.
+4. **Tamaño del Contenido (long):** (Solo para SUBIR, en DESCARGAR envía 0 el cliente y responde el servidor).
+5. **Contenido (bytes):** (Solo si aplica).
+
+---
+
+## Sección 2: El Servidor (Concurrencia y Sockets)
+
+**Requisitos:**
+
+1. El servidor debe escuchar en un puerto (ej. `5555`) usando `ServerSocket`.
+2. **Gestión de Hilos:** No crees un `new Thread()` por cada cliente. Debes utilizar un **`ExecutorService`** (ej. `newFixedThreadPool`) para gestionar los hilos que atienden a los clientes.
+3. Cada tarea enviada al Executor debe ser un **`Runnable`** (ej. `ClientHandler`) que gestione la conexión completa de un cliente.
+
+---
+
+## Sección 3: Monitor de Recursos (Sincronización Avanzada)
+
+Esta es la parte crítica del examen. Debes crear una clase compartida llamada `TransferController`.
+
+**Requisitos:**
+
+1. **Restricción de Concurrencia:** Define una constante `MAX_TRANSFERS = 2`.
+2. **Métodos Synchronized y Wait/Notify:**
+* Implementa un método `solicitarPermiso()`: Antes de que un hilo empiece a leer/escribir bytes del archivo, debe llamar a este método. Si ya hay 2 transferencias activas, el hilo debe quedarse bloqueado usando **`Object.wait()`**.
+* Implementa un método `liberarPermiso()`: Al finalizar la transferencia, el hilo llama a este método. Debe despertar a los hilos esperando usando **`Object.notify()`** o **`Object.notifyAll()`**.
+
+
+3. **Estadísticas Globales:** Utiliza una **`AtomicLong`** para llevar la cuenta global de *bytes totales transferidos* por todos los clientes desde que arrancó el servidor. Esta variable debe actualizarse de forma segura sin usar bloques synchronized (aprovecha su naturaleza atómica).
+
+---
+
+## Sección 4: Gestión de Archivos y Streams
+
+Implementa la lógica de transferencia en el `Runnable` del servidor y en el Cliente.
+
+**Requisitos:**
+
+1. **Subida (Upload):** El cliente lee un archivo local (ruta fija o argumento) usando `FileInputStream` y lo envía al servidor. El servidor lo recibe y lo guarda con `FileOutputStream`.
+2. **Descarga (Download):** El cliente solicita un archivo, el servidor lo lee (`FileInputStream`) y lo envía.
+3. **Buffer:** La lectura/escritura debe hacerse mediante un buffer de bytes (ej. `byte[4096]`), no byte a byte.
+
+---
+
+## Criterios de Evaluación
+
+1. **Compilación y Ejecución:** El código debe compilar y permitir la transferencia de un archivo real (ej. una imagen JPG).
+2. **Uso correcto de Sincronización:** Si se conectan 5 clientes e intentan transferir a la vez, solo 2 deben hacerlo simultáneamente; los otros 3 deben esperar su turno automáticamente.
+3. **Limpieza:** Cierre correcto de Streams y Sockets en bloques `finally`.
+
+---
+
+### Ejemplo de flujo esperado en Consola (Servidor)
+
+```text
+[Server] Iniciando en puerto 5555...
+[Server] Cliente 1 conectado.
+[Server] Cliente 2 conectado.
+[Server] Cliente 3 conectado.
+[Hilo-1] Solicitando permiso para subir 'foto.jpg'... Concedido. (Activos: 1)
+[Hilo-2] Solicitando permiso para subir 'doc.pdf'... Concedido. (Activos: 2)
+[Hilo-3] Solicitando permiso para subir 'video.mp4'... ESPERANDO (Max alcanzado).
+[Hilo-1] Transferencia 'foto.jpg' finalizada. Bytes totales: 102400.
+[Hilo-1] Permiso liberado. Notificando...
+[Hilo-3] ...Despierta. Permiso concedido. (Activos: 2)
+
+```
+
+

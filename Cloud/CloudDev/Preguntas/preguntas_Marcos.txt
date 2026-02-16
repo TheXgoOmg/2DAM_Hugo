@@ -1,0 +1,60 @@
+¿Cuál es el propósito principal de una arquitectura de mensajería asíncrona usando servicios como SQS o SNS?
+A) Mejorar el rendimiento de CPU y memoria
+B) Reducir los costos de licencias de software
+C) Desacoplar componentes para aumentar la tolerancia a fallos
+D) Simplificar el desarrollo de interfaces de usuario
+ANSWER: C
+¿Cuál es la diferencia fundamental entre el modelo de entrega de SQS y SNS?
+A) SQS usa push, SNS usa pull
+B) SQS es para mensajes grandes, SNS para mensajes pequeños
+C) SQS es más seguro que SNS
+D) SQS usa polling, SNS usa push
+ANSWER: D
+¿Qué métrica de CloudWatch mide específicamente el tiempo que tarda API Gateway en llamar al backend y recibir respuesta?
+A) Latency
+B) IntegrationLatency
+C) Count
+D) 5XXError
+ANSWER: B
+¿Qué modelo de invocación usa Amazon S3 cuando dispara una función Lambda tras la subida de un nuevo objeto?
+A) Síncrono
+B) Asíncrono
+C) Polling (event source mapping)
+D) Streaming
+ANSWER: B
+¿A que le tiene alergia Asier?
+A) Mujeres
+B) AWS
+C) Piña
+D) Gitanos
+ANSWER: C
+¿Cuál es el máximo tiempo de ejecución (timeout) permitido para una función Lambda?
+A) 5 minutos
+B) 15 minutos
+C) 30 minutos
+D) 1 hora
+ANSWER: B
+Cuando una función Lambda es invocada asíncronamente y falla, ¿cuántos reintentos realiza Lambda por defecto?
+A) 0
+B) 2
+C) 5
+D) 10
+ANSWER: B
+¿Qué comando de Docker se utiliza para crear un contenedor?
+A) docker run
+B) docker build
+C) docker create
+D) docker image
+ANSWER: A
+¿Qué servicio AWS es un registro de contenedores totalmente gestionado?
+A) Amazon ECR
+B) Amazon ECS
+C) Amazon EKS
+D) AWS Fargate
+ANSWER: A
+¿Cuáles son las siglas de ECS?
+A) Elastic Container Shell
+B) Single Elastic Container
+C) Elastic Cubernetes Service
+D) Elastic Container Service
+ANSWER: D

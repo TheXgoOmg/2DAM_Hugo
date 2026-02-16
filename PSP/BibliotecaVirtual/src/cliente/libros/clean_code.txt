@@ -1,0 +1,4 @@
+¿Qué es el código limpio? Hay tantas definiciones como programadores. He preguntado a muchos programadores conocidos y con mucha experiencia qué piensan al respecto. Sus respuestas son variadas y perspicaces.
+
+Bjarne Stroustrup, inventor de C++ y autor de The C++ Programming Language:
+'Me gusta que mi código sea elegante y eficaz. La lógica debe ser directa para que los errores resulten difíciles de encontrar; las dependencias deben ser mínimas para facilitar el mantenimiento; el procesamiento de errores debe ser completo conforme a una estrategia articulada y el rendimiento debe ser óptimo para no tentar a la gente a hacer chapuzas con optimizaciones sin sentido. El código limpio hace una sola cosa bien'.

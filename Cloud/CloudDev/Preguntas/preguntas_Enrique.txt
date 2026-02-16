@@ -1,0 +1,69 @@
+Las tres primeras fases del SDLC son planificar, definir y diseñar. ¿Cuáles son las tres últimas fases del SDLC?
+A. Codificar, construir y probar
+B. Desarrollar, desplegar y mantener
+C. Probar, desplegar y mantener
+D. Codificar, construir y mantener
+ANSWER: B
+
+Un ___ organiza el espacio de nombres de Amazon Simple Storage Service (Amazon S3) al nivel más alto.
+A. Contenedor
+B. Región
+C. Grupo
+D. Bucket
+ANSWER: D
+
+¿Cuál es el tamaño máximo de un objeto que un usuario puede cargar en Amazon Simple Storage Service (Amazon S3) en una sola operación PUT?
+A. 5 GB
+B. 5 TB
+C. 100 MB
+D. 1 GB
+ANSWER: A
+
+¿Qué recurso de AWS Identity and Access Management (IAM) concede o deniega explícitamente permisos a un usuario o grupo de usuarios?
+A. Roles de IAM
+B. Usuarios de IAM
+C. Grupos de IAM
+D. Políticas de IAM
+ANSWER: D
+
+¿Cuál es el término correcto para el proceso de verificar la identidad de un usuario?
+A. Aval
+B. Autenticación
+C. Confirmación
+D. Autorización
+ANSWER: B
+
+¿Qué componente forma parte de una tabla de Amazon DynamoDB?
+A. Esquema predefinido
+B. Consultas basadas en SQL
+C. Atributos
+D. Columnas
+ANSWER: C
+
+¿Qué afirmación sobre los contenedores Docker es cierta?
+A. Un contenedor es una instancia ejecutable de una imagen.
+B. Un registro de contenedores es una plantilla para lanzar contenedores.
+C. Una imagen de contenedor es una plantilla escribible.
+D. Una capa de contenedor es una fina capa de solo lectura asociada a un contenedor en ejecución.
+ANSWER: A
+
+¿Qué paso en el proceso de conexión segura es responsabilidad de la autoridad de certificación (CA)?
+A. Emitir un certificado.
+B. Verificar si el certificado proviene de una fuente de confianza.
+C. Enviar una clave de sesión cifrada.
+D. Enviar un certificado y una clave pública al cliente.
+ANSWER: A
+
+¿Qué opción describe la filosofía de DevOps?
+A. DevOps trata de enseñar a los equipos de desarrollo y operaciones a utilizar el mismo conjunto de herramientas para acortar los ciclos de pruebas y despliegue.
+B. DevOps trata de eliminar las barreras entre las funciones de desarrollo y operaciones para optimizar la productividad y la fiabilidad.
+C. La cultura DevOps se refleja en la idea de "Procesos sobre personas", lo que significa que, con procesos sólidos, cualquier miembro del equipo puede realizar cualquier tarea.
+D. La cultura DevOps se refleja en la idea de que un acoplamiento fuerte conduce a una paridad más estrecha entre los entornos de desarrollo, prueba y producción.
+ANSWER: B
+
+¿Qué afirmación sobre las pilas (stacks) de AWS CloudFormation es cierta?
+A. Eliminar una pila elimina su plantilla de CloudFormation pero no elimina los recursos que creó el despliegue más reciente.
+B. Una pila de CloudFormation es una unidad de despliegue.
+C. Se debe eliminar una pila existente antes de desplegar una plantilla actualizada para modificar los parámetros de recursos de esa pila.
+D. CloudFormation tiene algunas cuotas relacionadas con los recursos definidos en cada pila, pero no hay cuotas relacionadas con el número de pilas en sí.
+ANSWER: B

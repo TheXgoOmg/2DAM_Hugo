@@ -1,0 +1,10 @@
+Aumentar velocidad al BigSkeleton
+Evitar colisión entre personaje y bola del báculo
+Cambiar el sistema de aumento de oleadas y prob de BigSkeleton (aumentar el coste)
+Abrir un hueco en cada arista de las vallas
+Caminar más lento marcha atrás
+Aumento daño Wand a 1
+Capas de animación (enemigo), siguen corriendo al recibir un golpe
+Añadir imágenes a los paneles del Mercado
+Reducir cooldown ataque enemigo por oleada
+

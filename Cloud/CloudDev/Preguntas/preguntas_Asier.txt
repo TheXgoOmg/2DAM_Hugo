@@ -1,0 +1,60 @@
+¿Cuál de las siguientes tareas es responsabilidad exclusiva del cliente al desarrollar una aplicación?
+A) Parchear el software del motor de base de datos en Amazon RDS.
+B) Gestión de los datos del cliente y configuración de las reglas del firewall de red (Security Groups).
+C) Mantenimiento físico de los cables de red en las Zonas de Disponibilidad.
+D) Eliminación de discos duros físicos al final de su vida útil
+ANSWER: B
+¿Cuál es la mejor práctica recomendada para gestionar las credenciales en un entorno de desarrollo local?
+A) Incrustar el access_key y el secret_key directamente en el código fuente de la aplicación.
+B) Utilizar variables de entorno de sistema con las credenciales en texto plano.
+C) Utilizar un archivo de credenciales compartido (~/.aws/credentials) y perfiles con el principio de mínimo privilegio.
+D) Subir las credenciales al repositorio de Git para que todo el equipo las comparta.
+ANSWER: C
+Una aplicación requiere una latencia de milisegundos para acceder a objetos que se consultan con poca frecuencia, pero deben estar disponibles de forma inmediata. ¿Qué clase de almacenamiento de Amazon S3 es la más adecuada y rentable?
+A) S3 Standard.
+B) S3 Standard-Infrequent Access (S3 Standard-IA).
+C) S3 Glacier Flexible Retrieval.
+D) S3 Intelligent-Tiering (Archive Access Tier).
+ANSWER: B
+¿Cuál es la diferencia técnica fundamental entre una IAM Policy y un IAM Role?.
+A) Una política define permisos; un rol es una identidad que puede ser asumida por un usuario o servicio para obtener permisos temporales.
+B) Las políticas solo se aplican a usuarios, mientras que los roles solo se aplican a instancias EC2.
+C) Los roles son permanentes, mientras que las políticas caducan cada 15 minutos.
+D) No hay diferencia; ambos términos son intercambiables en AWS.
+ANSWER: A
+Estás diseñando una tabla de DynamoDB y necesitas realizar consultas basadas en un atributo que no es la clave de partición original. ¿En qué caso elegirías un Global Secondary Index (GSI) en lugar de un Local Secondary Index (LSI)?
+A) Cuando necesitas que el índice se cree obligatoriamente al mismo tiempo que la tabla.
+B) Cuando el atributo que quieres usar como clave de partición es diferente al de la tabla principal.
+C) Cuando requieres consistencia de lectura fuerte (Strongly Consistent Reads) en el índice.
+D) Cuando quieres que el índice comparta el límite de rendimiento (throughput) con la tabla principal.
+ANSWER: B
+En Amazon API Gateway, ¿cuál es la función de los Mapping Templates (Plantillas de mapeo)?
+A) Traducir el código de la función Lambda de Python a JavaScript.
+B) Transformar el cuerpo de la solicitud (payload) de entrada para que coincida con el formato que espera el servicio de backend.
+C) Generar automáticamente la documentación de Swagger/OpenAPI.
+D) Configurar las reglas de auto-escalado del endpoint de la API.
+ANSWER: B
+¿Cómo afecta el ajuste de Memoria en la configuración de una función AWS Lambda al rendimiento general?
+A) Solo aumenta la capacidad de almacenamiento temporal en /tmp.
+B) Aumentar la memoria incrementa proporcionalmente la potencia de la CPU y el ancho de banda de red asignado.
+C) La memoria no afecta a la CPU; la CPU se configura de forma independiente en un menú separado.
+D) Solo sirve para evitar errores de "Out of Memory", pero no afecta a la velocidad de ejecución.
+ANSWER: B
+En el contexto de Amazon ECS, ¿qué componente define los límites de CPU y memoria, los mapeos de puertos y las imágenes de contenedor que se utilizarán para ejecutar una aplicación?
+A) ECS Cluster.
+B) Task Definition (Definición de tarea).
+C) Service Auto Scaling.
+D) Task Role.
+ANSWER: B
+Estás utilizando Amazon ElastiCache para mejorar el rendimiento de lectura. ¿Cuál es la principal diferencia entre la estrategia de caché Lazy Loading (Carga diferida) y Write-Through?
+A) Lazy Loading garantiza que los datos en la caché nunca estén desactualizados.
+B) Write-Through actualiza la caché solo cuando ocurre un "cache miss".
+C) Lazy Loading solo carga datos en la caché cuando hay una solicitud del cliente; Write-Through actualiza la caché cada vez que se escribe en la base de datos.
+D) Write-Through es más eficiente para datos que se leen poco pero se escriben mucho.
+ANSWER: C
+En una máquina de estado de AWS Step Functions, ¿qué tipo de estado utilizarías para ejecutar múltiples ramas de pasos de forma simultánea y esperar a que todas terminen antes de continuar?
+A) Choice State.
+B) Parallel State.
+C) Map State.
+D) Wait State.
+ANSWER: B

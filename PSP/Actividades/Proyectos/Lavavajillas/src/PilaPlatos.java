@@ -34,7 +34,7 @@ public class PilaPlatos {
                 wait();
             }
 
-            Plato plato = pila.removeFirst();
+            Plato plato = pila.removeLast();
             System.out.printf("Plato secado #%d, total en pila: %d\n", plato.getId(), pila.size());
             notify();
             return plato;

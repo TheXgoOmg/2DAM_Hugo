@@ -1,0 +1,5 @@
+synchronized (lockObject) {
+                        try (FileOutputStream fos = new FileOutputStream(resultados, true)) {
+                            fos.write(bytesResultado);
+                        }
+                    }
