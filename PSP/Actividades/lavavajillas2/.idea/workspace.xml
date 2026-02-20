@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c5fa9a6-7cea-4455-b172-7a6d804fd932" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/GestorCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/1984.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/cien_anos_soledad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/clean_code.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/el_hobbit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/el_quijote.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/servidor/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/GestorBabosa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Friega.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PilaPlatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Plato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Mostrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Productor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/banco_preguntas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Aaron.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Amael.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Hugo-Tarin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Javier.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Paco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/AP6.MiniFTP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/AP6.MiniFTP/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/src/PilaPlatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/src/PilaPlatos.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="39l59W2mMy8kRuzrYiLANTA2c6Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hugo/Documents/2DAM_Hugo/PSP/Actividades/AP5.TransferenciaArchivosPrueba&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/hugo/Documents/2DAM_Hugo/PSP/lavavajillas2/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c5fa9a6-7cea-4455-b172-7a6d804fd932" name="Changes" comment="" />
+      <created>1771257665515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771257665515</updated>
+      <workItem from="1771257666744" duration="2733000" />
+      <workItem from="1771260441200" duration="911000" />
+      <workItem from="1771261379743" duration="192000" />
+      <workItem from="1771261736169" duration="45000" />
+      <workItem from="1771261971768" duration="126000" />
+      <workItem from="1771262136207" duration="1153000" />
+      <workItem from="1771264833715" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29784543-3e54-465f-a3e2-ed5690705871" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/GestorCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/1984.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/cien_anos_soledad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/clean_code.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/el_hobbit.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/cliente/libros/el_quijote.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BibliotecaVirtual/src/servidor/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/GestorBabosa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CarreraBabosas/src/Servidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lavavajillas2/src/Friega.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lavavajillas2/src/PilaPlatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lavavajillas2/src/Plato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lavavajillas2/src/Seca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos/el_quijote.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivos/la_biblia.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Mostrador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pizzeriaConcurrente/src/Productor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/banco_preguntas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Aaron.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Amael.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Hugo-Tarin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Javier.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/preguntas_Paco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Cloud/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/AP6.MiniFTP/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/AP6.MiniFTP/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/src/PilaPlatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Actividades/Proyectos/Lavavajillas/src/PilaPlatos.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="39lPCBOOZJnnVqNAyMHYSrxOdzb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Cliente.executor": "Run",
+    "Application.MiniFTPServidor.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/hugo/Documents/2DAM_Hugo/PSP/Actividades/AP6.MiniFTP",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/hugo/Documents/2DAM_Hugo/PSP/miniFTP2/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29784543-3e54-465f-a3e2-ed5690705871" name="Changes" comment="" />
+      <created>1771267554244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771267554244</updated>
+      <workItem from="1771267555483" duration="2328000" />
+      <workItem from="1771273711748" duration="222000" />
+      <workItem from="1771273967232" duration="65000" />
+      <workItem from="1771274052442" duration="39000" />
+      <workItem from="1771274108773" duration="414000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cliente.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Cliente.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
