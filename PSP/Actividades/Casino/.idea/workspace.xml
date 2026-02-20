@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e6477af-309f-4264-bd9b-3f5b3f355862" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/banco_preguntas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/preguntas_Aaron.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/preguntas_Amael.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/preguntas_Hugo-Tarin.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/preguntas_Javier.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/preguntas_Paco.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Cloud/test2.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="39cAza1sQmuBrSK2L5duzRP7S04" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Cliente.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Servidor.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hugo/Documents/2DAM_Hugo/PSP/Actividades/Casino&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/hugo/Documents/2DAM_Hugo/PSP/Casino/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e6477af-309f-4264-bd9b-3f5b3f355862" name="Changes" comment="" />
+      <created>1770985250441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770985250441</updated>
+      <workItem from="1770985252146" duration="616000" />
+      <workItem from="1770986151248" duration="10000" />
+      <workItem from="1770986175394" duration="42000" />
+      <workItem from="1770986229540" duration="156000" />
+      <workItem from="1770986429683" duration="215000" />
+      <workItem from="1770995223310" duration="11903000" />
+      <workItem from="1771010954381" duration="1721000" />
+      <workItem from="1771014951561" duration="3851000" />
+      <workItem from="1771018842514" duration="1333000" />
+      <workItem from="1771182572437" duration="439000" />
+      <workItem from="1771187067672" duration="10000" />
+      <workItem from="1771187123536" duration="21000" />
+      <workItem from="1771187454214" duration="7000" />
+      <workItem from="1771187499958" duration="48000" />
+      <workItem from="1771188237032" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Servidor.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
