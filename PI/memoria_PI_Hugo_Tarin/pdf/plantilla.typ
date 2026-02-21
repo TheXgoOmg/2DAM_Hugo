@@ -36,6 +36,21 @@
     lang: "es",
   )
 
+  // Resetea el estilo del código para que el resaltado funcione
+  show raw: set text(
+      font: ("Courier New", "DejaVu Sans Mono", "Consolas", "monospace"),
+      size: 10pt,
+      fill: black,  // evita que herede colores de los headings
+  )
+
+  show raw.where(block: true): it => block(
+      fill: rgb("#f5f5f5"),
+      inset: 1em,
+      radius: 4pt,
+      width: 100%,
+      it,
+  )
+
   // ==========================================================
   // [REQ: Márgenes] Izquierdo 2.5cm, resto 2cm
   // ==========================================================
