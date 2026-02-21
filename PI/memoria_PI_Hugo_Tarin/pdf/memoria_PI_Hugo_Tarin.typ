@@ -200,7 +200,7 @@ El sonido también es una muy buena fuente de ambientación, tanto de sonidos na
 *Antes destacar* \
 Para ambos tipos de sonido he creado un script que hace más fácil gestionar las pistas de audio de cada tipo de sonido, con la información necesaria para reproducirlas correctamente y asignándoles la pista de audio original. Además de añadirlas como una opción en Unity del apartado Create, para crear un objeto de estos scripts.
 
-=== MusicManager
+=== MusicManager.cs
 
 Este es el encargado de gestionar la música de fondo, que concuerde con la situación en la que estás. Cada menú tiene su música predeterminada, por lo que al cambiar de menú la música cambia.
 
@@ -208,8 +208,169 @@ Al estar presente en todas las escenas del juego decidí apli:car el patrón de 
 
 Para reproducir estos sonidos se usa un AudioSource general de toda la escena, no es un sonido 3D.
 
-=== SoundManager
+=== SoundManager.cs
 
 Este es el script que se encarga de gestionar efectos de sonido, una única vez por ejecución. Por la forma en el que lo he diseñado cada escena que tendrá la posibilidad de generar este tipo de sonidos tiene este script asignado a un objeto, además de un AudioSource que tendrá cada objeto con la capacidad de ejecutar estos sonidos.
 
 He modificado los valores del Spatial Blend en todos los AudioSource de objetos externos al personaje de la escena de Juego, lo cual hace que tenga un cierto porcentaje de sonido 3D, para que tenga cierto punto de realismo e inmersión. Manteniendo los sonidos de menú completamente 2D.
+
+#pagebreak()
+
+== Escenas
+
+Para el flujo del videojuego he decidido crear cuatro escenas, Menu, Mercado, Juego y GameOver con las que el usuario puede moverse y tener la experiencia total del videojuego.
+
+=== Flujo entre escenas
+
+El flujo entre escenas se puede ver claramente en la siguiente imagen:
+
+#figura(
+  image("img/img_flujo_escenas.png"),
+  "Imágen sobre el flujo de escenas del proyecto."
+)
+
+Como puedes ver, todas las escenas se mueven entre sí por medio de un botón que se acciona... Todas, menos una.
+
+*SceneAdditive*
+Este término es el que se utiliza para indicar que quieres añadir una escena como aditiva, osea que se sobreponga a la actual.
+
+Y este es el modo que he usado para cargar la escena de GameOver.
+
+#figura(
+  image("img/img_sceneadditive.png"),
+  "Muestra de la sobreposición de la escena GameOver sobre la escena Juego."
+)
+
+Utilizando una coroutina como las que he mencionado antes para que tarde 3 segundos en aparecer, además de aparecer con un FadeOn, quedando muy estético.
+
+Algo que aprendí mientras implementaba esta funcionalidad es que al cargar una escena sobre otra el EventSystem que usa es el de la escena que había antes, por lo que no hace falta añadirla, entre otros elementos y funciones que actúan parecido.
+
+== MenuSystem.cs
+
+Antes de continuar, creo que es importante explicar la funcionalidad del script MenuSystem, ya que ayuda a que la navegación entre escenas funcione facilmente.
+
+Este script tiene un método para cargar cada una de las escenas, además de uno para cerrar el videojuego, que se activa con el botón 'Salir' del menú.
+
+Cada método tiene 3 partes:
+
++ *Activación o desactivación del ratón*: Esta parte desactiva el ratón al comienzo del método que activa la escena 'Juego' y lo activa en el resto de escenas, ya que es necesario.
+
++ *StartCoroutine*: Ejecuta una coroutina para cambiar a la escena especificada con retraso, para un efecto de carga.
+
++ *MusicManager*: Finalmente se ejecuta la música de fondo de esa escena.
+
+Cada uno de estos métodos se activan especificando la acción a ejecutar en el apartado de 'On Click' de los botones.
+
+#pagebreak()
+
+== Escena 'Menu'
+
+Esta es la escena más simple de todas.
+
+=== Diseño
+
+- Con un diseño de un fondo con un Aspect Ratio Filter que hace que no se achate la imagen, sino que amplíe sobre la zona de la imagen más significante cuando la resolución de la pantalla lo requiera.
+
+- El título del nombre del videojuego es un elemento aparte para no afectar a su resolución y que siempre sea visible con calidad. Siempre fijo a cierta distancia del borde superior izquierdo.
+
+- Finalmente pasamos a los botones, con un diseño basado en una distancia fija entre ellos y hacia el borde inferior izquierdo de la pantalla.
+
+=== Implementación
+
+La única implementación de esta escena es el uso del script de MenuSystem para activar el cambio de escena mediante clicar el botón adecuado.
+
+Además del botón 'Salir', que utiliza el mismo script para ejecutar su función.
+
+#figura(
+  image("img/img_menu.png"),
+  "Imagen de la escena del 'Menu' del proyecto"
+)
+
+#pagebreak()
+
+== Escena 'Mercado'
+
+Esta escena es pura interfaz dinámica.
+
+Pero antes, es necesario explicar dos script:
+
+=== CoinsSystem.cs
+
+- Este script es el que cambia el valor numérico de un panel de monedas. Al cual hay que pasarle el texto que muestra el valor del panel y la cantidad a asignar. Esta cantidad se utiliza únicamente al cargar el objeto en la escena.
+
+#figura(
+  image("img/img_coinssystem.png"),
+  "Imagen del panel de CoinsSystem"
+)
+
+Todos los objetos que muestren un panel como este llevan un `CoinsSystem.cs` asignado.
+
+- También contiene los métodos `AddCoins` y `SubtractCoins`, que se utilizan para añadir y restar X cantidad de monedas al valor del panel de monedas asignado al script, una vez ya se ha cargado por primera vez el objeto.
+
+=== UIManager.cs
+
+Este script es muy importante en el apartado de la UI de todo el proyecto. Aunque a su vez es muy sencillo.
+
+Se compone de dos partes fundamentales:
+
+1. *Asignación de los objetos*: A este script se le asignan los objetos a gestionar desde el programa de Unity. Tiene una interfaz embellecida para que se dividan las asignaciones por apartados, así es más intuitivo.
+
+2. *Cambio de estado o valores*: En este segundo apartado ya solo queda modificar cada objeto según requiere, la idea es que todos los demás scripts puedas modificar cualquier apartado de la UI a partir de este script:
+  - Si es un panel visual de la escena 'Juego' se le asignará el estado que se le pase como parámetro, para que se pueda visualizar en la ejecución del proyecto o no.
+  - Si es un texto a modificar se aplicarán los textos que se le pasen como parámetro de la forma predefinida en su método de modificación.
+
+=== Diseño
+
+- Lo que más destaca de esta escena es el panel de madera que hace de soporte para las Cards de dentro, siendo responsive a cualquier pantalla.
+
+- En la esquina superior derecha tenemos un panel que muestra la cantidad de monedas que tenemos acumuladas, ajustada al tamaño de la pantalla.
+
+- Las tres Cards de mejora de recursos, que tienen:
+  - Texto de nivel del recurso.
+  - Imagen representativa dinámica al tamaño de la Card y sin achatamientos.
+  - Texto de muestra de la mejora de cada estadística del recurso.
+  - Panel de muestra del coste de mejora.
+  - Botón de mejora del recurso.
+
+- Botón para volver a la escena 'Menu' en el centro inferior.
+
+=== Implementación (MarketSystem.cs)
+
+Sabiendo la distribución de elementos y su agrupación por la escena 'Mercado' ya os puedo explicar este script.
+
+Este script se usa únicamente para la mejora de los recursos del usuario, y se dispone en dos grandes bloques:
+
++ *Plasmar datos al panel* \
+  Este paso es importante, ya que lo que hace es usar PlayerPrefs para buscar y asignar, valores encontrados o por defecto, a todos los textos dinámicos de la escena a través del UIManager para que todo sea visual y preciso.
+  
+  Esto incluye: el nivel del recurso, valores de las estadísticas y coste de mejora.
+
++ *Mejora y actualización* \
+  Esta parte tiene un método para la mejora y actualización de cada recurso, cada cual se acciona por el 'On Click' de cada botón a su respectivo recurso.
+  
+  La estructura del funcionamiento de estos métodos es:
+  1. Asignar el valor de coste a una variable, por medio del PlayerPrefs.
+  2. Ejecutar el método SubtractCoins del CoinsSystem y almacenar el booleano de exito en una variable.
+  3. Reproducir el sonido correspondiente, si se mejoro exitosamente o no, mediante el SoundManager.
+  4. Aplicar los cálculos de incremento de nivel a cada estadística, al valor del nivel mismo y ejecutar un método de `RecalcularCoste()` que modifica y guarda el siguiente coste de mejora de forma exponencial.
+  5. Almacenar todos estos cambios en la clave correspondiente del PlayerPrefs
+
+
+#figura(
+  image("img/img_market.png"),
+  "Imagen de la escena 'Mercado' del proyecto"
+)
+
+
+
+= Bugs y soluciones
+
+== SceneAdditive
+
+- El SceneAdditive me ocasionó un problema con el MusicManager, ya que solamente puede haber uno por escena, y al hacer aditiva la escena de GameOver y tener su propio MusicManager además del existente de la escena Juego me detectaba un error, el cual era que existían dos instancias de un objeto que debe ser único.
+
+Por lo que tuve que borrar el MusicManager de la escena GameOver, ya que reutilizaba el de la escena Juego.
+
+- Además la escena GameOver dependía de que la escena Juego se hubiese ejecutado previamente, sino no tendría los elementos funcionales cuando los requería.
+
+Así que solo podía hacer pruebas basándome en el flujo natural de juego, no solo en esa escena.

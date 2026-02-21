@@ -59,14 +59,14 @@
     -- Sonidos
 
 - Implementaciones transversales
-    -- MusicManager (Instance global)
-    -- MenuSystem (con UI Navigation)
-    -- DayNightCycle
-    -- SoundManager (AudioSource serializado, compatible con sonido 3D)
-    -- UIManager
+    -x- MusicManager (Instance global)
+    -x- MenuSystem (con UI Navigation)
+    -x- SoundManager (AudioSource serializado, compatible con sonido 3D)
     -- MarketSystem
+    -- UIManager
     -- CoinsSystem
     -- HealthBar (prefab)
+    -- DayNightCycle
 
 - Recursos externos
     -- Assets utilizados y atribuciones
