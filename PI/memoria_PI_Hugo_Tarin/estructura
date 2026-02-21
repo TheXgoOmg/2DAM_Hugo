@@ -1,0 +1,52 @@
+-introduccion-
+--justificación--
+--objetivos--
+
+-tecnologias
+--Unity
+--asignaturas (DI, AD, PMDM, PSP)
+---DI, diseño de interfaces responsive
+---AD, almacenar progreso (PlayerPrefs)
+---PMDM, NavMesh, UINavegation (menusystem), Input System-multiplataform, Blend Tree, diseño de scrips y manejadores
+---PSP coroutinas
+
+-juego
+--ambientación (-asset)
+
+--escenas
+---menu (MusicManager-audiosource-Instance-global, prefabBotones, UIManager)
+---market (MarketSystem, prefabBotones, coinsSystemm, SoundManager, UIManager)
+---game (UIManager-multiplataforma(healthbar, coinsystem, waveManager), dayNightCycle)
+---gameover (FadeOn-coroutine, SceneAditive)
+
+-personaje (-asset)
+--sistema de mejora, movimiento, vida/muerte, ataque, animaciones, coger_arma, soundmanager
+
+-enemigos (-asset)
+--wavemanager
+--sistema de vida/muerte, movimiento, animaciones, soundmanager, reward
+--arma (ataque, soundmanager)
+
+-armas (-asset
+--sistema doble arma
+--sistema de mejora de estadisticas independientes(market)
+
+
+-implementaciones
+--MusicManager (Instance) -g
+--MenuSystem (con UINavegation) -g
+--DayNightCycle
+--SoundManager
+--UIManager
+--MarketSystem
+--CoinsSystem
+--healthbar prefab
+
+
+-biblioteca assets (-asset)
+
+-dificultades y soluciones
+
+-aprendizajes
+
+-conclusion
