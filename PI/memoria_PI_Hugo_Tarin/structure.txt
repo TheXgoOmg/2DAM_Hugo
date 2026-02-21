@@ -1,0 +1,86 @@
+- Introducción
+    -- Justificación
+    -- Objetivos
+
+- Tecnologías utilizadas
+    -- Unity
+        --- NavMesh
+        --- UI Navigation (MenuSystem)
+        --- Input System multiplataforma
+        --- Blend Tree
+        --- Animator Controller
+    -- Relación con asignaturas
+        --- DI — Diseño de interfaces responsive
+        --- AD — Almacenar progreso (PlayerPrefs)
+        --- PMDM — Diseño de scripts y manejadores
+        --- PSP — Corrutinas
+	
+- Juego
+    -- Ambientación (asset)
+    -- Sonido
+        --- MusicManager (AudioSource, Instance global)
+        --- AudioSource libre por escena (sonido 2D, independiente de posición)
+    -- Escenas
+        --- Flujo entre escenas (diagrama)
+	    ---- Transición especial (SceneAdditive)
+        --- Menú
+            ---- Diseño (UIManager, prefab botones)
+            ---- Implementación (botones, MenuSystem)
+        --- Market
+            ---- Diseño (prefab botones, UIManager)
+            ---- Implementación (MarketSystem, CoinsSystem, SoundManager, botones MenuSystem)
+        --- Game
+            ---- Diseño (UIManager multiplataforma — healthbar, coins, waves, interfaz dinámica)
+            ---- Implementación (DayNightCycle)
+        --- Game Over
+            ---- Diseño (prefab botones)
+            ---- Implementación (SceneAdditive, botones MenuSystem, FadeIn corrutina)
+
+- Personaje (asset)
+    -- Sistema de movimiento
+    -- Sistema de mejora
+    -- Sistema de vida y muerte (HealthbarSystem)
+    -- Sistema de ataque
+    -- Animaciones
+    -- Coger arma
+    -- Sonidos
+
+- Enemigos (asset)
+    -- WaveManager
+    -- Sistema de vida y muerte (HealthbarSystem)
+    -- Sistema de movimiento
+    -- Animaciones
+    -- Arma y ataque
+    -- Recompensa (reward)
+    -- Sonidos
+
+- Armas (asset)
+    -- Sistema de doble arma
+    -- Sistema de mejora de estadísticas independientes (Market)
+    -- Sonidos
+
+- Implementaciones transversales
+    -- MusicManager (Instance global)
+    -- MenuSystem (con UI Navigation)
+    -- DayNightCycle
+    -- SoundManager (AudioSource serializado, compatible con sonido 3D)
+    -- UIManager
+    -- MarketSystem
+    -- CoinsSystem
+    -- HealthBar (prefab)
+
+- Recursos externos
+    -- Assets utilizados y atribuciones
+    -- Modificaciones realizadas sobre los assets
+
+- Pruebas
+    -- Plataformas probadas
+    -- Bugs encontrados y soluciones
+
+- Dificultades y soluciones
+
+- Aprendizajes
+
+- Conclusión
+
+- Bibliografía

@@ -58,8 +58,8 @@
   set par(
     justify: true,
     // [REQ: Interlineado] 1.5 líneas
-    leading: 1.5em * 0.85,   // ~1.5 líneas para tamaño 11pt
-    spacing: 1.2em,
+    leading: 0.65em,   // ~1.5 líneas para tamaño 11pt
+    spacing: 1.4em,
   )
 
   // ==========================================================
