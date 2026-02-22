@@ -39,24 +39,23 @@
     -x- Sistema de movimiento
     -x- Sistema de mejora
     -x- Sistema de vida y muerte (HealthbarSystem)
-    -- Animaciones
-    -- Coger arma
-    -- Sistema de ataque
-    -- Sonidos
+    -x- Animaciones
+    -x- Coger arma
+    -x- Sistema de ataque
+    -x- Sonidos
 
 - Enemigos (asset)
-    -- WaveManager
-    -- Sistema de vida y muerte (HealthbarSystem)
-    -- Sistema de movimiento
-    -- Animaciones
-    -- Arma y ataque
-    -- Recompensa (reward)
-    -- Sonidos
-
+    -x- Sistema de movimiento
+    -x- Vida/Muerte
+    -x- Animaciones
+    -x- Arma y ataque
+    -x- Recompensa
+    -x- Sonidos
+    -x- Tipos
+    
 - Armas (asset)
-    -- Sistema de doble arma
-    -- Sistema de mejora de estadísticas independientes (Market)
-    -- Sonidos
+    -x- Sistema de doble arma
+    -x- Sistema de mejora de estadísticas independientes (Market)
 
 - Implementaciones transversales
     -x- MusicManager (Instance global)
@@ -65,10 +64,10 @@
     -x- MarketSystem
     -x- UIManager
     -x- CoinsSystem
-    -- DayNightCycle
+    -x- DayNightCycle
 
 - Recursos externos
-    -- Assets utilizados y atribuciones
+    -x- Assets utilizados y atribuciones
     -- Modificaciones realizadas sobre los assets
 
 - Pruebas

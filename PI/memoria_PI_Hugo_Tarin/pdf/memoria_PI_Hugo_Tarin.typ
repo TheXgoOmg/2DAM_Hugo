@@ -597,9 +597,99 @@ Contamos con 2 tipos de enemigos, siendo:
 
 = Armas
 
+En este proyecto tenemos un sistema de doble arma, pudiendo intercambiar entre una y otra cuando queramos, siempre que estemos cerca del arma.
+
+La idea del sistema de doble arma es que da mucha variedad al tipo de juego, una siendo a melé con mucho daño y otra a larga distancia más segura, aunque da igual la distancia, porque como ya hemos visto... de los grandes no te escapas.
+
+#figura(
+  image("img/img_armas.png"),
+  "Imagen de las dos armas del proyecto"
+)
+
+== Daga
+
+La daga tiene un sistema de combate cerrado, teniendo que acercarte mucho al enemigo para combatir, pero tiene sus beneficios:
+
+- Daño muy alto: Tiene un daño superior al báculo, ideal para acabar rápido con los enemigos.
+- Daño en área: Si ya era bueno hacer más daño además, ¡puedes golpear a varios enemigos a la vez!
+
+Es un sistema de combate lineal, no cambia la jugabilidad conforme lo mejoras, es la opción que no falla.
+
+== Báculo
+
+A diferencia de la daga, el báculo te permite mantener el control de la situación desde lejos, ralentizar a los enemigos con los golpes y mantenerte seguro, además de que es muy divertida de jugar:
+
+- Daño único: No tiene funcionalidad de daño en área, al menos no fácilmente, con suerte podrás dar a dos enemigos a la vez.
+- Mejora rentable: Este arma está pensada para disfrutar a nivel alto, conforme la mejoras aumenta el daño, velocidad y distancia del proyectil.
+
+Comienza con un proyectil muy lento, casi como dejar una trampa en el suelo, pero después de unas mejoras...
+
+== Mejora de estadísticas
+
+Al ser un sistema de doble arma, cada una tiene sus propias estadísticas que mejoran su funcionamiento, vamos a ver a continuación cuales son y como mejoran con el paso de los niveles, además incluiremos la mejora del personaje.
+
+#tabla(
+  caption: "Comparativa de estadísticas",
+  columns: (auto, 1fr, 1fr, 1fr),
+  align: (col, row) => if col == 0 { horizon } else { center + horizon },
+  stroke: 0.5pt,
+  fill: (col, row) => if row == 0 or col == 0 { rgb("#1a3a5c") } else if calc.odd(row) { rgb("#f0f4f8") } else { white },
+  table.header(
+    text(fill: white, weight: "bold")[],
+    text(fill: white, weight: "bold")[Personaje],
+    text(fill: white, weight: "bold")[Daga],
+    text(fill: white, weight: "bold")[Báculo],
+  ),
+  text(fill: white, weight: "bold")[Nivel 1 \ Coste: 5],
+    [Vida máxima: 100], [Daño: 25 \ Cooldown: 2.0s], [Daño: 15 \ Distancia: 10 \ Velocidad: 1.0 \ Cooldown: 2.0s],
+  text(fill: white, weight: "bold")[Nivel 2 \ Coste: 6],
+    [Vida máxima: 110], [Daño: 27 \ Cooldown: 1.9s], [Daño: 17 \ Distancia: 10.5 \ Velocidad: 1.4 \ Cooldown: 1.9s],
+  text(fill: white, weight: "bold")[Nivel 5 \ Coste: 19],
+    [Vida máxima: 140], [Daño: 33 \ Cooldown: 1.6s], [Daño: 23 \ Distancia: 12 \ Velocidad: 2.6 \ Cooldown: 1.6s],
+  text(fill: white, weight: "bold")[Nivel 10 \ Coste: 103],
+    [Vida máxima: 190], [Daño: 43 \ Cooldown: 1.1s], [Daño: 33 \ Distancia: 14.5 \ Velocidad: 4.6 \ Cooldown: 1.1s],
+  text(fill: white, weight: "bold")[Nivel 15 \ Coste: 555],
+    [Vida máxima: 240], [Daño: 53 \ Cooldown: 0.5s], [Daño: 43 \ Distancia: 17 \ Velocidad: 6.6 \ Cooldown: 0.5s],
+  text(fill: white, weight: "bold")[Nivel 20 \ Coste: 2988],
+    [Vida máxima: 290], [Daño: 63 \ Cooldown: 0.5s], [Daño: 53 \ Distancia: 19.5 \ Velocidad: 8.6 \ Cooldown: 0.5s],
+)
+
+
+= Recursos externos
+
+El uso de recursos externos ha sido de infinita ayuda para el proyecto. El uso de Assets gratuitos de Unity Store y otras webs ha sido vital.
+
+== Assets utilizados y atribuciones
+
+#tabla(
+  caption: "Assets externos utilizados en el proyecto",
+  columns: (1fr, auto, auto, auto),
+  align: (col, row) => if row == 0 { center + horizon } else { left + horizon },
+  stroke: 0.5pt,
+  fill: (col, row) => if row == 0 { rgb("#1a3a5c") } else if calc.odd(row) { rgb("#f0f4f8") } else { white },
+  table.header(
+    text(fill: white, weight: "bold")[Nombre del Asset],
+    text(fill: white, weight: "bold")[Autor],
+    text(fill: white, weight: "bold")[Fuente],
+    text(fill: white, weight: "bold")[Licencia],
+  ),
+  [Stylized Cementery Pack], [Valentine Kurakin], [Unity Asset Store], [Gratuito],
+  [Stylized Low Poly Skeleton], [SazenGames], [Unity Asset Store], [Gratuito],
+  [UJoystick], [Lovatto Studio], [Unity Asset Store], [Gratuito],
+  [Fatality FPS Gaming Font], [Fontier], [Unity Asset Store], [Gratuito],
+  [3D Items - Free Wand Pack], [Frost Forged], [Unity Asset Store], [Gratuito],
+  [Lowpoly Environment - Nature Free - MEDIEVAL FANTASY SERIES], [Polytope Studio], [Unity Asset Store], [Gratuito],
+  [Magic Effects FREE], [Hovl Studio], [Unity Asset Store], [Gratuito],
+  [Red ruby dagger], [Gavalatorx], [Unity Asset Store], [Gratuito],
+  [Simple Input System], [yasirkulam], [Unity Asset Store], [Gratuito],
+  [Magic Effects FREE], [Hovl Studio], [Unity Asset Store], [Gratuito],
+)
+
 
 
 = Bugs y soluciones
+
+Antes recalcar que estas pruebas y el desarrollo completo ha sido testeado únicamente en Android y Windows 11.
 
 == SceneAdditive
 
@@ -610,3 +700,111 @@ Por lo que tuve que borrar el MusicManager de la escena GameOver, ya que reutili
 - Además la escena GameOver dependía de que la escena Juego se hubiese ejecutado previamente, sino no tendría los elementos funcionales cuando los requería.
 
 Así que solo podía hacer pruebas basándome en el flujo natural de juego, no solo en esa escena.
+
+== RaycastHit
+
+- Este elemento es una linea recta que es la encargada de hacer el contacto con el suelo, antes que el mismo collider del personaje, el problema que me ocasionó fue que desde bordes  o cuestas empinadas el collider no permitía al personaje caer y el raycastHit se quedaba flotando, anulando cualquier posibilidad de moverse.
+
+Para solucionarlo cambié el raycastHit que era una simple línea por un SphereCollider, que tiene una forma redondeada que evitaba que el collider del personaje tocase ningún elemento, y en una situación como la anterior simplemente se deslizaba hacia los lados.
+
+- Para este mismo problema en la situación de colinas me seguía dando el mismo tipo de error.
+
+Para ello decidí eliminar cualquier tipo de colina, dejando un espacio simple y efectivo para jugar.
+
+== Límites de juego
+
+- El tema de los límites por los que te puedes mover no me gustaba como era, eran unos muros invisibles que no te dejaban pasar, poco realistas y muy forzados.
+
+Así que decidí tematizarlo a lo grande, con unas grandes verjas de cementerio, poco realistas, pero eran el efecto de magnitud y fantasía que quería lograr, más creíble que el otro.
+
+== Obstáculos y colliders
+
+- Algunos elementos de los assets de temática de cementerio como las baldosas y piedras que forman caminos tanto al personaje como a los enemigos.
+
+A las baldosas y piedras les quité los colliders, ya que las baldosas hacían que mi personaje dejase de moverse, no tenían funcionalidad. Además las piedras del camino eran colliders muy pequeños pero que hacían que el personaje diese saltitos y persieses el control de su movimiento en momentos vitales.
+
+- También obstaculizaban los elementos derruidos, más a los enemigos que al personaje.
+
+Para el personaje conseguí que pudiese sobrepasarlos sin mucha dificultad, haciendo que quedase realista y bonito, pero para los enemigos tuve que eliminarles el NavMeshObstacle a los elementos, la solución que le dí al personaje no sirvió tanto en los enemigos.
+
+- El gran arco de piedra que marca la entrada al cementerio también me dio problemas, el collider que tenía no dejaba atravesarla a través.
+
+La única solución viable fue quitarle el collider.
+
+== Cambio de armas
+
+- Con el cambio de armas al cambiar el tag de 'CurrentWeapon' a 'Weapon' al soltar un arma de vez en cuando detectaba el arma que acababas de soltar como el arma que querías coger, por lo que no cambiaba de arma, simplemente movía de sitio el arma que querías coger.
+
+La solución fue quitarle el collider que detectaba que estabas cerca de un arma durante los siguientes 0.2 segundos después de soltarla, así no se podría agarrar un arma sin collider que detectar, y por si acaso tampoco le asignaría el tag 'Weapon' hasta pasados esos 0.2 segundos.
+
+== Orientación enemigos
+
+- En la primera implementación de los enemigos al proyecto estos siempre se orientaban hacia mi personaje, caminando marcha atrás al alejarse, esto era horrible.
+
+La solución que le di fue que mirasen hacia la dirección que caminaban siempre.
+
+- Esta solución dio a otro fallo, cuando estaban dentro de la distancia de detención no se movían, por lo que la rotación no se actualizaba, y si girabas alrededor de ellos sin salir del area de detención ellos se quedaban atacando al punto en el que el personaje estaba cuando lo alcanzó, que puede ser perfectamente el lado contrario.
+
+La solución fue añadirle la función de rotar constantemente hacia el personaje si está dentro de la distancia de detención.
+
+- Nuevamente dio nuevos problemas, en medio de los ataques también rotaba, siendo el ataque un Stab, siempre te daba y era imposible ganar.
+
+La solución fue añadir el booleano `puedeMover` que permitía rotar o caminar al enemigo o negárselo, hasta que hubiese acabado la animación que se lo negaba.
+
+== Golpear con la daga
+
+- Si la daga tenía un collider de acuerdo con su tamaño tenías que estar literalmente tocando al enemigo para poder darle, muy complicado y muy tosco para un videojuego.
+
+Por lo que le aumente bastante el tamaño del collider, lo suficiente para que fuese más dinámico sin pasarse de facilidad y poco realismo.
+
+
+= Conclusión
+
+== Aprendizajes
+
+Con este proyecto he aprendido muchísimo y he hecho algo que me hacía verdadera ilusión, mi propio videojuego
+
+De no entender para nada el entorno de Unity y asustarme de verlo a sentirme cómodo en él y saber usar sus ventajas con fluidez para el desarrollo de todas las partes del proyecto.
+
+No solo he mejorado enormemente en el uso de la herramienta, sino también en la programación, entender la lógica de un videojuego. 
+
+He pasado de asustarme con los vectores y las fuerzas, sin saber cómo o donde crear un script a entender las bases de como funcionan, como obtienen lo que necesitan para funcionar, como acceder a otros objetos.
+
+E incluso hasta a detectar algunas mejoras de optimización a nivel de código y estructura que podría haber utilizado, pero que por falta de tiempo no he podido llevar a cabo.
+
+== Conclusión
+
+Me ha fascinado el desarrollo de este proyecto, aunque también me han causado algunos días de mucho trabajo por finalizarlo lo mejor posible, con la estética que quería.
+
+He descubierto la dificultad de hacer un videojuego bien hecho, el esfuerzo que lleva. Tenía las expectativas altísimas, un juego dinámico, con muchas animaciones, combos de ataque, ataques desde el aire, enemigos saltando por los aires.
+
+Todo eran fantasías de un inexperto, este desarrollo me ha puesto los pies en la tierra y he descubierto otro apartado de la informática y la programación que me ha gustado mucho.
+
+= Bibliografía
+
+#show link: it => underline(text(fill: rgb("#2c5f8a"), it))
+
+== Documentación oficial
+
+Unity Technologies. (2024). *Unity Documentation*. Unity.
+#link("https://docs.unity3d.com")
+
+Unity Technologies. (2024). *Unity Scripting API*. Unity.
+#link("https://docs.unity3d.com/ScriptReference")
+
+Microsoft. (2024). *C\# Documentation*. Microsoft Learn.
+#link("https://learn.microsoft.com/es-es/dotnet/csharp")
+
+== Recursos utilizados
+
+Adobe. (2024). *Mixamo — Animaciones y personajes 3D*. Adobe Inc.
+#link("https://www.mixamo.com")
+
+Unity Technologies. (2024). *Unity Asset Store*. Unity.
+#link("https://assetstore.unity.com")
+
+Orange Free Sounds. (2024). *Orange Free Sounds — Efectos de sonido gratuitos*.
+#link("https://orangefreesounds.com")
+
+FreeSound. (2024). *Freesound — Biblioteca de sonidos colaborativa*.
+#link("https://freesound.org")
