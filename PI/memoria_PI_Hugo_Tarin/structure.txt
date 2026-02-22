@@ -36,12 +36,12 @@
             ---- Implementación (SceneAdditive, botones MenuSystem, FadeIn corrutina)
 
 - Personaje (asset)
-    -- Sistema de movimiento
-    -- Sistema de mejora
-    -- Sistema de vida y muerte (HealthbarSystem)
-    -- Sistema de ataque
+    -x- Sistema de movimiento
+    -x- Sistema de mejora
+    -x- Sistema de vida y muerte (HealthbarSystem)
     -- Animaciones
     -- Coger arma
+    -- Sistema de ataque
     -- Sonidos
 
 - Enemigos (asset)
@@ -62,10 +62,9 @@
     -x- MusicManager (Instance global)
     -x- MenuSystem (con UI Navigation)
     -x- SoundManager (AudioSource serializado, compatible con sonido 3D)
-    -- MarketSystem
-    -- UIManager
-    -- CoinsSystem
-    -- HealthBar (prefab)
+    -x- MarketSystem
+    -x- UIManager
+    -x- CoinsSystem
     -- DayNightCycle
 
 - Recursos externos

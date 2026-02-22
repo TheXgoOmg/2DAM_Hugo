@@ -16,7 +16,7 @@
   curso: "2025/2026",
   ciclo: "Desarrollo de Aplicaciones Multiplataforma",
   centro: "CEIPFP Cheste",
-  logo: none,   // Cambia a: logo: "logo.png"  cuando tengas el logo
+  logo: "img/img_cipfpcheste.png"   // Cambia a: logo: "logo.png"  cuando tengas el logo
 )
 
 // ============================================================
@@ -26,7 +26,7 @@
 
 = Introducción
 
-Este proyecto consiste en un videojuego multiplataforma y multimedia, desarrollado en Unity, que contiene sistemas de movimiento basado en vectores, de gestión de escenas y de sonidos, además de scripts dedicados a detalles para que sea lo más cómodo y visual para el usuario.
+  Este proyecto consiste en un videojuego multiplataforma y multimedia, desarrollado en Unity, que contiene sistemas de movimiento basado en vectores, de gestión de escenas y de sonidos, además de scripts dedicados a detalles para que sea lo más cómodo y visual para el usuario.
 
 == Justificación
 
@@ -283,7 +283,7 @@ Además del botón 'Salir', que utiliza el mismo script para ejecutar su funció
 
 #figura(
   image("img/img_menu.png"),
-  "Imagen de la escena del 'Menu' del proyecto"
+  "Imagen de la escena del 'Menu' del proyecto."
 )
 
 #pagebreak()
@@ -300,7 +300,7 @@ Pero antes, es necesario explicar dos script:
 
 #figura(
   image("img/img_coinssystem.png"),
-  "Imagen del panel de CoinsSystem"
+  "Imagen del panel de CoinsSystem."
 )
 
 Todos los objetos que muestren un panel como este llevan un `CoinsSystem.cs` asignado.
@@ -358,8 +358,244 @@ Este script se usa únicamente para la mejora de los recursos del usuario, y se 
 
 #figura(
   image("img/img_market.png"),
-  "Imagen de la escena 'Mercado' del proyecto"
+  "Imagen de la escena 'Mercado' del proyecto."
 )
+
+== Escena 'Juego'
+
+Esta es la escena en la que más tiempo pasarás, por ello le he dedicado tiempo a que sea cómoda y no agobien los elementos de la interfaz.
+
+=== Diseño
+
+En el primer vistazo podremos observar:
+
+- En la parte superior izquierda la barra de salud de nuestro personaje.
+- En la parte superior opuesta el panel de monedas que tenemos.
+- En el caso de que estemos jugando la versión móvil veremos que en la mayor parte de las esquinas inferiores tendremos botones y un joystick para adecuar la jugabilidad en estos ddispositivos.
+
+Conforme vayamos jugando aparecerán otros elementos de la interfaz, como pueden ser:
+
+- El contador de oleadas que aparecerá en la zona superior central.
+- Además de las interfaces de interacción con las armas que aparecerán cuando nos acerquemos a ellas.
+
+=== Implementación
+
+Todos estos elementos están sujetos al script UIManager que afecta a esta escena, tomando el control de cuando aparecen y desaparecen en pantalla, además de cambiar sus valores a tiempo real.
+
+- Comenzando por la barra de vida, tiene su propio script que actualiza la barra verde dependiendo del porcentaje de vida respecto a su vida máxima que le queda.
+- En cuanto al panel de monedas, utiliza el script CoinsSystem explicado anteriormente, siendo activada la actualización del valor cuando se detecta la muerte de un enemigo.
+- La interfaz móvil se incluye si detecta una pantalla táctil al iniciar la escena.
+- Con el texto del contador de oleadas lo maneja otro script llamado WaveManager a través del UIManager, más adelante explicaremos la funcionalidad interna de este.
+- Igual ocurre con los textos de interactuar con las armas, pero de manera más compleja. Lo maneja el script Coger_Arma del personaje, y según las entradas de datos que detecte muestra un texto u otro. Ya que la interfaz de cambio de arma es diferente para móvil, móvil PC o mando. Más adelante se explicará en profundidad. 
+
+#figura(
+  image("img/img_juego.png"),
+  "Imagen de la escena 'Juego' del proyecto."
+)
+
+=== DayNightCycle.cs
+
+Para una mayor ambientación y un poco de sensación tétrica quería implementar un sistema de noche, y para que no fuese estático decidí hacer un ciclo de día y noche, ahí nace este script.
+
+Este script funciona así:
+
+- Tienes dos objetos que generan luz, sol y luna, uno emite luz amarilla/blanca y el otro azul oscura, posicionados opuestamente.
+- El script va variando la intensidad de cada objeto conforme se acerca al horizonte, usando parámetros de máximas intensidades y tiempo que tarda en hacer un ciclo, para que sea personalizable. Además de que el mismo genera la rotación de los objetos, de manera sincronizada.
+
+#figura(
+  image("img/img_daynightcycle.png"),
+  "Imagen del estado de noche del proyecto,"
+)
+
+== Escena 'GameOver'
+
+Esta es la escena especial, ya que no tiene implementación, es gestionada en su totalidad por los scripts existentes en la escena 'Juego'. Únicamente que aparece con un difuminado, por el script MenuSystem.cs, pero sigue sin ser una funcionalidad de la escena.
+
+=== Diseño
+
+El diseño de esta interfaz es simple y estática en si misma, en la ejecución del juego adopta la funcionalidad al igual que cualquier otra escena:
+
+- Una imagen que hace como marco, ocupando toda la pantalla.
+- Una imagen bien acomodada que da la noticia del GameOver.
+- Y los dos botones para continuar con el flujo de juego tras perder la partida.
+
+Es simple pero hace su función tan bien como las otras.
+
+#figura(
+  image("img/img_gameover.png"),
+  "Imagen de la escena 'GameOver' del proyecto"
+)
+
+#text(size: 9.5pt)[*Esta imagen no está sacada de la ejecución completa del proyecto, en la ejecución se vería de fondo la escena 'Juego', ya que la escena 'GameOver' ha sido cargada sobre esta.*]
+
+= Personaje
+
+Continuamos con el personaje, el objeto que más scripts y trabajo interno tiene.
+
+== Movimiento
+
+El movimiento va atado a dos scripts, uno controla el movimiento sobre la superficie (`Moviment_Cub.cs`) y otro el movimiento del salto (`Moviment_vertical.cs`).
+
+El funcionamiento es bastante complejo, en término de matemáticas y física, pero simplificado, utiliza vectores y fuerzas para darle movimiento al objeto.
+
+Lo interesante está en el uso del `InputSystem` que detecta cuando quieres que se mueva o salte, y ejecuta fuerzas según cada acción.
+
+== Vida/Muerte
+
+Esta funcionalidad va ligada al script `PlayerHealthSystem.cs`, lo que hace es:
+
+- Acceder al valor de la clave que contiene el nivel y la vida máxima dentro de los PlayerPrefs.
+- Además de tener el método de `TakeDamage`, que resta a la vida actual el valor pasado por defecto. Esta función es pública para que los enemigos puedan accionarla. Además actualiza la barra de vida de la interfaz (`Healthbar.cs`) cada vez que se ejecuta.
+
+Si la vida es igual o inferior a cero se ejecuta el método `Morir`:
+
+- Esto activa el booleano `IsDead` y la animación de muerte.
+- Desactiva los scripts de movimiento y combate.
+- Desactiva toda interfaz de usuario que esté activa.
+- Además de activar la música de la escena `GameOver`, la cual se muestra gracias al booleano `IsDead` en estado `True`.
+
+=== Healtbar.cs (prefab externo)
+  
+El script `Healthbar.cs` fue desarrolla por otro compañero, Marcos Sancho, y lo reutilicé en mi proyecto, es muy útil para mostrar y actualizar la barra de vida de mi personaje.
+
+== Mejora
+
+El sistema de mejora del personaje, al igual que el de sus armas está ya definido en el script `MarketSystem.cs`, ahí están los valores de incremento establecidos.
+
+- Los valores son que cada mejora al personaje incrementa su vida máxima (MaxHealth) en 10 puntos. Siendo capaz de resistir más ataque enemigos.
+
+== Animaciones
+
+El sistema de animaciones del personaje se gestiona desde este único script, `Animaciones.cs`:
+
+- Guarda hashes de todos los parámetros que se pueden modificar en el `Animator` del personaje.
+- Actualiza constantemente para mostrar las animaciones de movimiento correctas, según el parámetro de velocidad en el eje X e Y. En este apartado es donde usé ambos parámetros para fusionar las cuatro animaciones de movimiento y la animación `Idle` (quieto).
+
+#figura(
+  image("img/img_mapablendtree.png"),
+  "Imagen sobre el mapa de animaciones 2D de BlendTree utilizado."
+)
+
+- Tiene métodos públicos que activan animaciones, siendo accionadas por otros scripts, como la animación de ataque, siendo accionada por el script `Player_combat.cs`.
+
+== Equipar arma
+
+Esta funcionalidad está gestionada por el script `Coger_Arma.cs` que es el que se encarga de poner el arma en las manos del personaje y sea usable, se aplica a un objeto que hace de avisador cuando entra en contacto con un objeto con el tag 'Weapon'.
+
+Entonces:
+
+- Comprueba si llevas un arma equipada, si llevas, muestra la interfaz de interactuar con el arma de 'Cambiar', sino muestra la de 'Coger'. Si clicas el botón adecuado según la situación sigue con estos pasos.
+- Ejecuta el método 'colocar_Arma', que le asigna el tag 'CurrentWeapon', la coloca en la posición correcta (posición y rotación), según el arma, le asigna como padre del objeto a nuestro personaje y finalmente asigna a la variable 'currentWeapon' del script este objeto.
+- Si tienes un arma equipada, previamente al método 'colocar_Arma' ejecuta 'soltar_Arma', que deshace todo lo realizado por 'colocar_Arma' sobre el 'currentWeapon' del script.
+
+== Atacar
+
+El script `Player_combat` es el que se encarga de esta funcionalidad.
+
+- Detecta la entrada desde el InputSystem y activa la animación de ataque, pasando como parámetro el cooldown de ataque de cada arma, para no reproducir la animación cuando no es necesario.
+- También tiene los métodos `EnableDamage` y `DisableDamage`, que activan y desactivan la función de colisión del arma equipada, estos métodos son ejecutados por la animación de ataque durante los frames en los que se quiere provocar el daño a los enemigos.
+- Según la naturaleza del arma hará uso de esta funcionalidad o no (que como veremos en el caso del Báculo no lo hará).
+
+== Sonidos
+
+Los sonidos reproducidos por el `SoundManager.cs` sobre este personaje es únicamente el sonido de ataque, que se ejecuta desde la animación de ataque, en el punto más álgido del golpe, golpee o no a un enemigo se reproducirá  .
+
+= Enemigos
+
+Estos enemigos, por su naturaleza de ser vivo (o no tan vivos), se parece mucho a nuestro personaje principal.
+
+== Movimiento
+
+El sistema de movimiento de nuestros enemigos se basa enormemente en la tecnología del NavMesh, usando NavMeshAgent sobre estos enemigos.
+
+- Mediante el script `EnemyMovement.cs` actualiza en cada frame el punto al que debe ir, mediante el método `SetDestination()` que incluye NavMeshAgent. 
+- Además de tener mucha personalización, en cuanto a velocidad, cambios de animación de correr y caminar basados en distancia del objetivo y su distancia de detención.
+- También tienen una función de evitar el giro automático y el movimiento hacia el objetivo cuando realiza ciertas acciones y animaciones, para que sea más realista.
+
+Todas estas acciones de bloqueo se ejecutan desde cada animación del enemigo, de manera individual.
+
+== Recompensa
+
+Este es el script más simple, se llama `InfoEnemy.cs` y únicamente tiene un valor que se puede modificar para personalizarlo por tipo de enemigo, etc y lo devuelve cuando lo solicitan.
+
+Es únicamente utilizado para actualizar la cantidad de monedas por el script `CoinsSystem.cs` cuando se elimina a un enemigo.
+
+== Vida/Muerte
+
+Este script `EnemyHealthSystem.cs` se parece mucho a la versión del personaje, tienen sus propias barras de vida (no hay diferencia en este script respecto a la versión del personaje), que se actualizan por la misma función `TakeDamage()`, la única diferencia es:
+
+- Que reproduce un sonido cada vez que recibe daño por medio de `TakeDamage()`.
+- Cuando muere:
+  - Reproduce un sonido de muerte.
+  - Actualiza la cantidad de monedas basándose en su `InfoEnemy.cs` y el objeto e CoinsSystem de la escena.
+  - Además de desactivar el script de animaciones, su barra de vida y su función de movimiento del NavMeshAgent.
+
+== Animaciones
+
+La funcionalidad de este script `EnemyAnimationController.cs` es igual a la del personaje, cuando llaman a cada método reproduce la animación asignada. Las animaciones con funciones especiales son:
+
+- Las animaciones 'TakeDamage' y 'Scream' reproducen un sonido específico y bloquean el movimiento del enemigo.
+- La animación de muerte detiene todas las coroutinas activas y activa otra coroutina para calcular el tiempo que tarda en destruir el objeto después de su muerte.
+
+#text(size: 9.5pt)[*Estas coroutinas son usadas para marcar el tiempo que tardan los enemigos en volver a atacar (2 segundos), este tiempo se calcula en paralelo con estos hilos.*]
+
+== Arma y Ataque
+
+=== Arma
+
+El arma tiene su propio script `DealDamage.cs` que al igual que el personaje:
+
+- Activa la colisión entre dos frames específicos y activa el método `TakeDamage()` del personaje cuando colisiona con él.
+- Tiene su propio atributo de daño, basado en los atributos del enemigo.
+- Al golpear al personaje con alguno de sus ataques emitirá un sonido de filo a través del Audio Source del enemigo.
+
+=== Ataque
+
+El ataque del enemigo se decide por el script `EnemyAttack.cs`, este se encarga de:
+
+- Si la distancia es menor a la distancia de ataque y puede atacar (osea que han pasado más de dos segundos desde el anterior ataque) activará `DecidirAtaque()`.
+- Este método decidirá entre cuatro animaciones de ataque, la ejecutará y activará la coroutina de `EsperarParaAtacar()`. Las animaciones son:
+  - Slash01: Que hace un daño alrededor suyo con un 100% del daño del enemigo.
+  - Slash02: Hace un daño alrededor suyo en sentido contrario al Slash01 y hace un 150% del daño del enemigo.
+  - Stab: Embiste con una estocada hacia el último punto del enemigo antes de realizar la animación y realiza un 200% de daño del enemigo. Es difícil de dar, pero si te pone en su blanco, prepárate.
+
+== Sonidos
+
+Todos los sonidos del enemigo son reproducidos con la funcionalidad de Spatial Blend del Audio Source que tiene el enemigo activada en algún valor, siendo variado este valor según el tipo de enemigo. Esto aumenta que tan 3D se escuchan los sonidos emitidos por ese Audio Source.
+
+Recapitulemos los sonidos del enemigo:
+- Scream: Se emite al ejecutar el ataque 'Scream' del enemigo, es un grito monstruoso.
+- Hit_enemy: Se reproduce al reproducir el método `TakeDamage()` del enemigo, siendo un quejido al daño recibido.
+- Hit_player: Suena un sonido de cuchillo afilado al reproducir el método `TakeDamage()` del personaje, representando el daño que te han causado.
+- Enemy_death: Al ejecutar el método `Morir()` del enemigo se reproduce este sonido, siendo un sonido que trata de recrear unos huesos cayendo unos encima de otros.
+
+== Tipos
+
+Estos son los tipos de enemigos que hay, y las diferencias entre ellos.
+
+Contamos con 2 tipos de enemigos, siendo:
+
+#tabla(
+  caption: "Comparativa de enemigos",
+  columns: (auto, 2cm, 3cm, 1fr),
+  align: (col, row) => if col == 0 { horizon } else { center + horizon },
+  stroke: 0.5pt,
+  fill: (col, row) => if row == 0 or col == 0 { rgb("#1a3a5c") } else if calc.odd(row) { rgb("#f0f4f8") } else { white },
+  table.header(
+    text(fill: white, weight: "bold")[],
+    text(fill: white, weight: "bold")[Skeleton],
+    text(fill: white, weight: "bold")[BigSkeleton],
+    text(fill: white, weight: "bold")[Explicación],
+  ),
+  text(fill: white, weight: "bold")[Tamaño], [x1.25], [x2.5], [El BigSkeleton es el doble de grande, teniendo mayor alcance de ataque y mayor área para recibir golpes.],
+  text(fill: white, weight: "bold")[Velocidad], [2 y 5], [3 y 7], [Los BigSkeleton corren más que los normales.],
+  text(fill: white, weight: "bold")[Vida], [100], [200], [Los BigSkeleton tienen el doble de vida que los normales.],
+  text(fill: white, weight: "bold")[Daño], [10], [20], [El daño base de los BigSkeleton es el doble que el de los normales.],
+  text(fill: white, weight: "bold")[Recompensa], [2], [10], [La recompensa de monedas de los BigSkeleton es notablemente superior a la de los normales.],
+  text(fill: white, weight: "bold")[Spatial Blend], [0.7], [0.6], [El Spatial Blend cuanto más alto es más 3D es, por lo que la distacia con el enemigo afecta más, al ser menos da un efecto de que el sonido es más fuerte.],
+)
+
+= Armas
 
 
 

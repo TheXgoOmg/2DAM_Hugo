@@ -146,26 +146,26 @@
     ]
 
 
+    #align(center)[
+      #text(fill: rgb("#1a3a5c"), weight: "bold")[Curso académico:]
+      #text()[ #curso]
+    ]
+
+
     #grid(
       columns: (1fr, 1fr),
       gutter: 1cm,
-      align(left)[
+      align(center)[
         #text(fill: rgb("#1a3a5c"), weight: "bold")[Alumno/a:]
         #linebreak()
         #text()[#alumno]
       ],
-      align(left)[
+      align(center)[
         #text(fill: rgb("#1a3a5c"), weight: "bold")[Tutor/a:]
         #linebreak()
         #text()[#tutor]
       ],
     )
-
-
-    #align(left)[
-      #text(fill: rgb("#1a3a5c"), weight: "bold")[Curso académico:]
-      #text()[ #curso]
-    ]
   ]
 
   // ==========================================================
